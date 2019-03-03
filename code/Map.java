@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Arrays;
-import javafx.util.Pair;
 
 
 public class Map{
@@ -111,7 +110,7 @@ public class Map{
 	}
 
 	// Count the frequency and print the results
-	public Pair<String, Double> countFreq(){
+	public MapResult countFreq(){
 	content = txtToString();
 	splitWord();
 	parseNegative();
@@ -127,7 +126,9 @@ public class Map{
 	String[] parseTaskAdd = taskUri.getPath().split("/");
 	String fileName = parseTaskAdd[parseTaskAdd.length - 2] + "/" +
 	parseTaskAdd[parseTaskAdd.length - 1];  
-	Pair <String, Double> ret = new Pair<String, Double>(fileName, sentiValue);
+	MapResult ret = new MapResult();
+	ret.filename = fileName;
+	ret.score = sentiValue;
 	saveResult();
 	return ret;
 	}
@@ -179,7 +180,7 @@ public class Map{
 	
 	public static void main(String[] args){
 	Map res = new Map("../data/positive.txt","../data/negative.txt","../data/example/poems","../data/output_dir");
-	System.out.println(res.countFreq().toString());
+	System.out.println(res.countFreq().filename);
 	
 	}
 }

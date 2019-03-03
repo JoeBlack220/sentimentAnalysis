@@ -9,7 +9,6 @@ import java.net.URI;
 
 // Useful built-in datastructures
 import java.util.ArrayList;
-import javafx.util.Pair;
 import java.util.Arrays;
 import java.util.Queue;
 import java.util.Comparator;
@@ -24,28 +23,28 @@ public class Sort{
 	// file writer to write the final output file
 	private FileWriter fwriter = null;
 	// Array that stores key value pairs (filename,sentimentvalue)
-	private PriorityQueue<Pair<String, Double>> files = 
-        new PriorityQueue<Pair<String, Double>>(new Comparator<Pair<String,Double>>() {
-        	public int compare(Pair<String, Double> a, Pair<String, Double> b) {
-        	if(b.getValue() >= a.getValue()) return 1;
+	private PriorityQueue<MapResult> files = 
+        new PriorityQueue<MapResult>(new Comparator<MapResult>() {
+        	public int compare(MapResult a, MapResult b) {
+        	if(b.score >= a.score) return 1;
 		else return -1; 
                 }
 	});
 
 	// Constructor
-	public Sort(ArrayList<Pair<String, Double>> unsorted){
+	public Sort(ArrayList<MapResult> unsorted){
 	sort(unsorted);
 	}
 
 	// Sort the (filename, sentiment value) pairs and save them
-	public void sort(ArrayList<Pair<String, Double>> unsorted){
+	public void sort(ArrayList<MapResult> unsorted){
 		for(int i = 0; i < unsorted.size(); i++){
 		files.add(unsorted.get(i));
 		}		
 	}
 	// Write the final output to a txt file
 	public void writeOutput(String address){
-	Pair<String, Double> current = null;
+	MapResult current = null;
 	try{
 	fwriter = new FileWriter(address);
 	writeHelper(fwriter);
@@ -53,7 +52,7 @@ public class Sort{
 	fwriter.write("-- output for the " + directName + " directory --\n");
 	while(files.size()!=0){
 		current = files.poll();
-		fwriter.write(current.getKey()+" "+current.getValue()+"\n");
+		fwriter.write(current.filename+" "+current.score+"\n");
 
 		}
 	} catch (IOException ioe) {
@@ -92,11 +91,21 @@ public class Sort{
 	}
 
 	public static void main(String[] args){
-	ArrayList<Pair<String,Double>> test = new ArrayList<Pair<String, Double>>();
-	Pair<String, Double> p1 = new Pair<String, Double>("example/histories",-0.0507148754943);
-	Pair<String, Double> p2 = new Pair<String, Double>("example/comedies",0.0722801788376);
-	Pair<String, Double> p3 = new Pair<String, Double>("example/poems",-0.120983606557);
-	Pair<String, Double> p4 = new Pair<String, Double>("example/tragedies",-0.0408327891522);
+	ArrayList<MapResult> test = new ArrayList<MapResult>();
+	MapResult p1 = new MapResult();
+	p1.score = -0.2;
+	p1.filename = "comedies";
+	MapResult p2 = new MapResult();
+	p1.score = -0.1;
+	p1.filename = "tragedies";
+	MapResult p3 = new MapResult();
+	p1.score = 0.2;
+	p1.filename = "poems";
+	MapResult p4 = new MapResult();
+	p1.score = 1;
+	p1.filename = "histories";
+
+
 	test.add(p1);
 	test.add(p2);
 	test.add(p3);
