@@ -22,6 +22,7 @@ public class Sort{
 	private String directName = "input_dir/";
 	// file writer to write the final output file
 	private FileWriter fwriter = null;
+	private String result = "";
 	// Array that stores key value pairs (filename,sentimentvalue)
 	private PriorityQueue<MapResult> files = 
         new PriorityQueue<MapResult>(new Comparator<MapResult>() {
@@ -35,12 +36,17 @@ public class Sort{
 	public Sort(ArrayList<MapResult> unsorted){
 	sort(unsorted);
 	}
-
+	//return the fileorder and score
+	public String getResult(){
+	return result;
+	}
+		
 	// Sort the (filename, sentiment value) pairs and save them
 	public void sort(ArrayList<MapResult> unsorted){
 		for(int i = 0; i < unsorted.size(); i++){
 		files.add(unsorted.get(i));
 		}		
+		writeOutput(outputDir+"/output.txt");
 	}
 	// Write the final output to a txt file
 	public void writeOutput(String address){
@@ -52,9 +58,10 @@ public class Sort{
 	fwriter.write("-- output for the " + directName + " directory --\n");
 	while(files.size()!=0){
 		current = files.poll();
-		fwriter.write(current.filename+" "+current.score+"\n");
+		result = result + current.filename+" "+current.score+"\n";
 
 		}
+	fwriter.write(result);
 	} catch (IOException ioe) {
 	System.err.println("Caught exception writing file '" + 
 	address + "'");
