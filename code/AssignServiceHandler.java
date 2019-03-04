@@ -32,7 +32,7 @@ public class AssignServiceHandler implements AssignService.Iface
         }
 }
 	//private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
-	private String[] nodeIp = {"128.101.35.181","10.0.0.28","localhost","localhost"};
+	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
 	public ClientResult assign(String folderAddress) throws TException {
@@ -52,7 +52,13 @@ public class AssignServiceHandler implements AssignService.Iface
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));
 			}
-			while(unsortedArray.size() != fileList.length);
+			while(unsortedArray.size() != fileList.length){
+			//	try {
+      			//		Thread.sleep(500); 
+			//	}catch (InterruptedException e) {
+			//	}
+				System.out.println(unsortedArray.size());
+			}
 			System.out.println("Start sorting.");
 			ret.fileOrder = callSort() ;
 			Instant end = Instant.now();
