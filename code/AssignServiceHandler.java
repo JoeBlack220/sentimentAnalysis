@@ -47,7 +47,7 @@ public class AssignServiceHandler implements AssignService.Iface
 				Task tmp = new Task(fileAddress);
 				tasks.add(tmp);
 			}
-			int threadNum = 100;
+			int threadNum = 50;
 			ExecutorService pool = Executors.newFixedThreadPool(threadNum);
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));
@@ -72,7 +72,7 @@ public class AssignServiceHandler implements AssignService.Iface
 		int acceptNodeId = 0;
 		while(!flag){
 		        try {		
-				TTransport  transport = new TSocket(nodeIp[acceptNodeIp], 9996);
+				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9996);
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
