@@ -16,8 +16,21 @@ import java.util.Date;
 import java.time.Instant;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ExecutorService; 
+import java.util.concurrent.Executors;	
+
 public class AssignServiceHandler implements AssignService.Iface
 {	
+	public class Task implements Runnable
+{
+        private String address;
+        public Task(String s) {
+                address = s;
+        }
+        public void run() {
+                callMap(address);
+        }
+}
 	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
@@ -27,15 +40,16 @@ public class AssignServiceHandler implements AssignService.Iface
 		try{
 			File file = new File(folderAddress);
 			String[] fileList = file.list();
+			ArrayList<Task> tasks = new ArrayList<>();
 			for(int i = 0; i < fileList.length; i++){
 				String fileAddress = folderAddress + "/" + fileList[i];
-				Runnable callMap = new Runnable() {
-					public void run() { 
-						callMap(fileAddress);
-					}	
-				};
-				Thread thread = new Thread(callMap);
-				thread.start();	
+				Task tmp = new Task(fileAddress);
+				tasks.add(tmp);
+			}
+			int threadNum = 2;
+			ExecutorService pool = Executors.newFixedThreadPool(threadNum);
+			for (int i = 0; i < tasks.size(); i ++) {
+				pool.execute(tasks.get(i));
 			}
 			while(unsortedArray.size() < fileList.length){
 			}
@@ -57,7 +71,7 @@ public class AssignServiceHandler implements AssignService.Iface
 		int acceptNodeId = 0;
 		while(!flag){
 		        try {		
-				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9090);
+				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9097);
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
