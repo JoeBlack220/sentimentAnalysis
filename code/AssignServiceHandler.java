@@ -31,7 +31,7 @@ public class AssignServiceHandler implements AssignService.Iface
                 callMap(address);
         }
 }
-	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
+	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
 	public ClientResult assign(String folderAddress) throws TException {
@@ -46,7 +46,7 @@ public class AssignServiceHandler implements AssignService.Iface
 				Task tmp = new Task(fileAddress);
 				tasks.add(tmp);
 			}
-			int threadNum = 2;
+			int threadNum = 10;
 			ExecutorService pool = Executors.newFixedThreadPool(threadNum);
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));

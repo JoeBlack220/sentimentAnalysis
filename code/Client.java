@@ -19,7 +19,9 @@ public class Client {
             transport.open();
 
             //What you need to do.
-		client.assign("../data/input_dir");
+	ClientResult finalResult = client.assign("../data/input_dir");
+	System.out.println(finalResult.fileOrder + "\nTime taken is: " + finalResult.time);
+	System.out.println("finished job!");
         } catch(TException e) {
 
         }

@@ -7,7 +7,7 @@ public class MapServiceHandler implements MapService.Iface
 {      
 	private String posAddress = "../data/positive.txt";
 	private String negAddress = "../data/negative.txt";
-	private String outDir = "../data/output_dir";
+	private String outDir = "../data/intermediate_dir";
 	private Random rand = new Random();
 	private HashMap<Integer, Double> nodeMap = new HashMap<Integer,Double>() {{
         	put(0, 0.2);
@@ -34,7 +34,7 @@ public class MapServiceHandler implements MapService.Iface
         @Override
         public MapResult mapping(String fileUri) throws TException {
 		MapResult res = null;		
-		System.out.println("I got put\n");
+		System.out.println("Start mapping " + fileUri + ".\n");
 		Map task = new Map(posAddress, negAddress, fileUri, outDir);
 		res = task.countFreq();
                 return res;
