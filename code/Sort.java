@@ -43,7 +43,7 @@ public class Sort{
 		
 	// Sort the (filename, sentiment value) pairs and save them
 	public void sort(ArrayList<MapResult> unsorted){
-		System.put.println("Start sorting");
+		System.out.println("Start sorting");
 		for(int i = 0; i < unsorted.size(); i++){
 		files.add(unsorted.get(i));
 		}		

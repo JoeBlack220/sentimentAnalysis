@@ -1,2002 +1,2002 @@
-input_dir/12576.txt
-Positive word: 570 Negative word: 420
-Sentiment score: 0.15151515151515152
-
-input_dir/12346.txt
-Positive word: 3510 Negative word: 2882
-Sentiment score: 0.09824780976220275
-
-input_dir/12526.txt
-Positive word: 905 Negative word: 861
-Sentiment score: 0.02491506228765572
-
-input_dir/12515.txt
-Positive word: 5265 Negative word: 3704
-Sentiment score: 0.17404392908908461
-
-input_dir/12869.txt
-Positive word: 270 Negative word: 283
-Sentiment score: -0.023508137432188065
-
-input_dir/12822.txt
-Positive word: 150 Negative word: 617
-Sentiment score: -0.6088657105606258
-
-input_dir/12700.txt
-Positive word: 4273 Negative word: 2336
-Sentiment score: 0.2930851868663943
-
-input_dir/12799.txt
-Positive word: 2706 Negative word: 1676
-Sentiment score: 0.2350524874486536
-
-input_dir/12756.txt
-Positive word: 128 Negative word: 406
-Sentiment score: -0.5205992509363296
-
-input_dir/12753.txt
-Positive word: 2985 Negative word: 2857
-Sentiment score: 0.021910304690174597
-
-input_dir/12648.txt
-Positive word: 925 Negative word: 333
-Sentiment score: 0.47058823529411764
-
-input_dir/12845.txt
-Positive word: 3263 Negative word: 3026
-Sentiment score: 0.03768484655748132
-
-input_dir/12887.txt
-Positive word: 1658 Negative word: 940
-Sentiment score: 0.2763664357197845
-
-input_dir/12380.txt
-Positive word: 2718 Negative word: 2688
-Sentiment score: 0.005549389567147614
-
-input_dir/12454.txt
-Positive word: 559 Negative word: 464
-Sentiment score: 0.09286412512218964
-
-input_dir/12387.txt
-Positive word: 6354 Negative word: 6523
-Sentiment score: -0.013124174885454686
-
-input_dir/12736.txt
-Positive word: 4170 Negative word: 2499
-Sentiment score: 0.2505623031938821
-
-input_dir/12883.txt
-Positive word: 2267 Negative word: 1023
-Sentiment score: 0.3781155015197568
-
-input_dir/12438.txt
-Positive word: 531 Negative word: 439
-Sentiment score: 0.09484536082474226
-
-input_dir/12482.txt
-Positive word: 2429 Negative word: 2377
-Sentiment score: 0.010819808572617561
-
-input_dir/12411.txt
-Positive word: 3342 Negative word: 3557
-Sentiment score: -0.031163936802435135
-
-input_dir/12592.txt
-Positive word: 836 Negative word: 1072
-Sentiment score: -0.12368972746331237
-
-input_dir/12738.txt
-Positive word: 440 Negative word: 298
-Sentiment score: 0.19241192411924118
-
-input_dir/12513.txt
-Positive word: 370 Negative word: 160
-Sentiment score: 0.39622641509433965
-
-input_dir/12419.txt
-Positive word: 3932 Negative word: 5439
-Sentiment score: -0.16081528118663962
-
-input_dir/12422.txt
-Positive word: 4057 Negative word: 4776
-Sentiment score: -0.08139929808672025
-
-input_dir/12414.txt
-Positive word: 1656 Negative word: 1812
-Sentiment score: -0.04498269896193772
-
-input_dir/12519.txt
-Positive word: 1903 Negative word: 1402
-Sentiment score: 0.15158850226928897
-
-input_dir/12595.txt
-Positive word: 578 Negative word: 449
-Sentiment score: 0.12560856864654332
-
-input_dir/12660.txt
-Positive word: 136 Negative word: 431
-Sentiment score: -0.5202821869488536
-
-input_dir/12697.txt
-Positive word: 3119 Negative word: 2943
-Sentiment score: 0.02903332233586275
-
-input_dir/12540.txt
-Positive word: 2122 Negative word: 2001
-Sentiment score: 0.029347562454523406
-
-input_dir/12359.txt
-Positive word: 414 Negative word: 199
-Sentiment score: 0.35073409461663946
-
-input_dir/12356.txt
-Positive word: 288 Negative word: 229
-Sentiment score: 0.11411992263056092
-
-input_dir/12478.txt
-Positive word: 3091 Negative word: 3035
-Sentiment score: 0.009141364675155077
-
-input_dir/12840.txt
-Positive word: 271 Negative word: 509
-Sentiment score: -0.30512820512820515
-
-input_dir/12562.txt
-Positive word: 621 Negative word: 718
-Sentiment score: -0.07244212098581031
-
-input_dir/12385.txt
-Positive word: 4092 Negative word: 4337
-Sentiment score: -0.02906631866176296
-
-input_dir/12343.txt
-Positive word: 460 Negative word: 346
-Sentiment score: 0.141439205955335
-
-input_dir/12768.txt
-Positive word: 3668 Negative word: 2782
-Sentiment score: 0.13736434108527132
-
-input_dir/12434.txt
-Positive word: 1803 Negative word: 1160
-Sentiment score: 0.21700978737765778
-
-input_dir/12476.txt
-Positive word: 1538 Negative word: 1343
-Sentiment score: 0.06768483165567511
-
-input_dir/12765.txt
-Positive word: 1184 Negative word: 781
-Sentiment score: 0.20508905852417303
-
-input_dir/12656.txt
-Positive word: 1298 Negative word: 1411
-Sentiment score: -0.04171280915466962
-
-input_dir/12374.txt
-Positive word: 3319 Negative word: 2671
-Sentiment score: 0.10818030050083473
-
-input_dir/12536.txt
-Positive word: 569 Negative word: 422
-Sentiment score: 0.14833501513622604
-
-input_dir/12758.txt
-Positive word: 3650 Negative word: 4028
-Sentiment score: -0.04923157072154207
-
-input_dir/12629.txt
-Positive word: 1749 Negative word: 1662
-Sentiment score: 0.025505716798592787
-
-input_dir/12726.txt
-Positive word: 672 Negative word: 895
-Sentiment score: -0.14231014677728143
-
-input_dir/12598.txt
-Positive word: 614 Negative word: 449
-Sentiment score: 0.15522107243650046
-
-input_dir/12507.txt
-Positive word: 3068 Negative word: 3746
-Sentiment score: -0.099501027296742
-
-input_dir/12460.txt
-Positive word: 1896 Negative word: 1020
-Sentiment score: 0.3004115226337449
-
-input_dir/12480.txt
-Positive word: 2673 Negative word: 1676
-Sentiment score: 0.2292481030121867
-
-input_dir/12636.txt
-Positive word: 191 Negative word: 2516
-Sentiment score: -0.8588843738455855
-
-input_dir/12779.txt
-Positive word: 1788 Negative word: 1527
-Sentiment score: 0.07873303167420814
-
-input_dir/12622.txt
-Positive word: 4156 Negative word: 2536
-Sentiment score: 0.242080095636581
-
-input_dir/12444.txt
-Positive word: 4582 Negative word: 3801
-Sentiment score: 0.09316473816056305
-
-input_dir/12529.txt
-Positive word: 1909 Negative word: 1083
-Sentiment score: 0.27606951871657753
-
-input_dir/12586.txt
-Positive word: 1774 Negative word: 1354
-Sentiment score: 0.13427109974424553
-
-input_dir/12416.txt
-Positive word: 2534 Negative word: 1874
-Sentiment score: 0.14972776769509982
-
-input_dir/12667.txt
-Positive word: 8823 Negative word: 8834
-Sentiment score: -6.229823865888883E-4
-
-input_dir/12637.txt
-Positive word: 130 Negative word: 251
-Sentiment score: -0.31758530183727035
-
-input_dir/12341.txt
-Positive word: 2297 Negative word: 3007
-Sentiment score: -0.13386123680241327
-
-input_dir/12791.txt
-Positive word: 2115 Negative word: 1989
-Sentiment score: 0.03070175438596491
-
-input_dir/12524.txt
-Positive word: 392 Negative word: 343
-Sentiment score: 0.06666666666666667
+input_dir/12852.txt
+Positive word: 1834 Negative word: 1277
+Sentiment score: 0.1790421086467374
 
 input_dir/12484.txt
 Positive word: 4122 Negative word: 4445
 Sentiment score: -0.03770281312011206
 
-input_dir/12425.txt
-Positive word: 3626 Negative word: 2939
-Sentiment score: 0.10464584920030465
-
-input_dir/12777.txt
-Positive word: 1623 Negative word: 1307
-Sentiment score: 0.10784982935153584
-
-input_dir/12849.txt
-Positive word: 1871 Negative word: 2210
-Sentiment score: -0.08306787552070571
-
-input_dir/12827.txt
-Positive word: 1816 Negative word: 2096
-Sentiment score: -0.07157464212678936
-
-input_dir/12391.txt
-Positive word: 613 Negative word: 721
-Sentiment score: -0.08095952023988005
-
-input_dir/12881.txt
-Positive word: 497 Negative word: 467
-Sentiment score: 0.03112033195020747
-
-input_dir/12808.txt
-Positive word: 1250 Negative word: 1325
-Sentiment score: -0.02912621359223301
-
-input_dir/12875.txt
-Positive word: 3175 Negative word: 2037
-Sentiment score: 0.21834228702993091
-
-input_dir/12344.txt
-Positive word: 1449 Negative word: 1203
-Sentiment score: 0.09276018099547512
-
-input_dir/12600.txt
-Positive word: 3571 Negative word: 2886
-Sentiment score: 0.10608641784110268
-
-input_dir/12893.txt
-Positive word: 1094 Negative word: 1066
-Sentiment score: 0.012962962962962963
-
-input_dir/12474.txt
-Positive word: 565 Negative word: 610
-Sentiment score: -0.03829787234042553
-
-input_dir/12781.txt
-Positive word: 551 Negative word: 355
-Sentiment score: 0.2163355408388521
-
-input_dir/12725.txt
-Positive word: 4086 Negative word: 5091
-Sentiment score: -0.10951291271657404
-
-input_dir/12541.txt
-Positive word: 2884 Negative word: 3572
-Sentiment score: -0.10656753407682776
-
-input_dir/12597.txt
-Positive word: 641 Negative word: 432
-Sentiment score: 0.19478098788443615
-
-input_dir/12649.txt
-Positive word: 7132 Negative word: 3717
-Sentiment score: 0.31477555535072355
-
-input_dir/12728.txt
-Positive word: 1737 Negative word: 1717
-Sentiment score: 0.005790387955993051
-
-input_dir/12518.txt
-Positive word: 1049 Negative word: 577
-Sentiment score: 0.2902829028290283
-
-input_dir/12789.txt
-Positive word: 1577 Negative word: 1348
-Sentiment score: 0.07829059829059828
-
-input_dir/12755.txt
-Positive word: 5041 Negative word: 3806
-Sentiment score: 0.13959534305414265
-
-input_dir/12565.txt
-Positive word: 5563 Negative word: 5809
-Sentiment score: -0.021632078790010553
-
-input_dir/12372.txt
-Positive word: 3290 Negative word: 2643
-Sentiment score: 0.10905107028484747
-
-input_dir/12876.txt
-Positive word: 5239 Negative word: 4221
-Sentiment score: 0.10761099365750529
-
-input_dir/12561.txt
-Positive word: 3739 Negative word: 2792
-Sentiment score: 0.14500076557954372
-
-input_dir/12823.txt
-Positive word: 1787 Negative word: 1380
-Sentiment score: 0.12851278812756553
-
-input_dir/12776.txt
-Positive word: 1351 Negative word: 1369
-Sentiment score: -0.006617647058823529
-
-input_dir/12617.txt
-Positive word: 822 Negative word: 562
-Sentiment score: 0.18786127167630057
-
-input_dir/12858.txt
-Positive word: 1544 Negative word: 1148
-Sentiment score: 0.14710252600297177
-
-input_dir/12837.txt
-Positive word: 218 Negative word: 173
-Sentiment score: 0.11508951406649616
-
-input_dir/12835.txt
-Positive word: 3853 Negative word: 3875
-Sentiment score: -0.002846790890269151
-
-input_dir/12668.txt
-Positive word: 2606 Negative word: 3083
-Sentiment score: -0.08384601863244859
-
-input_dir/12596.txt
-Positive word: 4155 Negative word: 2951
-Sentiment score: 0.16943428088938925
-
-input_dir/12628.txt
-Positive word: 5687 Negative word: 3289
-Sentiment score: 0.26715686274509803
-
-input_dir/12820.txt
-Positive word: 772 Negative word: 558
-Sentiment score: 0.16090225563909774
-
-input_dir/12418.txt
-Positive word: 2594 Negative word: 2667
-Sentiment score: -0.013875689032503326
-
-input_dir/12677.txt
-Positive word: 1003 Negative word: 740
-Sentiment score: 0.1508892713711991
-
-input_dir/12818.txt
-Positive word: 1764 Negative word: 2376
-Sentiment score: -0.14782608695652175
-
-input_dir/12774.txt
-Positive word: 1464 Negative word: 1191
-Sentiment score: 0.10282485875706214
-
-input_dir/12375.txt
-Positive word: 1751 Negative word: 915
-Sentiment score: 0.31357839459864967
-
-input_dir/12618.txt
-Positive word: 526 Negative word: 404
-Sentiment score: 0.13118279569892474
-
-input_dir/12782.txt
-Positive word: 649 Negative word: 707
-Sentiment score: -0.04277286135693215
-
-input_dir/12537.txt
-Positive word: 2064 Negative word: 1223
-Sentiment score: 0.2558564040158199
-
-input_dir/12397.txt
-Positive word: 2325 Negative word: 2648
-Sentiment score: -0.06495073396340237
-
-input_dir/12792.txt
-Positive word: 3146 Negative word: 1905
-Sentiment score: 0.24569392199564444
-
-input_dir/12614.txt
-Positive word: 578 Negative word: 408
-Sentiment score: 0.1724137931034483
-
-input_dir/12549.txt
-Positive word: 4012 Negative word: 1592
-Sentiment score: 0.4318344039971449
-
-input_dir/12367.txt
-Positive word: 789 Negative word: 1241
-Sentiment score: -0.22266009852216748
-
-input_dir/12577.txt
-Positive word: 2635 Negative word: 2433
-Sentiment score: 0.039857932123125495
-
-input_dir/12593.txt
-Positive word: 3176 Negative word: 2559
-Sentiment score: 0.1075850043591979
-
-input_dir/12645.txt
-Positive word: 627 Negative word: 490
-Sentiment score: 0.12264995523724262
-
-input_dir/12508.txt
-Positive word: 2819 Negative word: 1738
-Sentiment score: 0.23721746763221419
-
-input_dir/12871.txt
-Positive word: 568 Negative word: 741
-Sentiment score: -0.13216195569136746
-
-input_dir/12493.txt
-Positive word: 725 Negative word: 612
-Sentiment score: 0.08451757666417352
-
-input_dir/12633.txt
-Positive word: 1016 Negative word: 688
-Sentiment score: 0.19248826291079812
-
-input_dir/12350.txt
-Positive word: 4539 Negative word: 4767
-Sentiment score: -0.024500322372662798
-
-input_dir/12512.txt
-Positive word: 807 Negative word: 618
-Sentiment score: 0.13263157894736843
-
-input_dir/12532.txt
-Positive word: 3358 Negative word: 2558
-Sentiment score: 0.1352265043948614
-
-input_dir/12584.txt
-Positive word: 1944 Negative word: 1511
-Sentiment score: 0.12532561505065123
-
-input_dir/12694.txt
-Positive word: 1075 Negative word: 634
-Sentiment score: 0.2580456407255705
-
-input_dir/12505.txt
-Positive word: 440 Negative word: 266
-Sentiment score: 0.24645892351274787
-
-input_dir/12772.txt
-Positive word: 1663 Negative word: 1379
-Sentiment score: 0.09335963182117028
-
-input_dir/12481.txt
-Positive word: 1972 Negative word: 2196
-Sentiment score: -0.053742802303262956
-
-input_dir/12452.txt
-Positive word: 1916 Negative word: 2456
-Sentiment score: -0.12351326623970722
-
-input_dir/12362.txt
-Positive word: 5063 Negative word: 4272
-Sentiment score: 0.08473486877343332
-
-input_dir/12364.txt
-Positive word: 1240 Negative word: 814
-Sentiment score: 0.2074001947419669
-
-input_dir/12842.txt
-Positive word: 292 Negative word: 200
-Sentiment score: 0.18699186991869918
-
-input_dir/12464.txt
-Positive word: 5061 Negative word: 3402
-Sentiment score: 0.19602977667493796
-
-input_dir/12862.txt
-Positive word: 282 Negative word: 164
-Sentiment score: 0.2645739910313901
-
-input_dir/12891.txt
-Positive word: 2370 Negative word: 2674
-Sentiment score: -0.06026962727993656
-
-input_dir/12471.txt
-Positive word: 3775 Negative word: 2382
-Sentiment score: 0.22624654864382004
-
-input_dir/12699.txt
-Positive word: 3231 Negative word: 3631
-Sentiment score: -0.05829204313611192
-
-input_dir/12591.txt
-Positive word: 1750 Negative word: 1596
-Sentiment score: 0.04602510460251046
-
-input_dir/12494.txt
-Positive word: 876 Negative word: 940
-Sentiment score: -0.03524229074889868
-
-input_dir/12902.txt
-Positive word: 1327 Negative word: 941
-Sentiment score: 0.17019400352733685
-
-input_dir/12605.txt
-Positive word: 4442 Negative word: 3125
-Sentiment score: 0.17404519624686138
-
-input_dir/12403.txt
-Positive word: 3323 Negative word: 3734
-Sentiment score: -0.058240045345047474
-
-input_dir/12873.txt
-Positive word: 529 Negative word: 436
-Sentiment score: 0.09637305699481866
-
-input_dir/12788.txt
-Positive word: 7964 Negative word: 5738
-Sentiment score: 0.16245803532331046
-
-input_dir/12378.txt
-Positive word: 496 Negative word: 361
-Sentiment score: 0.15752625437572929
-
-input_dir/12589.txt
-Positive word: 443 Negative word: 234
-Sentiment score: 0.3087149187592319
-
-input_dir/12692.txt
-Positive word: 1591 Negative word: 1609
-Sentiment score: -0.005625
-
-input_dir/12701.txt
-Positive word: 124 Negative word: 52
-Sentiment score: 0.4090909090909091
-
-input_dir/12621.txt
-Positive word: 1601 Negative word: 2515
-Sentiment score: -0.22206025267249757
-
-input_dir/12664.txt
-Positive word: 493 Negative word: 470
-Sentiment score: 0.023883696780893044
-
-input_dir/12735.txt
-Positive word: 1636 Negative word: 1855
-Sentiment score: -0.06273274133486108
-
-input_dir/12828.txt
-Positive word: 915 Negative word: 1305
-Sentiment score: -0.17567567567567569
-
-input_dir/12421.txt
-Positive word: 1998 Negative word: 1545
-Sentiment score: 0.12785774767146485
-
-input_dir/12489.txt
-Positive word: 731 Negative word: 652
-Sentiment score: 0.05712219812002892
-
-input_dir/12417.txt
-Positive word: 306 Negative word: 224
-Sentiment score: 0.15471698113207547
-
-input_dir/12739.txt
-Positive word: 528 Negative word: 367
-Sentiment score: 0.17988826815642459
-
-input_dir/12794.txt
-Positive word: 598 Negative word: 658
-Sentiment score: -0.04777070063694268
-
-input_dir/12578.txt
-Positive word: 1120 Negative word: 868
-Sentiment score: 0.1267605633802817
-
-input_dir/12582.txt
-Positive word: 5546 Negative word: 6741
-Sentiment score: -0.09725726377472126
-
-input_dir/12683.txt
-Positive word: 2226 Negative word: 1450
-Sentiment score: 0.21109902067464636
-
-input_dir/12698.txt
-Positive word: 201 Negative word: 776
-Sentiment score: -0.5885363357215967
-
-input_dir/12357.txt
-Positive word: 1934 Negative word: 2633
-Sentiment score: -0.15305452156776878
-
-input_dir/12623.txt
-Positive word: 6635 Negative word: 6314
-Sentiment score: 0.024789559039308056
-
-input_dir/12631.txt
-Positive word: 1243 Negative word: 514
-Sentiment score: 0.414911781445646
-
-input_dir/12689.txt
-Positive word: 1582 Negative word: 1807
-Sentiment score: -0.06639126586013573
-
-input_dir/12531.txt
-Positive word: 622 Negative word: 458
-Sentiment score: 0.15185185185185185
-
-input_dir/12783.txt
-Positive word: 375 Negative word: 628
-Sentiment score: -0.2522432701894317
-
-input_dir/12527.txt
-Positive word: 3486 Negative word: 3446
-Sentiment score: 0.005770340450086555
-
-input_dir/12352.txt
-Positive word: 3190 Negative word: 2546
-Sentiment score: 0.11227336122733612
-
-input_dir/12750.txt
-Positive word: 1871 Negative word: 1840
-Sentiment score: 0.008353543519267044
-
-input_dir/12843.txt
-Positive word: 3157 Negative word: 2392
-Sentiment score: 0.1378626779599928
-
-input_dir/12520.txt
-Positive word: 7046 Negative word: 6947
-Sentiment score: 0.0070749660544557995
-
-input_dir/12583.txt
-Positive word: 643 Negative word: 422
-Sentiment score: 0.20751173708920187
-
-input_dir/12615.txt
-Positive word: 280 Negative word: 177
-Sentiment score: 0.22538293216630198
-
-input_dir/12658.txt
-Positive word: 2202 Negative word: 2465
-Sentiment score: -0.056353117634454684
-
-input_dir/12373.txt
-Positive word: 3349 Negative word: 2717
-Sentiment score: 0.1041872733267392
-
-input_dir/12778.txt
-Positive word: 1641 Negative word: 1362
-Sentiment score: 0.09290709290709291
-
-input_dir/12784.txt
-Positive word: 3059 Negative word: 2438
-Sentiment score: 0.11297071129707113
-
-input_dir/12854.txt
-Positive word: 2128 Negative word: 1159
-Sentiment score: 0.2947976878612717
-
-input_dir/12358.txt
-Positive word: 236 Negative word: 115
-Sentiment score: 0.34472934472934474
-
-input_dir/12825.txt
-Positive word: 498 Negative word: 476
-Sentiment score: 0.022587268993839837
-
-input_dir/12517.txt
-Positive word: 455 Negative word: 297
-Sentiment score: 0.21010638297872342
-
-input_dir/12657.txt
-Positive word: 1863 Negative word: 784
-Sentiment score: 0.40763128069512655
-
-input_dir/12514.txt
-Positive word: 6181 Negative word: 6131
-Sentiment score: 0.004061078622482131
-
-input_dir/12730.txt
-Positive word: 1473 Negative word: 1993
-Sentiment score: -0.15002885170225044
-
-input_dir/12747.txt
-Positive word: 2520 Negative word: 2227
-Sentiment score: 0.06172319359595534
-
-input_dir/12396.txt
-Positive word: 2693 Negative word: 2859
-Sentiment score: -0.02989913544668588
-
-input_dir/12787.txt
-Positive word: 1218 Negative word: 1017
-Sentiment score: 0.08993288590604027
-
-input_dir/12395.txt
-Positive word: 483 Negative word: 314
-Sentiment score: 0.2120451693851945
-
-input_dir/12469.txt
-Positive word: 551 Negative word: 317
-Sentiment score: 0.2695852534562212
-
-input_dir/12573.txt
-Positive word: 5976 Negative word: 4410
-Sentiment score: 0.15077989601386482
-
-input_dir/12545.txt
-Positive word: 1830 Negative word: 1909
-Sentiment score: -0.0211286440224659
-
-input_dir/12590.txt
-Positive word: 2382 Negative word: 2382
-Sentiment score: 0.0
-
-input_dir/12816.txt
-Positive word: 1557 Negative word: 1396
-Sentiment score: 0.05452082627836099
-
-input_dir/12650.txt
-Positive word: 582 Negative word: 338
-Sentiment score: 0.26521739130434785
-
-input_dir/12543.txt
-Positive word: 615 Negative word: 418
-Sentiment score: 0.19070667957405615
-
-input_dir/12786.txt
-Positive word: 1485 Negative word: 1741
-Sentiment score: -0.07935523868567886
-
-input_dir/12542.txt
-Positive word: 2875 Negative word: 2377
-Sentiment score: 0.09482102056359482
-
-input_dir/12886.txt
-Positive word: 1250 Negative word: 894
-Sentiment score: 0.166044776119403
-
-input_dir/12767.txt
-Positive word: 2634 Negative word: 2714
-Sentiment score: -0.014958863126402393
-
-input_dir/12453.txt
-Positive word: 6075 Negative word: 6232
-Sentiment score: -0.012756967579426343
-
-input_dir/12525.txt
-Positive word: 1768 Negative word: 1818
-Sentiment score: -0.013943112102621304
-
-input_dir/12409.txt
-Positive word: 5542 Negative word: 4308
-Sentiment score: 0.12527918781725889
-
-input_dir/12398.txt
-Positive word: 4084 Negative word: 3774
-Sentiment score: 0.03945024179180453
-
-input_dir/12405.txt
-Positive word: 1633 Negative word: 1285
-Sentiment score: 0.11925976696367376
-
-input_dir/12654.txt
-Positive word: 4465 Negative word: 3731
-Sentiment score: 0.08955588091752074
-
-input_dir/12901.txt
-Positive word: 3094 Negative word: 2711
-Sentiment score: 0.06597760551248924
-
-input_dir/12770.txt
-Positive word: 680 Negative word: 418
-Sentiment score: 0.23861566484517305
-
-input_dir/12675.txt
-Positive word: 1798 Negative word: 1344
-Sentiment score: 0.14449395289624442
-
-input_dir/12465.txt
-Positive word: 608 Negative word: 491
-Sentiment score: 0.10646041856232939
-
-input_dir/12761.txt
-Positive word: 3609 Negative word: 3140
-Sentiment score: 0.06949177655949029
-
-input_dir/12632.txt
-Positive word: 6774 Negative word: 3825
-Sentiment score: 0.27823379564109824
-
-input_dir/12516.txt
-Positive word: 3366 Negative word: 4295
-Sentiment score: -0.12126354261845712
-
-input_dir/12497.txt
-Positive word: 607 Negative word: 430
-Sentiment score: 0.17068466730954676
-
-input_dir/12581.txt
-Positive word: 2322 Negative word: 2467
-Sentiment score: -0.03027771977448319
-
-input_dir/12829.txt
-Positive word: 1463 Negative word: 1522
-Sentiment score: -0.019765494137353432
-
-input_dir/12642.txt
-Positive word: 667 Negative word: 201
-Sentiment score: 0.5368663594470046
-
-input_dir/12427.txt
-Positive word: 1177 Negative word: 1190
-Sentiment score: -0.005492184199408534
-
-input_dir/12588.txt
-Positive word: 2247 Negative word: 2073
-Sentiment score: 0.04027777777777778
-
-input_dir/12805.txt
-Positive word: 1529 Negative word: 1536
-Sentiment score: -0.0022838499184339315
-
-input_dir/12459.txt
-Positive word: 353 Negative word: 457
-Sentiment score: -0.12839506172839507
-
-input_dir/12673.txt
-Positive word: 2871 Negative word: 2744
-Sentiment score: 0.022617987533392697
-
-input_dir/12737.txt
-Positive word: 578 Negative word: 401
-Sentiment score: 0.1807967313585291
-
-input_dir/12490.txt
-Positive word: 1059 Negative word: 680
-Sentiment score: 0.21794134560092007
-
-input_dir/12393.txt
-Positive word: 462 Negative word: 335
-Sentiment score: 0.15934755332496864
-
-input_dir/12437.txt
-Positive word: 849 Negative word: 807
-Sentiment score: 0.025362318840579712
-
-input_dir/12803.txt
-Positive word: 1164 Negative word: 964
-Sentiment score: 0.09398496240601503
-
-input_dir/12895.txt
-Positive word: 2221 Negative word: 1807
-Sentiment score: 0.10278053624627606
-
-input_dir/12477.txt
-Positive word: 517 Negative word: 333
-Sentiment score: 0.2164705882352941
-
-input_dir/12370.txt
-Positive word: 3405 Negative word: 2653
-Sentiment score: 0.12413337735226147
-
-input_dir/12461.txt
-Positive word: 2338 Negative word: 2236
-Sentiment score: 0.02229995627459554
-
-input_dir/12620.txt
-Positive word: 737 Negative word: 1151
-Sentiment score: -0.21927966101694915
-
-input_dir/12894.txt
-Positive word: 8914 Negative word: 6533
-Sentiment score: 0.1541399624522561
-
-input_dir/12855.txt
-Positive word: 1989 Negative word: 1414
-Sentiment score: 0.16896855715545106
-
-input_dir/12638.txt
-Positive word: 769 Negative word: 753
-Sentiment score: 0.010512483574244415
-
-input_dir/12440.txt
-Positive word: 2231 Negative word: 1965
-Sentiment score: 0.06339370829361296
-
-input_dir/12575.txt
-Positive word: 564 Negative word: 374
-Sentiment score: 0.2025586353944563
-
-input_dir/12506.txt
-Positive word: 2774 Negative word: 2054
-Sentiment score: 0.1491300745650373
-
-input_dir/12458.txt
-Positive word: 204 Negative word: 115
-Sentiment score: 0.27899686520376177
-
-input_dir/12896.txt
-Positive word: 3020 Negative word: 1356
-Sentiment score: 0.3802559414990859
-
-input_dir/12450.txt
-Positive word: 3990 Negative word: 3317
-Sentiment score: 0.09210346243328316
-
-input_dir/12821.txt
-Positive word: 4594 Negative word: 4689
-Sentiment score: -0.010233760637724873
-
-input_dir/12603.txt
-Positive word: 137 Negative word: 90
-Sentiment score: 0.20704845814977973
-
-input_dir/12399.txt
-Positive word: 343 Negative word: 439
-Sentiment score: -0.12276214833759591
-
-input_dir/12839.txt
-Positive word: 2572 Negative word: 2142
-Sentiment score: 0.09121764955451846
-
-input_dir/12868.txt
-Positive word: 4489 Negative word: 2551
-Sentiment score: 0.2752840909090909
-
-input_dir/12834.txt
-Positive word: 910 Negative word: 619
-Sentiment score: 0.19032047089601045
-
-input_dir/12423.txt
-Positive word: 2597 Negative word: 2041
-Sentiment score: 0.1198792583009918
-
-input_dir/12599.txt
-Positive word: 585 Negative word: 417
-Sentiment score: 0.16766467065868262
-
-input_dir/12426.txt
-Positive word: 3855 Negative word: 2071
-Sentiment score: 0.30104623692203847
-
-input_dir/12686.txt
-Positive word: 2042 Negative word: 2068
-Sentiment score: -0.006326034063260341
-
-input_dir/12522.txt
-Positive word: 252 Negative word: 157
-Sentiment score: 0.23227383863080683
-
-input_dir/12568.txt
-Positive word: 616 Negative word: 424
-Sentiment score: 0.18461538461538463
-
-input_dir/12655.txt
-Positive word: 5435 Negative word: 3440
-Sentiment score: 0.2247887323943662
-
-input_dir/12639.txt
-Positive word: 2300 Negative word: 2700
-Sentiment score: -0.08
-
-input_dir/12859.txt
-Positive word: 2166 Negative word: 2916
-Sentiment score: -0.14757969303423848
-
-input_dir/12580.txt
-Positive word: 1371 Negative word: 809
-Sentiment score: 0.25779816513761467
-
-input_dir/12890.txt
-Positive word: 1401 Negative word: 1774
-Sentiment score: -0.11748031496062993
-
-input_dir/12741.txt
-Positive word: 2523 Negative word: 1193
-Sentiment score: 0.3579117330462863
-
-input_dir/12841.txt
-Positive word: 1122 Negative word: 1079
-Sentiment score: 0.019536574284416176
-
-input_dir/12624.txt
-Positive word: 5237 Negative word: 3215
-Sentiment score: 0.23923331755797445
-
-input_dir/12606.txt
-Positive word: 17672 Negative word: 12118
-Sentiment score: 0.18643840214837193
-
-input_dir/12870.txt
-Positive word: 1362 Negative word: 1662
-Sentiment score: -0.0992063492063492
-
-input_dir/12428.txt
-Positive word: 3091 Negative word: 3141
-Sentiment score: -0.008023106546854942
-
-input_dir/12571.txt
-Positive word: 1448 Negative word: 1612
-Sentiment score: -0.05359477124183006
-
-input_dir/12800.txt
-Positive word: 3549 Negative word: 3406
-Sentiment score: 0.020560747663551402
-
-input_dir/12884.txt
-Positive word: 2557 Negative word: 2166
-Sentiment score: 0.08278636459877196
-
-input_dir/12574.txt
-Positive word: 655 Negative word: 555
-Sentiment score: 0.08264462809917356
-
-input_dir/12342.txt
-Positive word: 25940 Negative word: 16007
-Sentiment score: 0.23679881755548668
-
-input_dir/12771.txt
-Positive word: 7153 Negative word: 4842
-Sentiment score: 0.19266360983743228
-
-input_dir/12672.txt
-Positive word: 2551 Negative word: 3259
-Sentiment score: -0.12185886402753873
-
-input_dir/12824.txt
-Positive word: 116 Negative word: 56
-Sentiment score: 0.3488372093023256
-
-input_dir/12442.txt
-Positive word: 5216 Negative word: 4459
-Sentiment score: 0.07824289405684755
-
-input_dir/12616.txt
-Positive word: 1048 Negative word: 780
-Sentiment score: 0.14660831509846828
-
-input_dir/12879.txt
-Positive word: 2494 Negative word: 2114
-Sentiment score: 0.08246527777777778
-
-input_dir/12594.txt
-Positive word: 1241 Negative word: 645
-Sentiment score: 0.31601272534464475
-
-input_dir/12470.txt
-Positive word: 3692 Negative word: 3912
-Sentiment score: -0.028932140978432403
-
-input_dir/12793.txt
-Positive word: 1956 Negative word: 2120
-Sentiment score: -0.040235525024533855
-
-input_dir/12678.txt
-Positive word: 1267 Negative word: 1079
-Sentiment score: 0.08013640238704177
-
-input_dir/12570.txt
-Positive word: 2031 Negative word: 2308
-Sentiment score: -0.06383959437658447
-
-input_dir/12390.txt
-Positive word: 359 Negative word: 258
-Sentiment score: 0.16369529983792544
-
-input_dir/12492.txt
-Positive word: 1208 Negative word: 600
-Sentiment score: 0.336283185840708
-
-input_dir/12817.txt
-Positive word: 5423 Negative word: 3732
-Sentiment score: 0.18470780993992353
-
-input_dir/12610.txt
-Positive word: 1659 Negative word: 1601
-Sentiment score: 0.017791411042944787
-
-input_dir/12641.txt
-Positive word: 2207 Negative word: 1628
-Sentiment score: 0.15097783572359844
-
-input_dir/12608.txt
-Positive word: 422 Negative word: 286
-Sentiment score: 0.192090395480226
-
-input_dir/12351.txt
-Positive word: 6495 Negative word: 4810
-Sentiment score: 0.14904909332153915
-
-input_dir/12732.txt
-Positive word: 2615 Negative word: 2900
-Sentiment score: -0.051677243880326386
-
-input_dir/12379.txt
-Positive word: 118 Negative word: 55
-Sentiment score: 0.36416184971098264
-
-input_dir/12662.txt
-Positive word: 3335 Negative word: 2308
-Sentiment score: 0.18199539252170832
-
-input_dir/12539.txt
-Positive word: 1629 Negative word: 1296
-Sentiment score: 0.11384615384615385
-
-input_dir/12530.txt
-Positive word: 722 Negative word: 538
-Sentiment score: 0.14603174603174604
-
-input_dir/12640.txt
-Positive word: 2349 Negative word: 3750
-Sentiment score: -0.22970978848991638
-
-input_dir/12340.txt
-Positive word: 1002 Negative word: 497
-Sentiment score: 0.33689126084056037
-
-input_dir/12548.txt
-Positive word: 2659 Negative word: 2215
-Sentiment score: 0.09109560935576529
-
-input_dir/12383.txt
-Positive word: 5384 Negative word: 4065
-Sentiment score: 0.13959149116308603
-
-input_dir/12898.txt
-Positive word: 568 Negative word: 377
-Sentiment score: 0.2021164021164021
-
-input_dir/12384.txt
-Positive word: 1446 Negative word: 1648
-Sentiment score: -0.06528765352294764
-
-input_dir/12609.txt
-Positive word: 601 Negative word: 521
-Sentiment score: 0.07130124777183601
-
-input_dir/12643.txt
-Positive word: 326 Negative word: 293
-Sentiment score: 0.05331179321486268
-
-input_dir/12746.txt
-Positive word: 4032 Negative word: 3972
-Sentiment score: 0.0074962518740629685
-
-input_dir/12569.txt
-Positive word: 1654 Negative word: 1217
-Sentiment score: 0.15221177290142807
-
-input_dir/12369.txt
-Positive word: 7736 Negative word: 6036
-Sentiment score: 0.12343886145803079
-
-input_dir/12878.txt
-Positive word: 1351 Negative word: 1136
-Sentiment score: 0.08644953759549658
-
-input_dir/12819.txt
-Positive word: 1427 Negative word: 1681
-Sentiment score: -0.08172458172458172
-
-input_dir/12559.txt
-Positive word: 1647 Negative word: 1756
-Sentiment score: -0.032030561269468114
-
-input_dir/12386.txt
-Positive word: 3131 Negative word: 1722
-Sentiment score: 0.2903358747166701
-
-input_dir/12445.txt
-Positive word: 6007 Negative word: 4993
-Sentiment score: 0.09218181818181818
-
-input_dir/12472.txt
-Positive word: 788 Negative word: 814
-Sentiment score: -0.016229712858926344
-
-input_dir/12773.txt
-Positive word: 4488 Negative word: 3911
-Sentiment score: 0.0686986546017383
-
-input_dir/12865.txt
-Positive word: 291 Negative word: 245
-Sentiment score: 0.08582089552238806
-
-input_dir/12627.txt
-Positive word: 215 Negative word: 451
-Sentiment score: -0.35435435435435436
-
-input_dir/12626.txt
-Positive word: 1551 Negative word: 531
-Sentiment score: 0.4899135446685879
-
-input_dir/12551.txt
-Positive word: 553 Negative word: 354
-Sentiment score: 0.21940463065049615
-
-input_dir/12392.txt
-Positive word: 537 Negative word: 453
-Sentiment score: 0.08484848484848485
-
 input_dir/12521.txt
 Positive word: 568 Negative word: 348
 Sentiment score: 0.24017467248908297
-
-input_dir/12674.txt
-Positive word: 2452 Negative word: 3359
-Sentiment score: -0.15608329031147822
-
-input_dir/12857.txt
-Positive word: 556 Negative word: 254
-Sentiment score: 0.3728395061728395
-
-input_dir/12443.txt
-Positive word: 579 Negative word: 421
-Sentiment score: 0.158
-
-input_dir/12790.txt
-Positive word: 2484 Negative word: 1585
-Sentiment score: 0.22093880560334234
-
-input_dir/12743.txt
-Positive word: 910 Negative word: 706
-Sentiment score: 0.12623762376237624
-
-input_dir/12486.txt
-Positive word: 1626 Negative word: 1414
-Sentiment score: 0.06973684210526315
-
-input_dir/12613.txt
-Positive word: 205 Negative word: 666
-Sentiment score: -0.529276693455798
-
-input_dir/12850.txt
-Positive word: 779 Negative word: 672
-Sentiment score: 0.0737422467263956
-
-input_dir/12607.txt
-Positive word: 596 Negative word: 457
-Sentiment score: 0.13200379867046533
-
-input_dir/12528.txt
-Positive word: 3654 Negative word: 3320
-Sentiment score: 0.04789217092056209
-
-input_dir/12563.txt
-Positive word: 2313 Negative word: 1895
-Sentiment score: 0.09933460076045628
-
-input_dir/12572.txt
-Positive word: 4125 Negative word: 3797
-Sentiment score: 0.04140368593789447
-
-input_dir/12762.txt
-Positive word: 1040 Negative word: 798
-Sentiment score: 0.13166485310119697
-
-input_dir/12348.txt
-Positive word: 2311 Negative word: 2205
-Sentiment score: 0.023472099202834367
-
-input_dir/12798.txt
-Positive word: 1882 Negative word: 2063
-Sentiment score: -0.0458808618504436
-
-input_dir/12406.txt
-Positive word: 558 Negative word: 441
-Sentiment score: 0.11711711711711711
-
-input_dir/12368.txt
-Positive word: 672 Negative word: 777
-Sentiment score: -0.07246376811594203
-
-input_dir/12557.txt
-Positive word: 3130 Negative word: 2843
-Sentiment score: 0.04804955633684915
-
-input_dir/12882.txt
-Positive word: 2229 Negative word: 2399
-Sentiment score: -0.03673292999135696
-
-input_dir/12429.txt
-Positive word: 3623 Negative word: 2110
-Sentiment score: 0.26391069248212107
-
-input_dir/12744.txt
-Positive word: 2997 Negative word: 2099
-Sentiment score: 0.17621664050235478
-
-input_dir/12899.txt
-Positive word: 660 Negative word: 350
-Sentiment score: 0.3069306930693069
-
-input_dir/12635.txt
-Positive word: 2292 Negative word: 1491
-Sentiment score: 0.21173671689135606
-
-input_dir/12630.txt
-Positive word: 645 Negative word: 443
-Sentiment score: 0.18566176470588236
-
-input_dir/12402.txt
-Positive word: 3735 Negative word: 3035
-Sentiment score: 0.103397341211226
-
-input_dir/12371.txt
-Positive word: 3640 Negative word: 4630
-Sentiment score: -0.11970979443772672
-
-input_dir/12766.txt
-Positive word: 477 Negative word: 440
-Sentiment score: 0.04034896401308615
-
-input_dir/12435.txt
-Positive word: 461 Negative word: 289
-Sentiment score: 0.22933333333333333
-
-input_dir/12652.txt
-Positive word: 4128 Negative word: 4001
-Sentiment score: 0.015623077869356624
-
-input_dir/12748.txt
-Positive word: 3662 Negative word: 2684
-Sentiment score: 0.1541128269776237
-
-input_dir/12496.txt
-Positive word: 455 Negative word: 379
-Sentiment score: 0.09112709832134293
-
-input_dir/12564.txt
-Positive word: 2612 Negative word: 2486
-Sentiment score: 0.02471557473519027
-
-input_dir/12535.txt
-Positive word: 1925 Negative word: 2606
-Sentiment score: -0.15029794747296402
-
-input_dir/12491.txt
-Positive word: 1406 Negative word: 1264
-Sentiment score: 0.05318352059925094
-
-input_dir/12832.txt
-Positive word: 438 Negative word: 336
-Sentiment score: 0.13178294573643412
-
-input_dir/12558.txt
-Positive word: 4089 Negative word: 4088
-Sentiment score: 1.2229423994129877E-4
-
-input_dir/12864.txt
-Positive word: 3898 Negative word: 3322
-Sentiment score: 0.07977839335180055
-
-input_dir/12394.txt
-Positive word: 391 Negative word: 356
-Sentiment score: 0.04685408299866131
-
-input_dir/12560.txt
-Positive word: 3216 Negative word: 3638
-Sentiment score: -0.06156988619784068
-
-input_dir/12734.txt
-Positive word: 1488 Negative word: 1287
-Sentiment score: 0.07243243243243243
-
-input_dir/12451.txt
-Positive word: 163 Negative word: 113
-Sentiment score: 0.18115942028985507
-
-input_dir/12389.txt
-Positive word: 951 Negative word: 434
-Sentiment score: 0.37328519855595665
-
-input_dir/12544.txt
-Positive word: 3526 Negative word: 2635
-Sentiment score: 0.14461937997078397
-
-input_dir/12742.txt
-Positive word: 2222 Negative word: 2419
-Sentiment score: -0.04244774833010127
-
-input_dir/12567.txt
-Positive word: 750 Negative word: 407
-Sentiment score: 0.2964563526361279
-
-input_dir/12754.txt
-Positive word: 2901 Negative word: 1363
-Sentiment score: 0.3606941838649156
-
-input_dir/12552.txt
-Positive word: 551 Negative word: 362
-Sentiment score: 0.20700985761226726
-
-input_dir/12466.txt
-Positive word: 531 Negative word: 359
-Sentiment score: 0.19325842696629214
-
-input_dir/12731.txt
-Positive word: 1581 Negative word: 1826
-Sentiment score: -0.07191077194012327
-
-input_dir/12555.txt
-Positive word: 1513 Negative word: 1881
-Sentiment score: -0.10842663523865645
-
-input_dir/12831.txt
-Positive word: 133 Negative word: 222
-Sentiment score: -0.2507042253521127
-
-input_dir/12685.txt
-Positive word: 607 Negative word: 458
-Sentiment score: 0.13990610328638498
-
-input_dir/12587.txt
-Positive word: 6318 Negative word: 8312
-Sentiment score: -0.13629528366370472
-
-input_dir/12661.txt
-Positive word: 3593 Negative word: 2630
-Sentiment score: 0.15474851357865982
-
-input_dir/12347.txt
-Positive word: 2862 Negative word: 3113
-Sentiment score: -0.04200836820083682
-
-input_dir/12897.txt
-Positive word: 594 Negative word: 332
-Sentiment score: 0.28293736501079914
-
-input_dir/12504.txt
-Positive word: 1461 Negative word: 1464
-Sentiment score: -0.0010256410256410256
-
-input_dir/12365.txt
-Positive word: 143 Negative word: 63
-Sentiment score: 0.3883495145631068
-
-input_dir/12498.txt
-Positive word: 574 Negative word: 414
-Sentiment score: 0.16194331983805668
-
-input_dir/12889.txt
-Positive word: 447 Negative word: 514
-Sentiment score: -0.06971904266389178
-
-input_dir/12760.txt
-Positive word: 3210 Negative word: 2979
-Sentiment score: 0.03732428502181289
-
-input_dir/12377.txt
-Positive word: 769 Negative word: 1102
-Sentiment score: -0.17797969000534475
-
-input_dir/12456.txt
-Positive word: 1205 Negative word: 832
-Sentiment score: 0.18311242022582228
-
-input_dir/12463.txt
-Positive word: 4897 Negative word: 2910
-Sentiment score: 0.2545151786857948
-
-input_dir/12355.txt
-Positive word: 626 Negative word: 370
-Sentiment score: 0.2570281124497992
-
-input_dir/12665.txt
-Positive word: 443 Negative word: 594
-Sentiment score: -0.14561234329797493
-
-input_dir/12682.txt
-Positive word: 1508 Negative word: 1434
-Sentiment score: 0.02515295717199184
-
-input_dir/12836.txt
-Positive word: 916 Negative word: 582
-Sentiment score: 0.22296395193591456
-
-input_dir/12611.txt
-Positive word: 3138 Negative word: 2244
-Sentiment score: 0.16610925306577481
-
-input_dir/12888.txt
-Positive word: 6795 Negative word: 5066
-Sentiment score: 0.1457718573476098
-
-input_dir/12424.txt
-Positive word: 1209 Negative word: 1505
-Sentiment score: -0.10906411201179071
-
-input_dir/12651.txt
-Positive word: 2650 Negative word: 2024
-Sentiment score: 0.1339323919554985
-
-input_dir/12430.txt
-Positive word: 557 Negative word: 350
-Sentiment score: 0.22822491730981256
-
-input_dir/12415.txt
-Positive word: 820 Negative word: 521
-Sentiment score: 0.22296793437733034
-
-input_dir/12433.txt
-Positive word: 2316 Negative word: 1918
-Sentiment score: 0.09400094473311289
-
-input_dir/12646.txt
-Positive word: 625 Negative word: 967
-Sentiment score: -0.21482412060301506
-
-input_dir/12579.txt
-Positive word: 133 Negative word: 68
-Sentiment score: 0.32338308457711445
-
-input_dir/12775.txt
-Positive word: 1546 Negative word: 1328
-Sentiment score: 0.07585247042449547
-
-input_dir/12663.txt
-Positive word: 2945 Negative word: 2004
-Sentiment score: 0.19013942210547585
-
-input_dir/12361.txt
-Positive word: 5006 Negative word: 4392
-Sentiment score: 0.0653330495850181
-
-input_dir/12634.txt
-Positive word: 552 Negative word: 469
-Sentiment score: 0.08129285014691479
-
-input_dir/12566.txt
-Positive word: 815 Negative word: 749
-Sentiment score: 0.04219948849104859
-
-input_dir/12856.txt
-Positive word: 1031 Negative word: 498
-Sentiment score: 0.3485938521909745
-
-input_dir/12619.txt
-Positive word: 555 Negative word: 401
-Sentiment score: 0.16108786610878661
-
-input_dir/12797.txt
-Positive word: 2599 Negative word: 2006
-Sentiment score: 0.1287730727470141
-
-input_dir/12550.txt
-Positive word: 534 Negative word: 473
-Sentiment score: 0.0605759682224429
-
-input_dir/12475.txt
-Positive word: 803 Negative word: 682
-Sentiment score: 0.08148148148148149
-
-input_dir/12410.txt
-Positive word: 7713 Negative word: 4897
-Sentiment score: 0.22331482950039652
-
-input_dir/12811.txt
-Positive word: 922 Negative word: 969
-Sentiment score: -0.024854574299312534
-
-input_dir/12851.txt
-Positive word: 1144 Negative word: 681
-Sentiment score: 0.2536986301369863
-
-input_dir/12844.txt
-Positive word: 169 Negative word: 218
-Sentiment score: -0.12661498708010335
-
-input_dir/12833.txt
-Positive word: 1675 Negative word: 1708
-Sentiment score: -0.00975465563109666
-
-input_dir/12860.txt
-Positive word: 471 Negative word: 330
-Sentiment score: 0.1760299625468165
-
-input_dir/12684.txt
-Positive word: 1750 Negative word: 1252
-Sentiment score: 0.1658894070619587
-
-input_dir/12510.txt
-Positive word: 745 Negative word: 690
-Sentiment score: 0.03832752613240418
-
-input_dir/12830.txt
-Positive word: 393 Negative word: 265
-Sentiment score: 0.1945288753799392
-
-input_dir/12625.txt
-Positive word: 1514 Negative word: 886
-Sentiment score: 0.26166666666666666
-
-input_dir/12900.txt
-Positive word: 10539 Negative word: 8768
-Sentiment score: 0.09172838866732273
-
-input_dir/12681.txt
-Positive word: 717 Negative word: 689
-Sentiment score: 0.01991465149359886
-
-input_dir/12381.txt
-Positive word: 2399 Negative word: 1891
-Sentiment score: 0.11841491841491841
-
-input_dir/12696.txt
-Positive word: 933 Negative word: 710
-Sentiment score: 0.1357273280584297
-
-input_dir/12376.txt
-Positive word: 3276 Negative word: 1446
-Sentiment score: 0.3875476493011436
-
-input_dir/12659.txt
-Positive word: 2269 Negative word: 2226
-Sentiment score: 0.009566184649610678
-
-input_dir/12680.txt
-Positive word: 7301 Negative word: 6800
-Sentiment score: 0.03552939507836324
-
-input_dir/12644.txt
-Positive word: 762 Negative word: 888
-Sentiment score: -0.07636363636363637
-
-input_dir/12759.txt
-Positive word: 4887 Negative word: 3787
-Sentiment score: 0.12681577127046345
-
-input_dir/12431.txt
-Positive word: 3043 Negative word: 2188
-Sentiment score: 0.16344867138214492
-
-input_dir/12468.txt
-Positive word: 490 Negative word: 326
-Sentiment score: 0.20098039215686275
-
-input_dir/12554.txt
-Positive word: 317 Negative word: 205
-Sentiment score: 0.21455938697318008
 
 input_dir/12752.txt
 Positive word: 182 Negative word: 124
 Sentiment score: 0.1895424836601307
 
-input_dir/12653.txt
-Positive word: 4413 Negative word: 3878
-Sentiment score: 0.06452780123024966
-
-input_dir/12473.txt
-Positive word: 6075 Negative word: 5627
-Sentiment score: 0.038284054007861903
-
-input_dir/12404.txt
-Positive word: 2112 Negative word: 982
-Sentiment score: 0.3652230122818358
-
-input_dir/12847.txt
-Positive word: 2775 Negative word: 2126
-Sentiment score: 0.13242195470312182
-
-input_dir/12495.txt
-Positive word: 1867 Negative word: 1917
-Sentiment score: -0.013213530655391121
-
-input_dir/12727.txt
-Positive word: 672 Negative word: 1018
-Sentiment score: -0.20473372781065088
-
-input_dir/12693.txt
-Positive word: 3534 Negative word: 1928
-Sentiment score: 0.29403149029659464
-
-input_dir/12740.txt
-Positive word: 2134 Negative word: 1773
-Sentiment score: 0.09239825953416944
-
-input_dir/12412.txt
-Positive word: 3740 Negative word: 3111
-Sentiment score: 0.09181141439205956
-
-input_dir/12353.txt
-Positive word: 3317 Negative word: 3873
-Sentiment score: -0.07732962447844229
-
-input_dir/12360.txt
-Positive word: 3586 Negative word: 4630
-Sentiment score: -0.12706913339824732
-
-input_dir/12345.txt
-Positive word: 1468 Negative word: 1484
-Sentiment score: -0.005420054200542005
-
-input_dir/12866.txt
-Positive word: 466 Negative word: 392
-Sentiment score: 0.08624708624708624
-
-input_dir/12745.txt
-Positive word: 3510 Negative word: 3596
-Sentiment score: -0.012102448634956376
-
-input_dir/12671.txt
-Positive word: 428 Negative word: 202
-Sentiment score: 0.35873015873015873
-
-input_dir/12846.txt
-Positive word: 2076 Negative word: 2306
-Sentiment score: -0.05248744865358284
-
-input_dir/12666.txt
-Positive word: 1040 Negative word: 1298
-Sentiment score: -0.11035072711719418
-
-input_dir/12585.txt
-Positive word: 1708 Negative word: 845
-Sentiment score: 0.33803368585977284
-
-input_dir/12538.txt
-Positive word: 2301 Negative word: 1628
-Sentiment score: 0.17129040468312548
-
-input_dir/12401.txt
-Positive word: 526 Negative word: 434
-Sentiment score: 0.09583333333333334
-
-input_dir/12511.txt
-Positive word: 3210 Negative word: 3230
-Sentiment score: -0.003105590062111801
-
-input_dir/12872.txt
-Positive word: 504 Negative word: 389
-Sentiment score: 0.12877939529675253
-
-input_dir/12455.txt
-Positive word: 4472 Negative word: 4217
-Sentiment score: 0.029347450799861893
-
-input_dir/12892.txt
-Positive word: 1031 Negative word: 855
-Sentiment score: 0.09331919406150584
-
-input_dir/12874.txt
-Positive word: 2985 Negative word: 2111
-Sentiment score: 0.17150706436420723
-
-input_dir/12449.txt
-Positive word: 4333 Negative word: 4782
-Sentiment score: -0.04925946242457488
-
-input_dir/12388.txt
-Positive word: 1513 Negative word: 2079
-Sentiment score: -0.15757238307349666
-
-input_dir/12687.txt
-Positive word: 826 Negative word: 686
-Sentiment score: 0.09259259259259259
-
-input_dir/12602.txt
-Positive word: 193 Negative word: 152
-Sentiment score: 0.11884057971014493
-
-input_dir/12814.txt
-Positive word: 1229 Negative word: 1098
-Sentiment score: 0.05629565964761495
-
-input_dir/12880.txt
-Positive word: 1749 Negative word: 1802
-Sentiment score: -0.014925373134328358
-
-input_dir/12729.txt
-Positive word: 1505 Negative word: 1889
-Sentiment score: -0.11314083677077195
-
-input_dir/12647.txt
-Positive word: 1481 Negative word: 2010
-Sentiment score: -0.15153251217416214
-
-input_dir/12436.txt
-Positive word: 2468 Negative word: 3315
-Sentiment score: -0.1464637731281342
-
-input_dir/12751.txt
-Positive word: 354 Negative word: 458
-Sentiment score: -0.12807881773399016
-
-input_dir/12815.txt
-Positive word: 718 Negative word: 457
-Sentiment score: 0.2221276595744681
-
-input_dir/12690.txt
-Positive word: 1638 Negative word: 1692
-Sentiment score: -0.016216216216216217
-
-input_dir/12863.txt
-Positive word: 1597 Negative word: 1424
-Sentiment score: 0.0572658060244952
-
-input_dir/12806.txt
-Positive word: 1521 Negative word: 1742
-Sentiment score: -0.06772908366533864
-
-input_dir/12467.txt
-Positive word: 480 Negative word: 361
-Sentiment score: 0.14149821640903687
-
-input_dir/12439.txt
-Positive word: 1653 Negative word: 1810
-Sentiment score: -0.04533641351429397
-
-input_dir/12861.txt
-Positive word: 2401 Negative word: 1783
-Sentiment score: 0.1477055449330784
-
-input_dir/12349.txt
-Positive word: 4093 Negative word: 4597
-Sentiment score: -0.05799769850402762
-
-input_dir/12809.txt
-Positive word: 2771 Negative word: 2706
-Sentiment score: 0.011867810845353296
-
-input_dir/12807.txt
-Positive word: 1542 Negative word: 1729
-Sentiment score: -0.057169061449098134
-
-input_dir/12670.txt
-Positive word: 2881 Negative word: 1793
-Sentiment score: 0.23277706461275138
-
-input_dir/12413.txt
-Positive word: 1314 Negative word: 1495
-Sentiment score: -0.06443574225703097
-
-input_dir/12400.txt
-Positive word: 3721 Negative word: 3636
-Sentiment score: 0.01155362240043496
-
-input_dir/12763.txt
-Positive word: 3321 Negative word: 2366
-Sentiment score: 0.16792685071215052
-
-input_dir/12553.txt
-Positive word: 548 Negative word: 372
-Sentiment score: 0.19130434782608696
-
-input_dir/12457.txt
-Positive word: 194 Negative word: 311
-Sentiment score: -0.2316831683168317
-
-input_dir/12801.txt
-Positive word: 3451 Negative word: 4168
-Sentiment score: -0.09410683816773854
-
-input_dir/12691.txt
-Positive word: 1494 Negative word: 1744
-Sentiment score: -0.07720815318097592
-
-input_dir/12867.txt
-Positive word: 3849 Negative word: 1796
-Sentiment score: 0.3636846767050487
-
-input_dir/12852.txt
-Positive word: 1834 Negative word: 1277
-Sentiment score: 0.1790421086467374
-
-input_dir/12679.txt
-Positive word: 1551 Negative word: 939
-Sentiment score: 0.2457831325301205
-
-input_dir/12813.txt
-Positive word: 2265 Negative word: 3221
-Sentiment score: -0.17426175720014583
-
-input_dir/12676.txt
-Positive word: 517 Negative word: 360
-Sentiment score: 0.1790193842645382
-
-input_dir/12363.txt
-Positive word: 2718 Negative word: 1813
-Sentiment score: 0.19973515780180975
-
-input_dir/12523.txt
-Positive word: 1611 Negative word: 1066
-Sentiment score: 0.2035861038475906
-
-input_dir/12556.txt
-Positive word: 2854 Negative word: 2958
-Sentiment score: -0.017894012388162423
-
-input_dir/12749.txt
-Positive word: 1683 Negative word: 1848
-Sentiment score: -0.04672897196261682
-
-input_dir/12826.txt
-Positive word: 2889 Negative word: 3464
-Sentiment score: -0.09050842121832205
-
-input_dir/12462.txt
-Positive word: 3406 Negative word: 2166
-Sentiment score: 0.22254127781765973
-
-input_dir/12485.txt
-Positive word: 5631 Negative word: 5313
-Sentiment score: 0.02905701754385965
-
-input_dir/12601.txt
-Positive word: 559 Negative word: 432
-Sentiment score: 0.12815338042381433
-
-input_dir/12366.txt
-Positive word: 1098 Negative word: 748
-Sentiment score: 0.18959913326110509
-
-input_dir/12483.txt
-Positive word: 5460 Negative word: 3554
-Sentiment score: 0.2114488573330375
-
-input_dir/12785.txt
-Positive word: 3302 Negative word: 3040
-Sentiment score: 0.0413118889940082
-
-input_dir/12810.txt
-Positive word: 1385 Negative word: 1807
-Sentiment score: -0.13220551378446116
-
-input_dir/12853.txt
-Positive word: 1329 Negative word: 1520
-Sentiment score: -0.06704106704106703
+input_dir/12897.txt
+Positive word: 594 Negative word: 332
+Sentiment score: 0.28293736501079914
+
+input_dir/12371.txt
+Positive word: 3640 Negative word: 4630
+Sentiment score: -0.11970979443772672
+
+input_dir/12632.txt
+Positive word: 6774 Negative word: 3825
+Sentiment score: 0.27823379564109824
+
+input_dir/12797.txt
+Positive word: 2599 Negative word: 2006
+Sentiment score: 0.1287730727470141
+
+input_dir/12469.txt
+Positive word: 551 Negative word: 317
+Sentiment score: 0.2695852534562212
+
+input_dir/12359.txt
+Positive word: 414 Negative word: 199
+Sentiment score: 0.35073409461663946
+
+input_dir/12437.txt
+Positive word: 849 Negative word: 807
+Sentiment score: 0.025362318840579712
+
+input_dir/12592.txt
+Positive word: 836 Negative word: 1072
+Sentiment score: -0.12368972746331237
+
+input_dir/12644.txt
+Positive word: 762 Negative word: 888
+Sentiment score: -0.07636363636363637
+
+input_dir/12824.txt
+Positive word: 116 Negative word: 56
+Sentiment score: 0.3488372093023256
 
 input_dir/12509.txt
 Positive word: 2475 Negative word: 4221
 Sentiment score: -0.260752688172043
 
+input_dir/12557.txt
+Positive word: 3130 Negative word: 2843
+Sentiment score: 0.04804955633684915
+
+input_dir/12681.txt
+Positive word: 717 Negative word: 689
+Sentiment score: 0.01991465149359886
+
+input_dir/12753.txt
+Positive word: 2985 Negative word: 2857
+Sentiment score: 0.021910304690174597
+
+input_dir/12520.txt
+Positive word: 7046 Negative word: 6947
+Sentiment score: 0.0070749660544557995
+
+input_dir/12485.txt
+Positive word: 5631 Negative word: 5313
+Sentiment score: 0.02905701754385965
+
+input_dir/12853.txt
+Positive word: 1329 Negative word: 1520
+Sentiment score: -0.06704106704106703
+
+input_dir/12633.txt
+Positive word: 1016 Negative word: 688
+Sentiment score: 0.19248826291079812
+
+input_dir/12440.txt
+Positive word: 2231 Negative word: 1965
+Sentiment score: 0.06339370829361296
+
+input_dir/12896.txt
+Positive word: 3020 Negative word: 1356
+Sentiment score: 0.3802559414990859
+
+input_dir/12370.txt
+Positive word: 3405 Negative word: 2653
+Sentiment score: 0.12413337735226147
+
+input_dir/12645.txt
+Positive word: 627 Negative word: 490
+Sentiment score: 0.12264995523724262
+
+input_dir/12358.txt
+Positive word: 236 Negative word: 115
+Sentiment score: 0.34472934472934474
+
+input_dir/12593.txt
+Positive word: 3176 Negative word: 2559
+Sentiment score: 0.1075850043591979
+
+input_dir/12436.txt
+Positive word: 2468 Negative word: 3315
+Sentiment score: -0.1464637731281342
+
+input_dir/12468.txt
+Positive word: 490 Negative word: 326
+Sentiment score: 0.20098039215686275
+
+input_dir/12725.txt
+Positive word: 4086 Negative word: 5091
+Sentiment score: -0.10951291271657404
+
+input_dir/12680.txt
+Positive word: 7301 Negative word: 6800
+Sentiment score: 0.03552939507836324
+
+input_dir/12556.txt
+Positive word: 2854 Negative word: 2958
+Sentiment score: -0.017894012388162423
+
+input_dir/12825.txt
+Positive word: 498 Negative word: 476
+Sentiment score: 0.022587268993839837
+
+input_dir/12508.txt
+Positive word: 2819 Negative word: 1738
+Sentiment score: 0.23721746763221419
+
+input_dir/12443.txt
+Positive word: 579 Negative word: 421
+Sentiment score: 0.158
+
+input_dir/12630.txt
+Positive word: 645 Negative word: 443
+Sentiment score: 0.18566176470588236
+
+input_dir/12373.txt
+Positive word: 3349 Negative word: 2717
+Sentiment score: 0.1041872733267392
+
+input_dir/12895.txt
+Positive word: 2221 Negative word: 1807
+Sentiment score: 0.10278053624627606
+
+input_dir/12486.txt
+Positive word: 1626 Negative word: 1414
+Sentiment score: 0.06973684210526315
+
+input_dir/12523.txt
+Positive word: 1611 Negative word: 1066
+Sentiment score: 0.2035861038475906
+
+input_dir/12750.txt
+Positive word: 1871 Negative word: 1840
+Sentiment score: 0.008353543519267044
+
+input_dir/12850.txt
+Positive word: 779 Negative word: 672
+Sentiment score: 0.0737422467263956
+
+input_dir/12878.txt
+Positive word: 1351 Negative word: 1136
+Sentiment score: 0.08644953759549658
+
+input_dir/12555.txt
+Positive word: 1513 Negative word: 1881
+Sentiment score: -0.10842663523865645
+
+input_dir/12683.txt
+Positive word: 2226 Negative word: 1450
+Sentiment score: 0.21109902067464636
+
+input_dir/12726.txt
+Positive word: 672 Negative word: 895
+Sentiment score: -0.14231014677728143
+
+input_dir/12778.txt
+Positive word: 1641 Negative word: 1362
+Sentiment score: 0.09290709290709291
+
+input_dir/12826.txt
+Positive word: 2889 Negative word: 3464
+Sentiment score: -0.09050842121832205
+
+input_dir/12435.txt
+Positive word: 461 Negative word: 289
+Sentiment score: 0.22933333333333333
+
+input_dir/12590.txt
+Positive word: 2382 Negative word: 2382
+Sentiment score: 0.0
+
+input_dir/12646.txt
+Positive word: 625 Negative word: 967
+Sentiment score: -0.21482412060301506
+
+input_dir/12618.txt
+Positive word: 526 Negative word: 404
+Sentiment score: 0.13118279569892474
+
+input_dir/12372.txt
+Positive word: 3290 Negative word: 2643
+Sentiment score: 0.10905107028484747
+
+input_dir/12894.txt
+Positive word: 8914 Negative word: 6533
+Sentiment score: 0.1541399624522561
+
+input_dir/12794.txt
+Positive word: 598 Negative word: 658
+Sentiment score: -0.04777070063694268
+
+input_dir/12631.txt
+Positive word: 1243 Negative word: 514
+Sentiment score: 0.414911781445646
+
+input_dir/12442.txt
+Positive word: 5216 Negative word: 4459
+Sentiment score: 0.07824289405684755
+
+input_dir/12851.txt
+Positive word: 1144 Negative word: 681
+Sentiment score: 0.2536986301369863
+
+input_dir/12751.txt
+Positive word: 354 Negative word: 458
+Sentiment score: -0.12807881773399016
+
+input_dir/12522.txt
+Positive word: 252 Negative word: 157
+Sentiment score: 0.23227383863080683
+
+input_dir/12827.txt
+Positive word: 1816 Negative word: 2096
+Sentiment score: -0.07157464212678936
+
+input_dir/12779.txt
+Positive word: 1788 Negative word: 1527
+Sentiment score: 0.07873303167420814
+
+input_dir/12727.txt
+Positive word: 672 Negative word: 1018
+Sentiment score: -0.20473372781065088
+
+input_dir/12682.txt
+Positive word: 1508 Negative word: 1434
+Sentiment score: 0.02515295717199184
+
+input_dir/12879.txt
+Positive word: 2494 Negative word: 2114
+Sentiment score: 0.08246527777777778
+
+input_dir/12554.txt
+Positive word: 317 Negative word: 205
+Sentiment score: 0.21455938697318008
+
+input_dir/12619.txt
+Positive word: 555 Negative word: 401
+Sentiment score: 0.16108786610878661
+
+input_dir/12647.txt
+Positive word: 1481 Negative word: 2010
+Sentiment score: -0.15153251217416214
+
+input_dir/12591.txt
+Positive word: 1750 Negative word: 1596
+Sentiment score: 0.04602510460251046
+
+input_dir/12434.txt
+Positive word: 1803 Negative word: 1160
+Sentiment score: 0.21700978737765778
+
+input_dir/12820.txt
+Positive word: 772 Negative word: 558
+Sentiment score: 0.16090225563909774
+
+input_dir/12685.txt
+Positive word: 607 Negative word: 458
+Sentiment score: 0.13990610328638498
+
+input_dir/12553.txt
+Positive word: 548 Negative word: 372
+Sentiment score: 0.19130434782608696
+
+input_dir/12398.txt
+Positive word: 4084 Negative word: 3774
+Sentiment score: 0.03945024179180453
+
+input_dir/12640.txt
+Positive word: 2349 Negative word: 3750
+Sentiment score: -0.22970978848991638
+
+input_dir/12596.txt
+Positive word: 4155 Negative word: 2951
+Sentiment score: 0.16943428088938925
+
+input_dir/12433.txt
+Positive word: 2316 Negative word: 1918
+Sentiment score: 0.09400094473311289
+
+input_dir/12893.txt
+Positive word: 1094 Negative word: 1066
+Sentiment score: 0.012962962962962963
+
+input_dir/12375.txt
+Positive word: 1751 Negative word: 915
+Sentiment score: 0.31357839459864967
+
+input_dir/12668.txt
+Positive word: 2606 Negative word: 3083
+Sentiment score: -0.08384601863244859
+
+input_dir/12793.txt
+Positive word: 1956 Negative word: 2120
+Sentiment score: -0.040235525024533855
+
+input_dir/12636.txt
+Positive word: 191 Negative word: 2516
+Sentiment score: -0.8588843738455855
+
+input_dir/12445.txt
+Positive word: 6007 Negative word: 4993
+Sentiment score: 0.09218181818181818
+
+input_dir/12856.txt
+Positive word: 1031 Negative word: 498
+Sentiment score: 0.3485938521909745
+
+input_dir/12756.txt
+Positive word: 128 Negative word: 406
+Sentiment score: -0.5205992509363296
+
+input_dir/12525.txt
+Positive word: 1768 Negative word: 1818
+Sentiment score: -0.013943112102621304
+
+input_dir/12480.txt
+Positive word: 2673 Negative word: 1676
+Sentiment score: 0.2292481030121867
+
+input_dir/12808.txt
+Positive word: 1250 Negative word: 1325
+Sentiment score: -0.02912621359223301
+
+input_dir/12552.txt
+Positive word: 551 Negative word: 362
+Sentiment score: 0.20700985761226726
+
+input_dir/12399.txt
+Positive word: 343 Negative word: 439
+Sentiment score: -0.12276214833759591
+
+input_dir/12684.txt
+Positive word: 1750 Negative word: 1252
+Sentiment score: 0.1658894070619587
+
+input_dir/12821.txt
+Positive word: 4594 Negative word: 4689
+Sentiment score: -0.010233760637724873
+
+input_dir/12597.txt
+Positive word: 641 Negative word: 432
+Sentiment score: 0.19478098788443615
+
+input_dir/12641.txt
+Positive word: 2207 Negative word: 1628
+Sentiment score: 0.15097783572359844
+
+input_dir/12444.txt
+Positive word: 4582 Negative word: 3801
+Sentiment score: 0.09316473816056305
+
+input_dir/12637.txt
+Positive word: 130 Negative word: 251
+Sentiment score: -0.31758530183727035
+
+input_dir/12792.txt
+Positive word: 3146 Negative word: 1905
+Sentiment score: 0.24569392199564444
+
+input_dir/12892.txt
+Positive word: 1031 Negative word: 855
+Sentiment score: 0.09331919406150584
+
+input_dir/12374.txt
+Positive word: 3319 Negative word: 2671
+Sentiment score: 0.10818030050083473
+
+input_dir/12481.txt
+Positive word: 1972 Negative word: 2196
+Sentiment score: -0.053742802303262956
+
+input_dir/12524.txt
+Positive word: 392 Negative word: 343
+Sentiment score: 0.06666666666666667
+
+input_dir/12809.txt
+Positive word: 2771 Negative word: 2706
+Sentiment score: 0.011867810845353296
+
+input_dir/12857.txt
+Positive word: 556 Negative word: 254
+Sentiment score: 0.3728395061728395
+
+input_dir/12642.txt
+Positive word: 667 Negative word: 201
+Sentiment score: 0.5368663594470046
+
+input_dir/12594.txt
+Positive word: 1241 Negative word: 645
+Sentiment score: 0.31601272534464475
+
+input_dir/12431.txt
+Positive word: 3043 Negative word: 2188
+Sentiment score: 0.16344867138214492
+
+input_dir/12687.txt
+Positive word: 826 Negative word: 686
+Sentiment score: 0.09259259259259259
+
+input_dir/12551.txt
+Positive word: 553 Negative word: 354
+Sentiment score: 0.21940463065049615
+
+input_dir/12822.txt
+Positive word: 150 Negative word: 617
+Sentiment score: -0.6088657105606258
+
+input_dir/12754.txt
+Positive word: 2901 Negative word: 1363
+Sentiment score: 0.3606941838649156
+
+input_dir/12527.txt
+Positive word: 3486 Negative word: 3446
+Sentiment score: 0.005770340450086555
+
+input_dir/12482.txt
+Positive word: 2429 Negative word: 2377
+Sentiment score: 0.010819808572617561
+
+input_dir/12579.txt
+Positive word: 133 Negative word: 68
+Sentiment score: 0.32338308457711445
+
+input_dir/12854.txt
+Positive word: 2128 Negative word: 1159
+Sentiment score: 0.2947976878612717
+
+input_dir/12791.txt
+Positive word: 2115 Negative word: 1989
+Sentiment score: 0.03070175438596491
+
+input_dir/12634.txt
+Positive word: 552 Negative word: 469
+Sentiment score: 0.08129285014691479
+
+input_dir/12377.txt
+Positive word: 769 Negative word: 1102
+Sentiment score: -0.17797969000534475
+
+input_dir/12891.txt
+Positive word: 2370 Negative word: 2674
+Sentiment score: -0.06026962727993656
+
+input_dir/12419.txt
+Positive word: 3932 Negative word: 5439
+Sentiment score: -0.16081528118663962
+
+input_dir/12430.txt
+Positive word: 557 Negative word: 350
+Sentiment score: 0.22822491730981256
+
+input_dir/12595.txt
+Positive word: 578 Negative word: 449
+Sentiment score: 0.12560856864654332
+
+input_dir/12643.txt
+Positive word: 326 Negative word: 293
+Sentiment score: 0.05331179321486268
+
+input_dir/12823.txt
+Positive word: 1787 Negative word: 1380
+Sentiment score: 0.12851278812756553
+
+input_dir/12550.txt
+Positive word: 534 Negative word: 473
+Sentiment score: 0.0605759682224429
+
+input_dir/12686.txt
+Positive word: 2042 Negative word: 2068
+Sentiment score: -0.006326034063260341
+
+input_dir/12578.txt
+Positive word: 1120 Negative word: 868
+Sentiment score: 0.1267605633802817
+
+input_dir/12855.txt
+Positive word: 1989 Negative word: 1414
+Sentiment score: 0.16896855715545106
+
+input_dir/12483.txt
+Positive word: 5460 Negative word: 3554
+Sentiment score: 0.2114488573330375
+
+input_dir/12526.txt
+Positive word: 905 Negative word: 861
+Sentiment score: 0.02491506228765572
+
+input_dir/12755.txt
+Positive word: 5041 Negative word: 3806
+Sentiment score: 0.13959534305414265
+
+input_dir/12376.txt
+Positive word: 3276 Negative word: 1446
+Sentiment score: 0.3875476493011436
+
+input_dir/12890.txt
+Positive word: 1401 Negative word: 1774
+Sentiment score: -0.11748031496062993
+
+input_dir/12418.txt
+Positive word: 2594 Negative word: 2667
+Sentiment score: -0.013875689032503326
+
+input_dir/12635.txt
+Positive word: 2292 Negative word: 1491
+Sentiment score: 0.21173671689135606
+
+input_dir/12790.txt
+Positive word: 2484 Negative word: 1585
+Sentiment score: 0.22093880560334234
+
+input_dir/12460.txt
+Positive word: 1896 Negative word: 1020
+Sentiment score: 0.3004115226337449
+
+input_dir/12613.txt
+Positive word: 205 Negative word: 666
+Sentiment score: -0.529276693455798
+
+input_dir/12350.txt
+Positive word: 4539 Negative word: 4767
+Sentiment score: -0.024500322372662798
+
+input_dir/12773.txt
+Positive word: 4488 Negative word: 3911
+Sentiment score: 0.0686986546017383
+
+input_dir/12873.txt
+Positive word: 529 Negative word: 436
+Sentiment score: 0.09637305699481866
+
+input_dir/12395.txt
+Positive word: 483 Negative word: 314
+Sentiment score: 0.2120451693851945
+
+input_dir/12576.txt
+Positive word: 570 Negative word: 420
+Sentiment score: 0.15151515151515152
+
+input_dir/12805.txt
+Positive word: 1529 Negative word: 1536
+Sentiment score: -0.0022838499184339315
+
+input_dir/12528.txt
+Positive word: 3654 Negative word: 3320
+Sentiment score: 0.04789217092056209
+
+input_dir/12378.txt
+Positive word: 496 Negative word: 361
+Sentiment score: 0.15752625437572929
+
+input_dir/12416.txt
+Positive word: 2534 Negative word: 1874
+Sentiment score: 0.14972776769509982
+
+input_dir/12665.txt
+Positive word: 443 Negative word: 594
+Sentiment score: -0.14561234329797493
+
+input_dir/12351.txt
+Positive word: 6495 Negative word: 4810
+Sentiment score: 0.14904909332153915
+
+input_dir/12461.txt
+Positive word: 2338 Negative word: 2236
+Sentiment score: 0.02229995627459554
+
+input_dir/12872.txt
+Positive word: 504 Negative word: 389
+Sentiment score: 0.12877939529675253
+
+input_dir/12394.txt
+Positive word: 391 Negative word: 356
+Sentiment score: 0.04685408299866131
+
+input_dir/12689.txt
+Positive word: 1582 Negative word: 1807
+Sentiment score: -0.06639126586013573
+
+input_dir/12772.txt
+Positive word: 1663 Negative word: 1379
+Sentiment score: 0.09335963182117028
+
+input_dir/12529.txt
+Positive word: 1909 Negative word: 1083
+Sentiment score: 0.27606951871657753
+
+input_dir/12577.txt
+Positive word: 2635 Negative word: 2433
+Sentiment score: 0.039857932123125495
+
+input_dir/12449.txt
+Positive word: 4333 Negative word: 4782
+Sentiment score: -0.04925946242457488
+
+input_dir/12664.txt
+Positive word: 493 Negative word: 470
+Sentiment score: 0.023883696780893044
+
+input_dir/12379.txt
+Positive word: 118 Negative word: 55
+Sentiment score: 0.36416184971098264
+
+input_dir/12417.txt
+Positive word: 306 Negative word: 224
+Sentiment score: 0.15471698113207547
+
+input_dir/12397.txt
+Positive word: 2325 Negative word: 2648
+Sentiment score: -0.06495073396340237
+
+input_dir/12871.txt
+Positive word: 568 Negative word: 741
+Sentiment score: -0.13216195569136746
+
+input_dir/12771.txt
+Positive word: 7153 Negative word: 4842
+Sentiment score: 0.19266360983743228
+
+input_dir/12352.txt
+Positive word: 3190 Negative word: 2546
+Sentiment score: 0.11227336122733612
+
+input_dir/12599.txt
+Positive word: 585 Negative word: 417
+Sentiment score: 0.16766467065868262
+
+input_dir/12462.txt
+Positive word: 3406 Negative word: 2166
+Sentiment score: 0.22254127781765973
+
+input_dir/12611.txt
+Positive word: 3138 Negative word: 2244
+Sentiment score: 0.16610925306577481
+
+input_dir/12639.txt
+Positive word: 2300 Negative word: 2700
+Sentiment score: -0.08
+
+input_dir/12414.txt
+Positive word: 1656 Negative word: 1812
+Sentiment score: -0.04498269896193772
+
+input_dir/12667.txt
+Positive word: 8823 Negative word: 8834
+Sentiment score: -6.229823865888883E-4
+
+input_dir/12759.txt
+Positive word: 4887 Negative word: 3787
+Sentiment score: 0.12681577127046345
+
+input_dir/12807.txt
+Positive word: 1542 Negative word: 1729
+Sentiment score: -0.057169061449098134
+
+input_dir/12859.txt
+Positive word: 2166 Negative word: 2916
+Sentiment score: -0.14757969303423848
+
+input_dir/12574.txt
+Positive word: 655 Negative word: 555
+Sentiment score: 0.08264462809917356
+
+input_dir/12770.txt
+Positive word: 680 Negative word: 418
+Sentiment score: 0.23861566484517305
+
+input_dir/12396.txt
+Positive word: 2693 Negative word: 2859
+Sentiment score: -0.02989913544668588
+
+input_dir/12870.txt
+Positive word: 1362 Negative word: 1662
+Sentiment score: -0.0992063492063492
+
+input_dir/12610.txt
+Positive word: 1659 Negative word: 1601
+Sentiment score: 0.017791411042944787
+
+input_dir/12463.txt
+Positive word: 4897 Negative word: 2910
+Sentiment score: 0.2545151786857948
+
+input_dir/12353.txt
+Positive word: 3317 Negative word: 3873
+Sentiment score: -0.07732962447844229
+
+input_dir/12598.txt
+Positive word: 614 Negative word: 449
+Sentiment score: 0.15522107243650046
+
+input_dir/12666.txt
+Positive word: 1040 Negative word: 1298
+Sentiment score: -0.11035072711719418
+
+input_dir/12415.txt
+Positive word: 820 Negative word: 521
+Sentiment score: 0.22296793437733034
+
+input_dir/12638.txt
+Positive word: 769 Negative word: 753
+Sentiment score: 0.010512483574244415
+
+input_dir/12858.txt
+Positive word: 1544 Negative word: 1148
+Sentiment score: 0.14710252600297177
+
+input_dir/12575.txt
+Positive word: 564 Negative word: 374
+Sentiment score: 0.2025586353944563
+
+input_dir/12806.txt
+Positive word: 1521 Negative word: 1742
+Sentiment score: -0.06772908366533864
+
+input_dir/12758.txt
+Positive word: 3650 Negative word: 4028
+Sentiment score: -0.04923157072154207
+
+input_dir/12661.txt
+Positive word: 3593 Negative word: 2630
+Sentiment score: 0.15474851357865982
+
+input_dir/12412.txt
+Positive word: 3740 Negative word: 3111
+Sentiment score: 0.09181141439205956
+
+input_dir/12701.txt
+Positive word: 124 Negative word: 52
+Sentiment score: 0.4090909090909091
+
+input_dir/12572.txt
+Positive word: 4125 Negative word: 3797
+Sentiment score: 0.04140368593789447
+
+input_dir/12801.txt
+Positive word: 3451 Negative word: 4168
+Sentiment score: -0.09410683816773854
+
+input_dir/12489.txt
+Positive word: 731 Negative word: 652
+Sentiment score: 0.05712219812002892
+
+input_dir/12777.txt
+Positive word: 1623 Negative word: 1307
+Sentiment score: 0.10784982935153584
+
+input_dir/12504.txt
+Positive word: 1461 Negative word: 1464
+Sentiment score: -0.0010256410256410256
+
+input_dir/12829.txt
+Positive word: 1463 Negative word: 1522
+Sentiment score: -0.019765494137353432
+
+input_dir/12391.txt
+Positive word: 613 Negative word: 721
+Sentiment score: -0.08095952023988005
+
+input_dir/12729.txt
+Positive word: 1505 Negative word: 1889
+Sentiment score: -0.11314083677077195
+
+input_dir/12617.txt
+Positive word: 822 Negative word: 562
+Sentiment score: 0.18786127167630057
+
+input_dir/12464.txt
+Positive word: 5061 Negative word: 3402
+Sentiment score: 0.19602977667493796
+
+input_dir/12649.txt
+Positive word: 7132 Negative word: 3717
+Sentiment score: 0.31477555535072355
+
+input_dir/12413.txt
+Positive word: 1314 Negative word: 1495
+Sentiment score: -0.06443574225703097
+
+input_dir/12660.txt
+Positive word: 136 Negative word: 431
+Sentiment score: -0.5202821869488536
+
+input_dir/12800.txt
+Positive word: 3549 Negative word: 3406
+Sentiment score: 0.020560747663551402
+
+input_dir/12573.txt
+Positive word: 5976 Negative word: 4410
+Sentiment score: 0.15077989601386482
+
+input_dir/12700.txt
+Positive word: 4273 Negative word: 2336
+Sentiment score: 0.2930851868663943
+
+input_dir/12728.txt
+Positive word: 1737 Negative word: 1717
+Sentiment score: 0.005790387955993051
+
+input_dir/12876.txt
+Positive word: 5239 Negative word: 4221
+Sentiment score: 0.10761099365750529
+
+input_dir/12390.txt
+Positive word: 359 Negative word: 258
+Sentiment score: 0.16369529983792544
+
+input_dir/12505.txt
+Positive word: 440 Negative word: 266
+Sentiment score: 0.24645892351274787
+
+input_dir/12828.txt
+Positive word: 915 Negative word: 1305
+Sentiment score: -0.17567567567567569
+
+input_dir/12776.txt
+Positive word: 1351 Negative word: 1369
+Sentiment score: -0.006617647058823529
+
+input_dir/12648.txt
+Positive word: 925 Negative word: 333
+Sentiment score: 0.47058823529411764
+
+input_dir/12355.txt
+Positive word: 626 Negative word: 370
+Sentiment score: 0.2570281124497992
+
+input_dir/12465.txt
+Positive word: 608 Negative word: 491
+Sentiment score: 0.10646041856232939
+
+input_dir/12616.txt
+Positive word: 1048 Negative word: 780
+Sentiment score: 0.14660831509846828
+
+input_dir/12803.txt
+Positive word: 1164 Negative word: 964
+Sentiment score: 0.09398496240601503
+
+input_dir/12570.txt
+Positive word: 2031 Negative word: 2308
+Sentiment score: -0.06383959437658447
+
+input_dir/12798.txt
+Positive word: 1882 Negative word: 2063
+Sentiment score: -0.0458808618504436
+
+input_dir/12663.txt
+Positive word: 2945 Negative word: 2004
+Sentiment score: 0.19013942210547585
+
+input_dir/12410.txt
+Positive word: 7713 Negative word: 4897
+Sentiment score: 0.22331482950039652
+
+input_dir/12898.txt
+Positive word: 568 Negative word: 377
+Sentiment score: 0.2021164021164021
+
+input_dir/12356.txt
+Positive word: 288 Negative word: 229
+Sentiment score: 0.11411992263056092
+
+input_dir/12438.txt
+Positive word: 531 Negative word: 439
+Sentiment score: 0.09484536082474226
+
+input_dir/12615.txt
+Positive word: 280 Negative word: 177
+Sentiment score: 0.22538293216630198
+
+input_dir/12466.txt
+Positive word: 531 Negative word: 359
+Sentiment score: 0.19325842696629214
+
+input_dir/12558.txt
+Positive word: 4089 Negative word: 4088
+Sentiment score: 1.2229423994129877E-4
+
+input_dir/12393.txt
+Positive word: 462 Negative word: 335
+Sentiment score: 0.15934755332496864
+
+input_dir/12875.txt
+Positive word: 3175 Negative word: 2037
+Sentiment score: 0.21834228702993091
+
+input_dir/12775.txt
+Positive word: 1546 Negative word: 1328
+Sentiment score: 0.07585247042449547
+
+input_dir/12506.txt
+Positive word: 2774 Negative word: 2054
+Sentiment score: 0.1491300745650373
+
+input_dir/12571.txt
+Positive word: 1448 Negative word: 1612
+Sentiment score: -0.05359477124183006
+
+input_dir/12411.txt
+Positive word: 3342 Negative word: 3557
+Sentiment score: -0.031163936802435135
+
+input_dir/12899.txt
+Positive word: 660 Negative word: 350
+Sentiment score: 0.3069306930693069
+
+input_dir/12662.txt
+Positive word: 3335 Negative word: 2308
+Sentiment score: 0.18199539252170832
+
+input_dir/12799.txt
+Positive word: 2706 Negative word: 1676
+Sentiment score: 0.2350524874486536
+
+input_dir/12467.txt
+Positive word: 480 Negative word: 361
+Sentiment score: 0.14149821640903687
+
+input_dir/12614.txt
+Positive word: 578 Negative word: 408
+Sentiment score: 0.1724137931034483
+
+input_dir/12357.txt
+Positive word: 1934 Negative word: 2633
+Sentiment score: -0.15305452156776878
+
+input_dir/12439.txt
+Positive word: 1653 Negative word: 1810
+Sentiment score: -0.04533641351429397
+
+input_dir/12507.txt
+Positive word: 3068 Negative word: 3746
+Sentiment score: -0.099501027296742
+
+input_dir/12774.txt
+Positive word: 1464 Negative word: 1191
+Sentiment score: 0.10282485875706214
+
+input_dir/12559.txt
+Positive word: 1647 Negative word: 1756
+Sentiment score: -0.032030561269468114
+
+input_dir/12392.txt
+Positive word: 537 Negative word: 453
+Sentiment score: 0.08484848484848485
+
+input_dir/12874.txt
+Positive word: 2985 Negative word: 2111
+Sentiment score: 0.17150706436420723
+
+input_dir/12738.txt
+Positive word: 440 Negative word: 298
+Sentiment score: 0.19241192411924118
+
+input_dir/12380.txt
+Positive word: 2718 Negative word: 2688
+Sentiment score: 0.005549389567147614
+
+input_dir/12866.txt
+Positive word: 466 Negative word: 392
+Sentiment score: 0.08624708624708624
+
+input_dir/12515.txt
+Positive word: 5265 Negative word: 3704
+Sentiment score: 0.17404392908908461
+
+input_dir/12766.txt
+Positive word: 477 Negative word: 440
+Sentiment score: 0.04034896401308615
+
+input_dir/12658.txt
+Positive word: 2202 Negative word: 2465
+Sentiment score: -0.056353117634454684
+
+input_dir/12345.txt
+Positive word: 1468 Negative word: 1484
+Sentiment score: -0.005420054200542005
+
+input_dir/12475.txt
+Positive word: 803 Negative word: 682
+Sentiment score: 0.08148148148148149
+
+input_dir/12606.txt
+Positive word: 17672 Negative word: 12118
+Sentiment score: 0.18643840214837193
+
+input_dir/12403.txt
+Positive word: 3323 Negative word: 3734
+Sentiment score: -0.058240045345047474
+
+input_dir/12670.txt
+Positive word: 2881 Negative word: 1793
+Sentiment score: 0.23277706461275138
+
+input_dir/12810.txt
+Positive word: 1385 Negative word: 1807
+Sentiment score: -0.13220551378446116
+
+input_dir/12498.txt
+Positive word: 574 Negative word: 414
+Sentiment score: 0.16194331983805668
+
+input_dir/12563.txt
+Positive word: 2313 Negative word: 1895
+Sentiment score: 0.09933460076045628
+
+input_dir/12767.txt
+Positive word: 2634 Negative word: 2714
+Sentiment score: -0.014958863126402393
+
+input_dir/12514.txt
+Positive word: 6181 Negative word: 6131
+Sentiment score: 0.004061078622482131
+
+input_dir/12839.txt
+Positive word: 2572 Negative word: 2142
+Sentiment score: 0.09121764955451846
+
+input_dir/12381.txt
+Positive word: 2399 Negative word: 1891
+Sentiment score: 0.11841491841491841
+
+input_dir/12867.txt
+Positive word: 3849 Negative word: 1796
+Sentiment score: 0.3636846767050487
+
+input_dir/12739.txt
+Positive word: 528 Negative word: 367
+Sentiment score: 0.17988826815642459
+
+input_dir/12607.txt
+Positive word: 596 Negative word: 457
+Sentiment score: 0.13200379867046533
+
+input_dir/12474.txt
+Positive word: 565 Negative word: 610
+Sentiment score: -0.03829787234042553
+
+input_dir/12344.txt
+Positive word: 1449 Negative word: 1203
+Sentiment score: 0.09276018099547512
+
+input_dir/12659.txt
+Positive word: 2269 Negative word: 2226
+Sentiment score: 0.009566184649610678
+
+input_dir/12671.txt
+Positive word: 428 Negative word: 202
+Sentiment score: 0.35873015873015873
+
+input_dir/12402.txt
+Positive word: 3735 Negative word: 3035
+Sentiment score: 0.103397341211226
+
+input_dir/12562.txt
+Positive word: 621 Negative word: 718
+Sentiment score: -0.07244212098581031
+
+input_dir/12811.txt
+Positive word: 922 Negative word: 969
+Sentiment score: -0.024854574299312534
+
+input_dir/12477.txt
+Positive word: 517 Negative word: 333
+Sentiment score: 0.2164705882352941
+
+input_dir/12347.txt
+Positive word: 2862 Negative word: 3113
+Sentiment score: -0.04200836820083682
+
+input_dir/12429.txt
+Positive word: 3623 Negative word: 2110
+Sentiment score: 0.26391069248212107
+
+input_dir/12517.txt
+Positive word: 455 Negative word: 297
+Sentiment score: 0.21010638297872342
+
+input_dir/12549.txt
+Positive word: 4012 Negative word: 1592
+Sentiment score: 0.4318344039971449
+
+input_dir/12864.txt
+Positive word: 3898 Negative word: 3322
+Sentiment score: 0.07977839335180055
+
+input_dir/12561.txt
+Positive word: 3739 Negative word: 2792
+Sentiment score: 0.14500076557954372
+
+input_dir/12401.txt
+Positive word: 526 Negative word: 434
+Sentiment score: 0.09583333333333334
+
+input_dir/12889.txt
+Positive word: 447 Negative word: 514
+Sentiment score: -0.06971904266389178
+
+input_dir/12672.txt
+Positive word: 2551 Negative word: 3259
+Sentiment score: -0.12185886402753873
+
+input_dir/12789.txt
+Positive word: 1577 Negative word: 1348
+Sentiment score: 0.07829059829059828
+
+input_dir/12346.txt
+Positive word: 3510 Negative word: 2882
+Sentiment score: 0.09824780976220275
+
+input_dir/12428.txt
+Positive word: 3091 Negative word: 3141
+Sentiment score: -0.008023106546854942
+
+input_dir/12605.txt
+Positive word: 4442 Negative word: 3125
+Sentiment score: 0.17404519624686138
+
+input_dir/12476.txt
+Positive word: 1538 Negative word: 1343
+Sentiment score: 0.06768483165567511
+
+input_dir/12548.txt
+Positive word: 2659 Negative word: 2215
+Sentiment score: 0.09109560935576529
+
+input_dir/12865.txt
+Positive word: 291 Negative word: 245
+Sentiment score: 0.08582089552238806
+
+input_dir/12383.txt
+Positive word: 5384 Negative word: 4065
+Sentiment score: 0.13959149116308603
+
+input_dir/12765.txt
+Positive word: 1184 Negative word: 781
+Sentiment score: 0.20508905852417303
+
+input_dir/12516.txt
+Positive word: 3366 Negative word: 4295
+Sentiment score: -0.12126354261845712
+
+input_dir/12813.txt
+Positive word: 2265 Negative word: 3221
+Sentiment score: -0.17426175720014583
+
+input_dir/12560.txt
+Positive word: 3216 Negative word: 3638
+Sentiment score: -0.06156988619784068
+
+input_dir/12788.txt
+Positive word: 7964 Negative word: 5738
+Sentiment score: 0.16245803532331046
+
+input_dir/12673.txt
+Positive word: 2871 Negative word: 2744
+Sentiment score: 0.022617987533392697
+
+input_dir/12400.txt
+Positive word: 3721 Negative word: 3636
+Sentiment score: 0.01155362240043496
+
+input_dir/12888.txt
+Positive word: 6795 Negative word: 5066
+Sentiment score: 0.1457718573476098
+
+input_dir/12814.txt
+Positive word: 1229 Negative word: 1098
+Sentiment score: 0.05629565964761495
+
+input_dir/12539.txt
+Positive word: 1629 Negative word: 1296
+Sentiment score: 0.11384615384615385
+
+input_dir/12567.txt
+Positive word: 750 Negative word: 407
+Sentiment score: 0.2964563526361279
+
+input_dir/12459.txt
+Positive word: 353 Negative word: 457
+Sentiment score: -0.12839506172839507
+
+input_dir/12674.txt
+Positive word: 2452 Negative word: 3359
+Sentiment score: -0.15608329031147822
+
+input_dir/12369.txt
+Positive word: 7736 Negative word: 6036
+Sentiment score: 0.12343886145803079
+
+input_dir/12902.txt
+Positive word: 1327 Negative word: 941
+Sentiment score: 0.17019400352733685
+
+input_dir/12341.txt
+Positive word: 2297 Negative word: 3007
+Sentiment score: -0.13386123680241327
+
+input_dir/12602.txt
+Positive word: 193 Negative word: 152
+Sentiment score: 0.11884057971014493
+
+input_dir/12471.txt
+Positive word: 3775 Negative word: 2382
+Sentiment score: 0.22624654864382004
+
+input_dir/12384.txt
+Positive word: 1446 Negative word: 1648
+Sentiment score: -0.06528765352294764
+
+input_dir/12862.txt
+Positive word: 282 Negative word: 164
+Sentiment score: 0.2645739910313901
+
+input_dir/12699.txt
+Positive word: 3231 Negative word: 3631
+Sentiment score: -0.05829204313611192
+
+input_dir/12762.txt
+Positive word: 1040 Negative word: 798
+Sentiment score: 0.13166485310119697
+
+input_dir/12511.txt
+Positive word: 3210 Negative word: 3230
+Sentiment score: -0.003105590062111801
+
+input_dir/12566.txt
+Positive word: 815 Negative word: 749
+Sentiment score: 0.04219948849104859
+
+input_dir/12815.txt
+Positive word: 718 Negative word: 457
+Sentiment score: 0.2221276595744681
+
+input_dir/12538.txt
+Positive word: 2301 Negative word: 1628
+Sentiment score: 0.17129040468312548
+
+input_dir/12368.txt
+Positive word: 672 Negative word: 777
+Sentiment score: -0.07246376811594203
+
+input_dir/12406.txt
+Positive word: 558 Negative word: 441
+Sentiment score: 0.11711711711711711
+
+input_dir/12675.txt
+Positive word: 1798 Negative word: 1344
+Sentiment score: 0.14449395289624442
+
+input_dir/12458.txt
+Positive word: 204 Negative word: 115
+Sentiment score: 0.27899686520376177
+
+input_dir/12470.txt
+Positive word: 3692 Negative word: 3912
+Sentiment score: -0.028932140978432403
+
+input_dir/12603.txt
+Positive word: 137 Negative word: 90
+Sentiment score: 0.20704845814977973
+
+input_dir/12340.txt
+Positive word: 1002 Negative word: 497
+Sentiment score: 0.33689126084056037
+
+input_dir/12510.txt
+Positive word: 745 Negative word: 690
+Sentiment score: 0.03832752613240418
+
+input_dir/12763.txt
+Positive word: 3321 Negative word: 2366
+Sentiment score: 0.16792685071215052
+
+input_dir/12698.txt
+Positive word: 201 Negative word: 776
+Sentiment score: -0.5885363357215967
+
+input_dir/12385.txt
+Positive word: 4092 Negative word: 4337
+Sentiment score: -0.02906631866176296
+
+input_dir/12863.txt
+Positive word: 1597 Negative word: 1424
+Sentiment score: 0.0572658060244952
+
+input_dir/12676.txt
+Positive word: 517 Negative word: 360
+Sentiment score: 0.1790193842645382
+
+input_dir/12405.txt
+Positive word: 1633 Negative word: 1285
+Sentiment score: 0.11925976696367376
+
+input_dir/12628.txt
+Positive word: 5687 Negative word: 3289
+Sentiment score: 0.26715686274509803
+
+input_dir/12565.txt
+Positive word: 5563 Negative word: 5809
+Sentiment score: -0.021632078790010553
+
+input_dir/12816.txt
+Positive word: 1557 Negative word: 1396
+Sentiment score: 0.05452082627836099
+
+input_dir/12748.txt
+Positive word: 3662 Negative word: 2684
+Sentiment score: 0.1541128269776237
+
+input_dir/12760.txt
+Positive word: 3210 Negative word: 2979
+Sentiment score: 0.03732428502181289
+
+input_dir/12513.txt
+Positive word: 370 Negative word: 160
+Sentiment score: 0.39622641509433965
+
+input_dir/12860.txt
+Positive word: 471 Negative word: 330
+Sentiment score: 0.1760299625468165
+
+input_dir/12386.txt
+Positive word: 3131 Negative word: 1722
+Sentiment score: 0.2903358747166701
+
+input_dir/12600.txt
+Positive word: 3571 Negative word: 2886
+Sentiment score: 0.10608641784110268
+
+input_dir/12473.txt
+Positive word: 6075 Negative word: 5627
+Sentiment score: 0.038284054007861903
+
+input_dir/12900.txt
+Positive word: 10539 Negative word: 8768
+Sentiment score: 0.09172838866732273
+
+input_dir/12343.txt
+Positive word: 460 Negative word: 346
+Sentiment score: 0.141439205955335
+
+input_dir/12588.txt
+Positive word: 2247 Negative word: 2073
+Sentiment score: 0.04027777777777778
+
+input_dir/12629.txt
+Positive word: 1749 Negative word: 1662
+Sentiment score: 0.025505716798592787
+
+input_dir/12404.txt
+Positive word: 2112 Negative word: 982
+Sentiment score: 0.3652230122818358
+
+input_dir/12677.txt
+Positive word: 1003 Negative word: 740
+Sentiment score: 0.1508892713711991
+
+input_dir/12749.txt
+Positive word: 1683 Negative word: 1848
+Sentiment score: -0.04672897196261682
+
+input_dir/12817.txt
+Positive word: 5423 Negative word: 3732
+Sentiment score: 0.18470780993992353
+
+input_dir/12849.txt
+Positive word: 1871 Negative word: 2210
+Sentiment score: -0.08306787552070571
+
+input_dir/12564.txt
+Positive word: 2612 Negative word: 2486
+Sentiment score: 0.02471557473519027
+
+input_dir/12861.txt
+Positive word: 2401 Negative word: 1783
+Sentiment score: 0.1477055449330784
+
+input_dir/12387.txt
+Positive word: 6354 Negative word: 6523
+Sentiment score: -0.013124174885454686
+
+input_dir/12512.txt
+Positive word: 807 Negative word: 618
+Sentiment score: 0.13263157894736843
+
+input_dir/12761.txt
+Positive word: 3609 Negative word: 3140
+Sentiment score: 0.06949177655949029
+
+input_dir/12342.txt
+Positive word: 25940 Negative word: 16007
+Sentiment score: 0.23679881755548668
+
+input_dir/12901.txt
+Positive word: 3094 Negative word: 2711
+Sentiment score: 0.06597760551248924
+
+input_dir/12589.txt
+Positive word: 443 Negative word: 234
+Sentiment score: 0.3087149187592319
+
+input_dir/12472.txt
+Positive word: 788 Negative word: 814
+Sentiment score: -0.016229712858926344
+
+input_dir/12601.txt
+Positive word: 559 Negative word: 432
+Sentiment score: 0.12815338042381433
+
+input_dir/12454.txt
+Positive word: 559 Negative word: 464
+Sentiment score: 0.09286412512218964
+
+input_dir/12782.txt
+Positive word: 649 Negative word: 707
+Sentiment score: -0.04277286135693215
+
+input_dir/12627.txt
+Positive word: 215 Negative word: 451
+Sentiment score: -0.35435435435435436
+
+input_dir/12679.txt
+Positive word: 1551 Negative word: 939
+Sentiment score: 0.2457831325301205
+
+input_dir/12364.txt
+Positive word: 1240 Negative word: 814
+Sentiment score: 0.2074001947419669
+
+input_dir/12882.txt
+Positive word: 2229 Negative word: 2399
+Sentiment score: -0.03673292999135696
+
+input_dir/12491.txt
+Positive word: 1406 Negative word: 1264
+Sentiment score: 0.05318352059925094
+
+input_dir/12819.txt
+Positive word: 1427 Negative word: 1681
+Sentiment score: -0.08172458172458172
+
+input_dir/12747.txt
+Positive word: 2520 Negative word: 2227
+Sentiment score: 0.06172319359595534
+
+input_dir/12847.txt
+Positive word: 2775 Negative word: 2126
+Sentiment score: 0.13242195470312182
+
+input_dir/12542.txt
+Positive word: 2875 Negative word: 2377
+Sentiment score: 0.09482102056359482
+
+input_dir/12389.txt
+Positive word: 951 Negative word: 434
+Sentiment score: 0.37328519855595665
+
+input_dir/12731.txt
+Positive word: 1581 Negative word: 1826
+Sentiment score: -0.07191077194012327
+
+input_dir/12694.txt
+Positive word: 1075 Negative word: 634
+Sentiment score: 0.2580456407255705
+
+input_dir/12831.txt
+Positive word: 133 Negative word: 222
+Sentiment score: -0.2507042253521127
+
+input_dir/12587.txt
+Positive word: 6318 Negative word: 8312
+Sentiment score: -0.13629528366370472
+
+input_dir/12422.txt
+Positive word: 4057 Negative word: 4776
+Sentiment score: -0.08139929808672025
+
+input_dir/12651.txt
+Positive word: 2650 Negative word: 2024
+Sentiment score: 0.1339323919554985
+
+input_dir/12365.txt
+Positive word: 143 Negative word: 63
+Sentiment score: 0.3883495145631068
+
+input_dir/12883.txt
+Positive word: 2267 Negative word: 1023
+Sentiment score: 0.3781155015197568
+
+input_dir/12678.txt
+Positive word: 1267 Negative word: 1079
+Sentiment score: 0.08013640238704177
+
+input_dir/12626.txt
+Positive word: 1551 Negative word: 531
+Sentiment score: 0.4899135446685879
+
+input_dir/12783.txt
+Positive word: 375 Negative word: 628
+Sentiment score: -0.2522432701894317
+
+input_dir/12455.txt
+Positive word: 4472 Negative word: 4217
+Sentiment score: 0.029347450799861893
+
+input_dir/12846.txt
+Positive word: 2076 Negative word: 2306
+Sentiment score: -0.05248744865358284
+
+input_dir/12746.txt
+Positive word: 4032 Negative word: 3972
+Sentiment score: 0.0074962518740629685
+
+input_dir/12490.txt
+Positive word: 1059 Negative word: 680
+Sentiment score: 0.21794134560092007
+
+input_dir/12535.txt
+Positive word: 1925 Negative word: 2606
+Sentiment score: -0.15029794747296402
+
+input_dir/12818.txt
+Positive word: 1764 Negative word: 2376
+Sentiment score: -0.14782608695652175
+
+input_dir/12830.txt
+Positive word: 393 Negative word: 265
+Sentiment score: 0.1945288753799392
+
+input_dir/12730.txt
+Positive word: 1473 Negative word: 1993
+Sentiment score: -0.15002885170225044
+
+input_dir/12543.txt
+Positive word: 615 Negative word: 418
+Sentiment score: 0.19070667957405615
+
+input_dir/12388.txt
+Positive word: 1513 Negative word: 2079
+Sentiment score: -0.15757238307349666
+
+input_dir/12650.txt
+Positive word: 582 Negative word: 338
+Sentiment score: 0.26521739130434785
+
+input_dir/12423.txt
+Positive word: 2597 Negative word: 2041
+Sentiment score: 0.1198792583009918
+
+input_dir/12586.txt
+Positive word: 1774 Negative word: 1354
+Sentiment score: 0.13427109974424553
+
+input_dir/12568.txt
+Positive word: 616 Negative word: 424
+Sentiment score: 0.18461538461538463
+
+input_dir/12845.txt
+Positive word: 3263 Negative word: 3026
+Sentiment score: 0.03768484655748132
+
+input_dir/12536.txt
+Positive word: 569 Negative word: 422
+Sentiment score: 0.14833501513622604
+
+input_dir/12493.txt
+Positive word: 725 Negative word: 612
+Sentiment score: 0.08451757666417352
+
+input_dir/12745.txt
+Positive word: 3510 Negative word: 3596
+Sentiment score: -0.012102448634956376
+
+input_dir/12880.txt
+Positive word: 1749 Negative word: 1802
+Sentiment score: -0.014925373134328358
+
+input_dir/12366.txt
+Positive word: 1098 Negative word: 748
+Sentiment score: 0.18959913326110509
+
+input_dir/12456.txt
+Positive word: 1205 Negative word: 832
+Sentiment score: 0.18311242022582228
+
+input_dir/12625.txt
+Positive word: 1514 Negative word: 886
+Sentiment score: 0.26166666666666666
+
+input_dir/12585.txt
+Positive word: 1708 Negative word: 845
+Sentiment score: 0.33803368585977284
+
+input_dir/12653.txt
+Positive word: 4413 Negative word: 3878
+Sentiment score: 0.06452780123024966
+
+input_dir/12833.txt
+Positive word: 1675 Negative word: 1708
+Sentiment score: -0.00975465563109666
+
+input_dir/12540.txt
+Positive word: 2122 Negative word: 2001
+Sentiment score: 0.029347562454523406
+
+input_dir/12696.txt
+Positive word: 933 Negative word: 710
+Sentiment score: 0.1357273280584297
+
+input_dir/12744.txt
+Positive word: 2997 Negative word: 2099
+Sentiment score: 0.17621664050235478
+
+input_dir/12492.txt
+Positive word: 1208 Negative word: 600
+Sentiment score: 0.336283185840708
+
+input_dir/12537.txt
+Positive word: 2064 Negative word: 1223
+Sentiment score: 0.2558564040158199
+
+input_dir/12569.txt
+Positive word: 1654 Negative word: 1217
+Sentiment score: 0.15221177290142807
+
+input_dir/12844.txt
+Positive word: 169 Negative word: 218
+Sentiment score: -0.12661498708010335
+
+input_dir/12624.txt
+Positive word: 5237 Negative word: 3215
+Sentiment score: 0.23923331755797445
+
+input_dir/12781.txt
+Positive word: 551 Negative word: 355
+Sentiment score: 0.2163355408388521
+
+input_dir/12457.txt
+Positive word: 194 Negative word: 311
+Sentiment score: -0.2316831683168317
+
+input_dir/12881.txt
+Positive word: 497 Negative word: 467
+Sentiment score: 0.03112033195020747
+
+input_dir/12367.txt
+Positive word: 789 Negative word: 1241
+Sentiment score: -0.22266009852216748
+
+input_dir/12409.txt
+Positive word: 5542 Negative word: 4308
+Sentiment score: 0.12527918781725889
+
+input_dir/12652.txt
+Positive word: 4128 Negative word: 4001
+Sentiment score: 0.015623077869356624
+
+input_dir/12421.txt
+Positive word: 1998 Negative word: 1545
+Sentiment score: 0.12785774767146485
+
+input_dir/12584.txt
+Positive word: 1944 Negative word: 1511
+Sentiment score: 0.12532561505065123
+
+input_dir/12697.txt
+Positive word: 3119 Negative word: 2943
+Sentiment score: 0.02903332233586275
+
+input_dir/12732.txt
+Positive word: 2615 Negative word: 2900
+Sentiment score: -0.051677243880326386
+
+input_dir/12541.txt
+Positive word: 2884 Negative word: 3572
+Sentiment score: -0.10656753407682776
+
+input_dir/12832.txt
+Positive word: 438 Negative word: 336
+Sentiment score: 0.13178294573643412
+
+input_dir/12655.txt
+Positive word: 5435 Negative word: 3440
+Sentiment score: 0.2247887323943662
+
+input_dir/12348.txt
+Positive word: 2311 Negative word: 2205
+Sentiment score: 0.023472099202834367
+
+input_dir/12426.txt
+Positive word: 3855 Negative word: 2071
+Sentiment score: 0.30104623692203847
+
+input_dir/12583.txt
+Positive word: 643 Negative word: 422
+Sentiment score: 0.20751173708920187
+
+input_dir/12478.txt
+Positive word: 3091 Negative word: 3035
+Sentiment score: 0.009141364675155077
+
+input_dir/12690.txt
+Positive word: 1638 Negative word: 1692
+Sentiment score: -0.016216216216216217
+
+input_dir/12735.txt
+Positive word: 1636 Negative word: 1855
+Sentiment score: -0.06273274133486108
+
+input_dir/12835.txt
+Positive word: 3853 Negative word: 3875
+Sentiment score: -0.002846790890269151
+
+input_dir/12518.txt
+Positive word: 1049 Negative word: 577
+Sentiment score: 0.2902829028290283
+
+input_dir/12743.txt
+Positive word: 910 Negative word: 706
+Sentiment score: 0.12623762376237624
+
+input_dir/12495.txt
+Positive word: 1867 Negative word: 1917
+Sentiment score: -0.013213530655391121
+
+input_dir/12530.txt
+Positive word: 722 Negative word: 538
+Sentiment score: 0.14603174603174604
+
+input_dir/12843.txt
+Positive word: 3157 Negative word: 2392
+Sentiment score: 0.1378626779599928
+
+input_dir/12623.txt
+Positive word: 6635 Negative word: 6314
+Sentiment score: 0.024789559039308056
+
+input_dir/12786.txt
+Positive word: 1485 Negative word: 1741
+Sentiment score: -0.07935523868567886
+
+input_dir/12450.txt
+Positive word: 3990 Negative word: 3317
+Sentiment score: 0.09210346243328316
+
+input_dir/12360.txt
+Positive word: 3586 Negative word: 4630
+Sentiment score: -0.12706913339824732
+
+input_dir/12886.txt
+Positive word: 1250 Negative word: 894
+Sentiment score: 0.166044776119403
+
+input_dir/12349.txt
+Positive word: 4093 Negative word: 4597
+Sentiment score: -0.05799769850402762
+
+input_dir/12582.txt
+Positive word: 5546 Negative word: 6741
+Sentiment score: -0.09725726377472126
+
+input_dir/12427.txt
+Positive word: 1177 Negative word: 1190
+Sentiment score: -0.005492184199408534
+
+input_dir/12654.txt
+Positive word: 4465 Negative word: 3731
+Sentiment score: 0.08955588091752074
+
+input_dir/12834.txt
+Positive word: 910 Negative word: 619
+Sentiment score: 0.19032047089601045
+
+input_dir/12519.txt
+Positive word: 1903 Negative word: 1402
+Sentiment score: 0.15158850226928897
+
+input_dir/12734.txt
+Positive word: 1488 Negative word: 1287
+Sentiment score: 0.07243243243243243
+
+input_dir/12691.txt
+Positive word: 1494 Negative word: 1744
+Sentiment score: -0.07720815318097592
+
+input_dir/12842.txt
+Positive word: 292 Negative word: 200
+Sentiment score: 0.18699186991869918
+
+input_dir/12531.txt
+Positive word: 622 Negative word: 458
+Sentiment score: 0.15185185185185185
+
+input_dir/12494.txt
+Positive word: 876 Negative word: 940
+Sentiment score: -0.03524229074889868
+
+input_dir/12742.txt
+Positive word: 2222 Negative word: 2419
+Sentiment score: -0.04244774833010127
+
+input_dir/12361.txt
+Positive word: 5006 Negative word: 4392
+Sentiment score: 0.0653330495850181
+
+input_dir/12887.txt
+Positive word: 1658 Negative word: 940
+Sentiment score: 0.2763664357197845
+
+input_dir/12451.txt
+Positive word: 163 Negative word: 113
+Sentiment score: 0.18115942028985507
+
+input_dir/12787.txt
+Positive word: 1218 Negative word: 1017
+Sentiment score: 0.08993288590604027
+
+input_dir/12622.txt
+Positive word: 4156 Negative word: 2536
+Sentiment score: 0.242080095636581
+
+input_dir/12837.txt
+Positive word: 218 Negative word: 173
+Sentiment score: 0.11508951406649616
+
 input_dir/12769.txt
 Positive word: 3121 Negative word: 1841
 Sentiment score: 0.25796049979846836
+
+input_dir/12692.txt
+Positive word: 1591 Negative word: 1609
+Sentiment score: -0.005625
+
+input_dir/12737.txt
+Positive word: 578 Negative word: 401
+Sentiment score: 0.1807967313585291
+
+input_dir/12869.txt
+Positive word: 270 Negative word: 283
+Sentiment score: -0.023508137432188065
+
+input_dir/12544.txt
+Positive word: 3526 Negative word: 2635
+Sentiment score: 0.14461937997078397
+
+input_dir/12609.txt
+Positive word: 601 Negative word: 521
+Sentiment score: 0.07130124777183601
+
+input_dir/12657.txt
+Positive word: 1863 Negative word: 784
+Sentiment score: 0.40763128069512655
+
+input_dir/12424.txt
+Positive word: 1209 Negative word: 1505
+Sentiment score: -0.10906411201179071
+
+input_dir/12581.txt
+Positive word: 2322 Negative word: 2467
+Sentiment score: -0.03027771977448319
+
+input_dir/12884.txt
+Positive word: 2557 Negative word: 2166
+Sentiment score: 0.08278636459877196
+
+input_dir/12362.txt
+Positive word: 5063 Negative word: 4272
+Sentiment score: 0.08473486877343332
+
+input_dir/12621.txt
+Positive word: 1601 Negative word: 2515
+Sentiment score: -0.22206025267249757
+
+input_dir/12784.txt
+Positive word: 3059 Negative word: 2438
+Sentiment score: 0.11297071129707113
+
+input_dir/12452.txt
+Positive word: 1916 Negative word: 2456
+Sentiment score: -0.12351326623970722
+
+input_dir/12841.txt
+Positive word: 1122 Negative word: 1079
+Sentiment score: 0.019536574284416176
+
+input_dir/12741.txt
+Positive word: 2523 Negative word: 1193
+Sentiment score: 0.3579117330462863
+
+input_dir/12497.txt
+Positive word: 607 Negative word: 430
+Sentiment score: 0.17068466730954676
+
+input_dir/12532.txt
+Positive word: 3358 Negative word: 2558
+Sentiment score: 0.1352265043948614
+
+input_dir/12868.txt
+Positive word: 4489 Negative word: 2551
+Sentiment score: 0.2752840909090909
+
+input_dir/12545.txt
+Positive word: 1830 Negative word: 1909
+Sentiment score: -0.0211286440224659
+
+input_dir/12736.txt
+Positive word: 4170 Negative word: 2499
+Sentiment score: 0.2505623031938821
+
+input_dir/12693.txt
+Positive word: 3534 Negative word: 1928
+Sentiment score: 0.29403149029659464
+
+input_dir/12768.txt
+Positive word: 3668 Negative word: 2782
+Sentiment score: 0.13736434108527132
+
+input_dir/12836.txt
+Positive word: 916 Negative word: 582
+Sentiment score: 0.22296395193591456
+
+input_dir/12580.txt
+Positive word: 1371 Negative word: 809
+Sentiment score: 0.25779816513761467
+
+input_dir/12425.txt
+Positive word: 3626 Negative word: 2939
+Sentiment score: 0.10464584920030465
+
+input_dir/12656.txt
+Positive word: 1298 Negative word: 1411
+Sentiment score: -0.04171280915466962
+
+input_dir/12608.txt
+Positive word: 422 Negative word: 286
+Sentiment score: 0.192090395480226
+
+input_dir/12453.txt
+Positive word: 6075 Negative word: 6232
+Sentiment score: -0.012756967579426343
+
+input_dir/12785.txt
+Positive word: 3302 Negative word: 3040
+Sentiment score: 0.0413118889940082
+
+input_dir/12620.txt
+Positive word: 737 Negative word: 1151
+Sentiment score: -0.21927966101694915
+
+input_dir/12363.txt
+Positive word: 2718 Negative word: 1813
+Sentiment score: 0.19973515780180975
+
+input_dir/12496.txt
+Positive word: 455 Negative word: 379
+Sentiment score: 0.09112709832134293
+
+input_dir/12740.txt
+Positive word: 2134 Negative word: 1773
+Sentiment score: 0.09239825953416944
+
+input_dir/12840.txt
+Positive word: 271 Negative word: 509
+Sentiment score: -0.30512820512820515
 
 
 -- output for the input_dir/ directory --

@@ -18,7 +18,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ExecutorService; 
 import java.util.concurrent.Executors;	
-
+import java.util.Random;
 public class AssignServiceHandler implements AssignService.Iface
 {	
 	public class Task implements Runnable
@@ -31,7 +31,7 @@ public class AssignServiceHandler implements AssignService.Iface
                 callMap(address);
         }
 }
-	//private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
+//	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
 	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
@@ -47,14 +47,15 @@ public class AssignServiceHandler implements AssignService.Iface
 				Task tmp = new Task(fileAddress);
 				tasks.add(tmp);
 			}
-			int threadNum = 50;
+			int threadNum = 30;
 			ExecutorService pool = Executors.newFixedThreadPool(threadNum);
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));
 			}
 			while(unsortedArray.size() != fileList.length){
 				try {
-      					Thread.sleep(500); 
+      					Thread.sleep(500);
+					System.out.println("Now we have finished " + unsortedArray.size() + " tasks."); 
 				}catch (InterruptedException e) {
 				}
 			}
@@ -75,6 +76,12 @@ public class AssignServiceHandler implements AssignService.Iface
 	private void callMap(String address){
 		boolean flag = false;
 		int acceptNodeId = 0;
+		boolean injectMode = true;
+		if (injectMode) {
+			Random rand = new Random();
+			int tmp = rand.nextInt(15);
+			acceptNodeId = tmp % 4;
+		}
 		while(!flag){
 		        try {		
 				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9996);
@@ -90,6 +97,16 @@ public class AssignServiceHandler implements AssignService.Iface
 					System.out.println("Node " + acceptNodeId + "accept task " + address + "!");
 					unsortedArray.add(client.mapping(address));
 					System.out.println("Task '"+address+"' finished");
+				} else if (!flag && injectMode) {
+					System.out.println("In Inject Mode");
+					while(!flag) {
+						try{		
+    							Thread.sleep(3000);
+						}catch(InterruptedException ex){
+   							 Thread.currentThread().interrupt();
+						}
+						flag = client.accept(acceptNodeId);
+					}
 				} else{
 					acceptNodeId = (acceptNodeId + 1) % 4;
 				}

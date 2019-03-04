@@ -10,9 +10,9 @@ public class MapServiceHandler implements MapService.Iface
 	private String outDir = "../data/intermediate_dir";
 	private Random rand = new Random();
 	private HashMap<Integer, Double> nodeMap = new HashMap<Integer,Double>() {{
-        	put(0, 0.2);
-        	put(1, 0.2);
-		put(2, 0.2);
+        	put(0, 0.8);
+        	put(1, 0.6);
+		put(2, 0.4);
 		put(3, 0.2);
     	}};
 	
@@ -25,10 +25,14 @@ public class MapServiceHandler implements MapService.Iface
 	}	
 	@Override
         public boolean accept(int nodeID) throws TException {
-		System.out.println("I got accept()");
 		int tmp = rand.nextInt(100);
-		if (tmp > nodeMap.get(nodeID) * 100) return true;
-		return false; 	
+		if (tmp > nodeMap.get(nodeID) * 100) {
+			System.out.println("I accept the task.");
+			return true;
+		} else {
+			System.out.println("I reject/delay the task.");
+			return false;
+		}
 	}
 
         @Override
