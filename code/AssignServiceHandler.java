@@ -53,11 +53,10 @@ public class AssignServiceHandler implements AssignService.Iface
 				pool.execute(tasks.get(i));
 			}
 			while(unsortedArray.size() != fileList.length){
-			//	try {
-      			//		Thread.sleep(500); 
-			//	}catch (InterruptedException e) {
-			//	}
-				System.out.println(unsortedArray.size());
+				try {
+      					Thread.sleep(500); 
+				}catch (InterruptedException e) {
+				}
 			}
 			System.out.println("Start sorting.");
 			ret.fileOrder = callSort() ;
