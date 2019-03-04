@@ -32,7 +32,7 @@ public class AssignServiceHandler implements AssignService.Iface
         }
 }
 	//private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
-	private String[] nodeIp = {"10.0.0.28","10.0.0.28","localhost","localhost"};
+	private String[] nodeIp = {"128.101.35.181","10.0.0.28","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
 	public ClientResult assign(String folderAddress) throws TException {
