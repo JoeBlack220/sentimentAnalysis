@@ -34,7 +34,7 @@ public class Server {
     public static void simple(AssignService.Processor processor) {
         try {
             //Create Thrift server socket
-            TServerTransport serverTransport = new TServerSocket(9090);
+            TServerTransport serverTransport = new TServerSocket(9998);
             TTransportFactory factory = new TFramedTransport.Factory();
 
             //Create service request handler

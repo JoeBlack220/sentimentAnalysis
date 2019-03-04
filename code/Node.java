@@ -34,7 +34,7 @@ public class Node {
     public static void simple(MapService.Processor processor) {
         try {
             //Create Thrift server socket
-            TServerTransport serverTransport = new TServerSocket(9097);
+            TServerTransport serverTransport = new TServerSocket(9996);
             TTransportFactory factory = new TFramedTransport.Factory();
 
             //Create service request handler

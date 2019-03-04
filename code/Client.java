@@ -11,7 +11,7 @@ public class Client {
     public static void main(String [] args) {
         //Create client connect.
         try {
-            TTransport  transport = new TSocket("localhost", 9090);
+            TTransport  transport = new TSocket("localhost", 9998);
             TProtocol protocol = new TBinaryProtocol(transport);
             AssignService.Client client = new AssignService.Client(protocol);
 

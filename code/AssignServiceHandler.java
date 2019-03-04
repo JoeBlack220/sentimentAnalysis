@@ -31,7 +31,8 @@ public class AssignServiceHandler implements AssignService.Iface
                 callMap(address);
         }
 }
-	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
+	//private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
+	private String[] nodeIp = {"10.0.0.28","10.0.0.28","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	@Override
 	public ClientResult assign(String folderAddress) throws TException {
@@ -71,7 +72,7 @@ public class AssignServiceHandler implements AssignService.Iface
 		int acceptNodeId = 0;
 		while(!flag){
 		        try {		
-				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9097);
+				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9996);
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
@@ -96,7 +97,7 @@ public class AssignServiceHandler implements AssignService.Iface
 
 	private String callSort(){
 		try {
-           		 TTransport  transport = new TSocket(nodeIp[0], 9097);
+           		 TTransport  transport = new TSocket(nodeIp[0], 9996);
                		 TProtocol protocol = new TBinaryProtocol(transport);
                		 MapService.Client client = new MapService.Client(protocol);
                		 //Try to connect
