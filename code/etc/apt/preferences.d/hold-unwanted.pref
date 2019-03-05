@@ -1,0 +1,16 @@
+Package: update-manager
+Pin: origin ""
+Pin-Priority: -1
+
+Package: update-notifier
+Pin: origin ""
+Pin-Priority: -1
+
+Package: ubuntu-release-upgrader-gtk
+Pin: origin ""
+Pin-Priority: -1
+
+Package: software-center
+Pin: origin ""
+Pin-Priority: -1
+

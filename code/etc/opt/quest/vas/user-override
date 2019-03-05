@@ -1,0 +1,73 @@
+# AllowedUsers groups
+AD.UMN.EDU\CSEL-AllowedUsers:::901489026:::/bin/bash
+AD.UMN.EDU\CS-AllowedUsers:::80887845:::/bin/bash
+AD.UMN.EDU\Math-AllowedUsers:::1090648949:::/bin/bash
+AD.UMN.EDU\DTC-AllowedUsers:::901489026:::/bin/bash
+AD.UMN.EDU\Esci-AllowedUsers:::775115124:::/bin/bash
+AD.UMN.EDU\CSEA-AllowedUsers:::543837000:::/bin/bash
+# Shells
+AD.UMN.EDU\CSEL-BashUsers::::::/bin/bash
+AD.UMN.EDU\CSEL-TCSHUsers::::::/bin/tcsh
+AD.UMN.EDU\CSEL-ZSHUsers::::::/bin/zsh
+AD.UMN.EDU\math-BashUsers::::::/bin/bash
+AD.UMN.EDU\math-TCSHUsers::::::/bin/tcsh
+AD.UMN.EDU\math-ZSHUsers::::::/bin/zsh
+AD.UMN.EDU\CS-BashUsers::::::/bin/bash
+AD.UMN.EDU\CS-TCSHUsers::::::/bin/tcsh
+AD.UMN.EDU\CS-ZSHUsers::::::/bin/zsh
+# Cselabs
+AD.UMN.EDU\CSEL-register::::::/bin/false
+AD.UMN.EDU\CSEL-student:::1328160511:::
+AD.UMN.EDU\CSEL-hadoop:::660541939:::
+AD.UMN.EDU\CSEL-faculty:::1483033070:::
+# DTC
+AD.UMN.EDU\CSE-cusp:::63755805:::/bin/bash
+AD.UMN.EDU\DTC-Georgios:::1500654637:::
+AD.UMN.EDU\DTC-SidirGroup:::999997210:::
+# ESCI
+AD.UMN.EDU\Esci-Hydrogeology:::1237104549:::
+AD.UMN.EDU\Esci-Biogeochemical:::1195817015:::
+AD.UMN.EDU\Esci-Seismology:::28789201:::
+AD.UMN.EDU\Esci-Geodynamics:::1120367399:::
+AD.UMN.EDU\Esci-Saar:::389934803:::
+AD.UMN.EDU\Esci-Geobiology:::1001367761:::
+# math
+AD.UMN.EDU\math-student:::498879323:::
+AD.UMN.EDU\math-grad:::1104330978:::
+AD.UMN.EDU\math-visitor:::692127579:::
+AD.UMN.EDU\math-instructors:::595003761:::
+AD.UMN.EDU\math-adjunct:::901542981:::
+AD.UMN.EDU\math-faculty:::1049100709:::
+AD.UMN.EDU\mcgehee::176689:2044000015:::/bin/bash
+# Override for CSE Staff
+AD.UMN.EDU\CSEL-staff:::1394683279:::
+# CS
+AD.UMN.EDU\cs-grad:::1808838015:::
+AD.UMN.EDU\cs-faculty:::1691827286:::
+AD.UMN.EDU\cs-office:::547436463:::
+AD.UMN.EDU\cs-csbio:::1376945971:::
+AD.UMN.EDU\cs-dminers:::2088139501:::
+AD.UMN.EDU\cs-grplens:::563023655:::
+AD.UMN.EDU\barry:::1504739998:::/bin/csh
+AD.UMN.EDU\boley:::1723266487:::/bin/tcsh
+AD.UMN.EDU\carl:::458636599:::/bin/bash
+AD.UMN.EDU\dovol002:::502103572:::/bin/tcsh
+AD.UMN.EDU\du:::1996023184:::/bin/tcsh
+AD.UMN.EDU\dunn:::2111599198:::/bin/tcsh
+AD.UMN.EDU\gini:::2008577543:::/bin/tcsh
+AD.UMN.EDU\heimdahl:::278550377:::/bin/tcsh
+AD.UMN.EDU\janardan:::1291866732:::/bin/tcsh
+AD.UMN.EDU\jcollins:::1390099842:::/bin/tcsh
+AD.UMN.EDU\karypis:::1946897835:::/bin/tcsh
+AD.UMN.EDU\konstan:::561731717:::/bin/tcsh
+AD.UMN.EDU\kumar001:::263616958:::/bin/tcsh
+AD.UMN.EDU\lilja:::982350534:::/bin/tcsh
+AD.UMN.EDU\rsanjai:::474388224:::/bin/tcsh
+AD.UMN.EDU\saad:::1327874197:::/bin/tcsh
+AD.UMN.EDU\shekhar:::19041314:::/bin/csh
+AD.UMN.EDU\shragowi:::1189874591:::/bin/csh
+AD.UMN.EDU\steinmet:::316845323:::/bin/tcsh
+AD.UMN.EDU\tripathi:::577615510:::/bin/bash
+AD.UMN.EDU\yew:::2116881352:::/bin/tcsh
+AD.UMN.EDU\zhang089:::545047736:::/bin/tcsh
+# Host specific overrides

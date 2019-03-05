@@ -1,0 +1,17 @@
+#%PAM-1.0
+# Fixes Ubuntu bug #582858 -LdT, 8/11/10
+auth	required	pam_nologin.so
+auth	required	pam_securetty.so
+auth	sufficient	pam_rhosts.so
+auth	sufficient	pam_vas3.so get_nonvas_pass try_first_pass
+auth	requisite	pam_vas3.so echo_return
+auth	required	pam_unix.so nullok use_first_pass
+account	sufficient	pam_vas3.so
+account	requisite	pam_vas3.so echo_return
+account	required	pam_unix.so
+password	sufficient	pam_vas3.so
+password	requisite	pam_vas3.so echo_return
+password	required	pam_unix.so nullok use_authtok obscure min=4 max=8
+session	required	pam_vas3.so
+session	requisite	pam_vas3.so echo_return
+session	required	pam_unix.so

@@ -18,13 +18,20 @@ public class Client {
 		// Try to connect
 		transport.open();
 
-		// Check if inject mode is used
-		boolean injectMode = false;
-		if(args[0].equals("inject")) {
-			injectMode = true;
+		// Check which mode is in use
+		// The default mode is load balancing
+		int mode = 0;
+		if(args.length!= 0){
+			if(args[0].equals("balance")) {
+				mode = 0;
+			} else if(args[0].equals("random")){
+				mode = 1;
+			} else if(args[0].equals("inject")){
+				mode = 2;	
+			}
 		}
 		// Send input directory address and mode to server
-		ClientResult finalResult = client.assign("../data/input_dir", injectMode);
+		ClientResult finalResult = client.assign("../data/input_dir", mode);
 		// Log final file score ranking and elapsed time
 		System.out.println(finalResult.fileOrder + "\nTime taken is: " + finalResult.time);
 		// Notice

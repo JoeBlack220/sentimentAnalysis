@@ -1,0 +1,1 @@
+/opt/quest/bin/vastool -u csed-joiner -w XXXXX join -f -c OU=Linux,OU=Machines,OU=03StandardSecurity,OU=CS,OU=CSED,OU=CSE,OU=TC,OU=Units,DC=ad,DC=umn,DC=edu -n cs-cello ad.umn.edu

@@ -1,0 +1,37 @@
+#!/usr/bin/install-menu
+
+#   -*- mode: shell-script; -*-
+#I need menu-1!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/sbin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/doc/menu/html.
+#
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+outputencoding="ASCII"; 
+
+function q($com)=esc($com,"\"");
+function f($com)="  \"" q(title()) "\"    f.exec  \"" q($com) " &\"\n";
+
+supported;
+  x11= f($command);
+  text=f(term());
+  wm=" \"" q(title()) "\" f.startwm \"" q($command) "\"\n";
+#  x11 = "  \"" $title "\"    f.exec  \""$command " &\"\n";
+#  text= "  \"" $title "\"    f.exec  \"xterm -title \\\""
+#               $title "\\\" -e " esc($command,"\"") " &\"\n";
+endsupported;
+startmenu=   "menu \"" q($section) "\"\n{\n";
+endmenu=     "}\n";
+submenutitle="  \"" q(title()) "\" f.menu \"" q($section) "\"\n";
+genmenu=      "menudefs.hook";
+rcfile=       "system.twmrc";
+examplercfile="system.twmrc-menu";
+rootprefix=   "/etc/X11/twm/";
+userprefix=   "/.twm/";

@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Vector;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.time.Instant;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -26,8 +27,8 @@ public class AssignServiceHandler implements AssignService.Iface
 	public class Task implements Runnable
 	{
        		private String address;
-		private boolean injectMode;
-       		public Task(String s, boolean m) {
+		private int injectMode;
+       		public Task(String s, int m) {
                		address = s;
 			injectMode = m;
         	}
@@ -45,7 +46,7 @@ public class AssignServiceHandler implements AssignService.Iface
 	private Vector saveResult = new Vector(3,2);
 
 	@Override
-	public ClientResult assign(String folderAddress, boolean injectMode) throws TException {
+	public ClientResult assign(String folderAddress, int mode) throws TException {
 		// Start counting time
 		Instant start = Instant.now();
 		// empty vector
@@ -62,7 +63,7 @@ public class AssignServiceHandler implements AssignService.Iface
 				// make complete file address
 				String fileAddress = folderAddress + "/" + fileList[i];
 				// create a new task
-				Task tmp = new Task(fileAddress, injectMode);
+				Task tmp = new Task(fileAddress, mode);
 				tasks.add(tmp);
 			}
 			// define the size of the threadpool in the server
@@ -77,12 +78,13 @@ public class AssignServiceHandler implements AssignService.Iface
 				try {
 					// wait 0.5 seconds then count the finished task number
       					Thread.sleep(500);
-					System.out.println("Now we have finished " + saveResult.size() + " tasks."); 
+					System.out.println("Now we have finished " + saveResult.size() + " tasks.");
+					System.out.println("Currently " +((ThreadPoolExecutor)pool).getActiveCount()+ " tasks are running."); 
 				}catch (InterruptedException e) {
 				}
 			}
 			// finished mapping, calling the first node to do the sorting job
-			System.out.println("Start sorting.");
+			System.out.println("Start assign sorting task to the node 0.");
 			ret.fileOrder = callSort() ;
 			Instant end = Instant.now();
 			// record the time a job takes
@@ -98,18 +100,16 @@ public class AssignServiceHandler implements AssignService.Iface
 			
 	}
 	
-	private void callMap(String address, boolean mode){
+	private void callMap(String address, int mode){
 		// this flag tests whether a node accept a task
 		boolean flag = false;
 		// when start calling map, first assign the task to the first node, if it rejects, then assign it to the next node
 		int acceptNodeId = 0;
-		// this flag tests whether we should do injection
-		boolean injectMode = mode;
-		// when we use injection, assign a task to a random node, if it says delay, then delay few seconds then send it;
-		if (injectMode) {
+		// this flag indicates which mode we are using 0-load balancing 1-random mode 2-inject mode
+		// when we use injection or random mode, assign a task to a random node
+		if (mode == 1 || mode == 2) {
 			Random rand = new Random();
-			int tmp = rand.nextInt(4);
-			acceptNodeId = tmp % 4;
+			acceptNodeId = rand.nextInt(4);
 		}
 		while(!flag){
 		        try {		
@@ -117,17 +117,23 @@ public class AssignServiceHandler implements AssignService.Iface
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
-				//Try to connect
+				// Try to connect
 				transport.open();
 
-				//What you need to do
-				flag = client.accept(acceptNodeId);
+				// What you need to do
+				// if we are in random mode, we don't have to call accept function, just assgin the task to a random node
+				if(mode == 1) flag = true;
+				else flag = client.accept(acceptNodeId);
 				if(flag) {
 					// print whether a node accepts
-					System.out.println("Node " + acceptNodeId + "accept task " + address + "!");
+					if(mode == 0) System.out.println("In load balancing load.");
+					else if(mode == 1) System.out.println("In random mode.");
+					else System.out.println("In inject mode");
+					System.out.println("Node " + acceptNodeId + " accept task " + address + "!");
 					saveResult.addElement(client.mapping(address));
-					System.out.println("Task '"+address+"' finished.");
-				} else if (!flag && injectMode) {
+					System.out.println("Task '"+address+"' finished by node " + acceptNodeId +".");
+				// in inject mode, the reject just means some delay, the assigned node still have to do the computing
+				} else if (!flag && mode==2) {
 					System.out.println("In Inject Mode.");
 					try{	
 						// if a node doesn't accept and it is in injection mode, delay few seconds	
@@ -137,7 +143,7 @@ public class AssignServiceHandler implements AssignService.Iface
 					}
 					System.out.println("Node " + acceptNodeId + " accept the task after delay in injection mode.");
 					saveResult.addElement(client.mapping(address));
-					System.out.println("Task finished.");
+					System.out.println("Task '" + address + "' is finished by node " + acceptNodeId +".");
 					// set the flag to true to ensure the loop goes on
 					flag = true;
 				} else{

@@ -1,0 +1,4 @@
+// Set timeout to 10 minutes
+Acquire::http::Timeout "600";
+// Set retries to 12 so apt attempts to upgrade against a busy mirror for 2 hours before failing.
+Acquire::Retries "12";

@@ -1,0 +1,26 @@
+# Sample users.deny file
+# This assumes that the host has been joined to the example.com domain.
+# To validate the users.deny file, run: vastool list users-denied
+
+# Prevent users john and steve from accessing this machine.
+# User names may be entered as user principal names (UPN) for 
+# backward compatibility, but the DOMAIN\SamAccountName format
+# is preferred.
+
+john@example.com
+EXAMPLE\Steve
+
+# Prevent members of the sales and engineering groups from accessing this machine.
+# Groups may be specified using thier Unix Name for backward compatibility, 
+# but the DOMAIN\SamAccountName format is preferred.  
+
+EXAMPLE\sales
+engineering
+
+# Deny users that belong to the engineering OU.
+
+ou=engineering,dc=example,dc=com
+
+# Deny access to users in the in the example.com realm (domain).
+
+@example.com

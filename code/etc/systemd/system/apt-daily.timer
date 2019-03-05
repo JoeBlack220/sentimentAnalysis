@@ -1,0 +1,15 @@
+[Unit]
+Description=Daily apt activities
+
+[Timer]
+# Run updates on Tuesdays
+OnCalendar=Tue *-*-* 00:30
+# Maintenance window update
+#OnCalendar=Sun *-*-* 00:30
+RandomizedDelaySec=5h
+AccuracySec=20min
+Persistent=false
+
+[Install]
+WantedBy=timers.target
+

@@ -1,0 +1,16 @@
+TARGETS = nfs-kernel-server unattended-upgrades nvi puppet vasd openbsd-inetd nagios-nrpe-server fail2ban kerneloops speech-dispatcher autofs alsa-utils nscd whoopsie ntp fetchmail bluetooth lightdm resolvconf cups-browsed saned cups plymouth urandom nis postfix avahi-daemon sendsigs rsyslog umountnfs.sh hwclock.sh rpcbind networking umountfs cryptdisks cryptdisks-early umountroot halt reboot
+nis: autofs
+postfix: fetchmail
+avahi-daemon: cups-browsed saned
+sendsigs: puppet vasd openbsd-inetd avahi-daemon plymouth nagios-nrpe-server fail2ban kerneloops speech-dispatcher nfs-kernel-server cups-browsed postfix autofs alsa-utils unattended-upgrades nscd fetchmail nvi bluetooth lightdm
+rsyslog: sendsigs puppet vasd openbsd-inetd avahi-daemon nagios-nrpe-server fail2ban kerneloops speech-dispatcher cups-browsed postfix autofs nscd bluetooth saned whoopsie ntp cups
+umountnfs.sh: rsyslog puppet vasd openbsd-inetd avahi-daemon plymouth nagios-nrpe-server fail2ban kerneloops speech-dispatcher nfs-kernel-server cups-browsed postfix autofs alsa-utils unattended-upgrades nscd sendsigs fetchmail nvi bluetooth lightdm
+hwclock.sh: rsyslog kerneloops nfs-kernel-server cups-browsed
+rpcbind: nfs-kernel-server umountnfs.sh nis
+networking: puppet nagios-nrpe-server fail2ban kerneloops cups-browsed postfix rpcbind autofs umountnfs.sh lightdm
+umountfs: puppet vasd networking openbsd-inetd avahi-daemon plymouth nagios-nrpe-server fail2ban resolvconf kerneloops speech-dispatcher nfs-kernel-server cups-browsed urandom postfix rpcbind autofs alsa-utils unattended-upgrades umountnfs.sh nscd hwclock.sh fetchmail nvi bluetooth lightdm
+cryptdisks: umountfs
+cryptdisks-early: cryptdisks umountfs
+umountroot: cryptdisks cryptdisks-early umountfs
+halt: umountroot
+reboot: umountroot

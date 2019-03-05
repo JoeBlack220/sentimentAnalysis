@@ -1,0 +1,354 @@
+#!/bin/sh
+#
+# /etc/init.d/vasd
+#
+## For redhat chkconfig
+# vasd    Start/Stop the VAS daemon (vasd).
+#
+# chkconfig: 345 22 73
+# description: VAS daemon which manages cached VAS information
+# processname: vasd
+#
+## For LSB-compatible init
+### BEGIN INIT INFO
+# Provides:       vasd
+# Required-Start: $local_fs $remote_fs $syslog
+# Required-Stop: $local_fs $remote_fs $syslog 
+# Default-Start:  2 3 4 5
+# Default-Stop:   0 1 6
+# Description:    Start/Stop the VAS daemon (vasd)
+# X-Quest-Start-Priority: 22
+# X-Quest-Stop-Priority: 73
+### END INIT INFO
+
+NAME=vasd
+IPCFILE=/var/opt/quest/vas/vasd/.vasd40_ipc_sock
+
+unset GREP_OPTIONS
+
+# The full path of the daemon binary
+DAEMON=/opt/quest/sbin/.$NAME
+DAEMON_BC=/opt/quest/sbin/$NAME
+DAEMONWRAPPER=/opt/quest/sbin/$NAME
+
+## This is so we can unlink it since we drop privileges
+## and the binary can't unlink the pid file at the end
+## i.e. if it dies from an expired license
+PIDFILE=/var/opt/quest/vas/$NAME/.$NAME.pid
+SUSE=0
+
+# Change to root
+OLDDIR=`pwd`
+cd /
+
+# The command line options to pass to the daemon
+OPTIONS="-p $PIDFILE"
+
+# 0: Not running.
+# 1: Running normally
+# 2: Running, but no PID file.
+# 3: Running, but PID file doesn't match running processes.
+# If the PID file is found but no process, the file is removed and 0 is returned.
+DAEMON_RUNNING=0
+
+PROCESSES=
+
+# Have seen some setups where these are not in the path,
+# leading to killproc/startproc not working, as on Suse
+# I believe they are executables, not shell functions.
+PATH=$PATH:/sbin:/usr/sbin
+export PATH
+
+# Test if we can use the faster -o options the don't require uid->name translation.
+# Also track in what field the pid will be.
+ps -o pid,args>/dev/null 2>&1
+if [ $? -eq 0 ] ; then
+    PS_CMD="ps -e -o pid,args"
+    PID_PARSE=1
+else
+    ps -ex >/dev/null 2>&1
+    if [ $? -eq 0 ] ; then
+        PS_CMD="ps -ex"
+        PID_PARSE=1
+    else
+        PS_CMD="ps -ef"
+        PID_PARSE=2
+    fi
+fi
+
+check_daemon_running() {
+    DAEMON_RUNNING=0
+    FIND_DAEMON_REGEX="/opt/quest/sbin/[.]*$NAME"
+
+    if [ $PID_PARSE = 1 ] ; then
+        PROCESSES="`eval $PS_CMD | grep $FIND_DAEMON_REGEX | grep -v grep | awk '{print $1}'`"
+    else
+        PROCESSES="`eval $PS_CMD | grep $FIND_DAEMON_REGEX | grep -v grep | awk '{print $2}'`"
+    fi
+
+    if [ -f $PIDFILE ]; then
+        if [ ! -z "$PROCESSES" ] ; then
+            PARENT_PID=`cat $PIDFILE 2>/dev/null`
+            PPROCESS=`echo $PROCESSES | grep $PARENT_PID`
+            if [ $? -eq 0 ] ; then
+                DAEMON_RUNNING=1
+            else
+                DAEMON_RUNNING=3
+            fi
+        else
+            rm -f $PIDFILE
+        fi
+    else
+        if [ ! -z "$PROCESSES" ] ; then
+            DAEMON_RUNNING=2
+        fi
+    fi
+}
+
+# Kills process $1.
+# First a sigterm, then wait up to 10 seconds
+# before issuing a sig kill.
+kill_proc() {
+    if [ -z "$1" ] ; then
+        # Hmm... No pid, meaning no $PIDFILE. Use the list from check_daemon_running()
+        kill $PROCESSES 2>/dev/null
+    else
+        kill $1 2>/dev/null
+    fi
+    count=1
+
+    while [ $count -le 10 ] ; do
+        sleep 1
+        check_daemon_running
+        if [ $DAEMON_RUNNING -eq 0 ] ; then
+            break
+        fi
+        if [ $count -eq 1 ] ; then
+            # Maybe some processes aren't attached to the one with in the pid file.
+            # Kill everything.
+            kill $PROCESSES 2>/dev/null
+        fi
+        count=`expr $count + 1`
+    done
+    # Use value from last check
+    if [ $DAEMON_RUNNING -ne 0 ] ; then
+        # Since we are kill killing, kill everything from check_daemon_running()
+        kill -9 $PROCESSES 2>/dev/null
+    fi
+    rm -f $PIDFILE
+}
+
+
+# Source function library.
+if [ -f /etc/rc.d/init.d/functions ]; then
+    REDHAT=1
+    SUSE=0
+    . /etc/rc.d/init.d/functions
+else
+    if [ -f /etc/rc.status ] ; then
+        REDHAT=0
+        SUSE=1
+        . /etc/rc.status
+    else
+        REDHAT=0
+        SUSE=0
+    fi
+fi
+
+# make sure the binary exists
+if test ! -x $DAEMONWRAPPER; then
+  echo "$DAEMONWRAPPER could not be found"
+  exit 1
+fi
+
+check_root()
+{
+    if [ "`id | sed 's/uid=\([0-9]*\).*/\1/'`" -ne 0 ] ; then
+        echo "This option must be run as root."
+        exit
+    fi
+}
+
+
+# our return value
+RETVAL=0
+
+# process the command line
+case "$1" in
+  start)
+    echo -n "Starting $NAME: "
+    check_daemon_running
+
+    if [ $DAEMON_RUNNING -eq 0 ]; then
+        if [ $REDHAT -eq 1 ]; then
+            if [ -x /sbin/ssd ]; then
+                ssd -S -n $NAME -x $DAEMONWRAPPER -- $OPTIONS
+            else
+                daemon $DAEMONWRAPPER $OPTIONS
+            fi
+            # I guess Redhat wants us to create a lock file
+            touch /var/lock/subsys/$NAME
+            echo
+        else
+            if [ $SUSE -eq 1 ] ; then
+                # startproc needs the true name, so -e to erase any LD_LIBRARY_PATH being set.
+                startproc -e $DAEMON $OPTIONS
+                rc_status -v
+            else
+                # Non-suse/redhat, so use the generic functions.
+                if [ "t$START_REQUIRED_SERVICES" != "t" ] && [ $START_REQUIRED_SERVICES -eq 1 ]; then
+                    start_required_services
+                fi
+
+                $DAEMONWRAPPER $OPTIONS > /dev/null
+                RETVAL=$?
+                if [ $RETVAL -eq 0 ]; then
+                    echo "$NAME started"
+                    if [ "t$START_DEPENDENT_SERVICES" != "t" ] && [ $START_DEPENDENT_SERVICES  -eq 1 ] ; then
+                        start_dependent_services
+                    fi
+                else
+                    echo "$NAME failed to start"
+                fi
+            fi
+        fi
+        if [ -n "$IPCFILE" ] ; then 
+            loop_cnt=1
+            while [ ! -e "$IPCFILE" ]; do
+                sleep 1
+                loop_cnt=`expr $loop_cnt + 1`
+                if [ $loop_cnt -eq 10 ]; then
+                    break
+                fi
+            done
+        fi
+    else
+        echo -n "$NAME appears to be running already."
+        if [ $SUSE -eq 1 ]; then
+            rc_status -s
+        else
+            echo
+        fi
+    fi
+    ;;
+
+  stop)
+    echo -n "Stopping $NAME: "
+    check_daemon_running
+
+    if [ $DAEMON_RUNNING -ne 0 ]; then
+        if [ $REDHAT -eq 1 ] ; then
+            if [ -x /sbin/ssd ]; then
+                ssd -K -p $PIDFILE -n $NAME
+            else
+                killproc $DAEMON
+                RETVAL=$?
+                killproc $DAEMON_BC 2>&1 > /dev/null
+            fi
+            # I guess Redhat wants us to remove the lock file
+            rm -f /var/lock/subsys/$NAME
+            echo
+        else
+            if [ $SUSE -eq 1 ] ; then
+                # Because SUSE's killproc binary uses the inode/fullpath combo to
+                # determine the daemons existence, to stop the daemon on upgrade,
+                # pass in the pidfile and don't pass in the fullpath (to disable
+                # the inode checks)
+                if [ -f $PIDFILE ]; then
+                    killproc -p $PIDFILE $NAME
+                else
+                    killproc $DAEMON_BC 2>&1 > /dev/null
+                    killproc $DAEMON
+                fi
+                rc_status -v
+            else
+                # Non-suse/redhat, so use the generic functions.
+                kill_proc `cat $PIDFILE 2>/dev/null`
+                if [ "t$STOP_DEPENDENT_SERVICES" != "t" ] && [ $STOP_DEPENDENT_SERVICES -eq 1 ]; then
+                    stop_dependent_services
+                fi
+                echo "$NAME stopped"
+            fi
+        fi
+        # Since the Suse/Redhat process killers might not catch everything
+        # ( like vasd not responding becasue its deluser-check-script process
+        # is still running ) go ahead and make sure EVERYTHING is killed.       
+        kill_proc `cat $PIDFILE 2>/dev/null`
+        if [ -n "$IPCFILE" ] ; then 
+            loop_cnt=1
+            while [ -e ${IPCFILE} ]; do
+                sleep 1
+                loop_cnt=`expr $loop_cnt + 1`
+                if [ $loop_cnt -eq 10 ]; then
+                    break
+                fi
+            done
+        fi
+        if [ -n "$PIDFILE" ] ; then
+            loop_cnt=1
+            while [ -e ${PIDFILE} ]; do
+                sleep 1
+                loop_cnt=`expr $loop_cnt + 1`
+                if [ $loop_cnt -eq 10 ]; then
+                    break
+                fi
+            done
+        fi
+        rm  -f $PIDFILE
+    else
+        echo -n "$NAME does not appear to be running."
+        if [ $SUSE -eq 1 ]; then
+            rc_status -s
+        else
+            echo
+        fi
+    fi
+    ;;
+
+  restart)
+    cd "$OLDDIR"
+    $0 stop
+    sleep 1
+    $0 start
+    cd /
+    RETVAL=$?
+    ;;
+
+  status)
+    echo -n "Checking $NAME: "
+    if [ $REDHAT -eq 1 ]; then
+        status $DAEMON || status $DAEMON_BC
+    RETVAL=$?
+    else
+        if [ $SUSE -eq 1 ] ; then
+            if [ -f $PIDFILE ]; then
+                rc_status -v
+            else
+                rc_status -v
+            fi
+            RETVAL=$?
+        else
+            # Non-suse/redhat, so use the generic functions.
+            check_daemon_running
+            if [ $DAEMON_RUNNING -eq 1 ]; then
+                echo "$NAME is running"
+                RETVAL=0
+            else
+                if [ $DAEMON_RUNNING -eq 0 ] ; then
+                    echo "$NAME is not running"
+                else
+                    echo "$NAME is running without a pid file"
+                fi
+                RETVAL=1
+            fi
+        fi
+    fi
+    ;;
+
+  *)
+    echo "Usage: /etc/init.d/$NAME {start|stop|restart|status}"
+    exit 1
+
+esac
+
+exit $RETVAL

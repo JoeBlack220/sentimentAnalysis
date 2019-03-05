@@ -1,0 +1,6 @@
+# This file is pushed out via Puppet and won't keep updates.
+# Talk to the cse-unix team if you need to make changes to this file.
+
+auto enp0s25
+  iface enp0s25 inet dhcp
+

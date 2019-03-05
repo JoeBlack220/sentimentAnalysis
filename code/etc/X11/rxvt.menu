@@ -1,0 +1,214 @@
+#Automatically generated file. Do not edit (see /usr/doc/menu/html)
+
+See the rxvt(1) man page for details on using this file.
+
+[menu]
+/Debian/Applications
+/Debian/Applications/Accessibility
+{Xmag}	xmag&\r
+/Debian/Applications/Editors
+{Joe}	/usr/bin/joe\r
+{KBiBTeX}	/usr/bin/kbibtex&\r
+{Kile}	/usr/bin/kile&\r
+{LeafPad}	/usr/bin/leafpad&\r
+{scite}	/usr/bin/scite&\r
+{texmaker}	/usr/bin/texmaker&\r
+{Winefish}	/usr/bin/winefish&\r
+{Xedit}	xedit&\r
+{xournal}	/usr/bin/xournal&\r
+/Debian/Applications/Emulators
+{SPIM}	/usr/bin/spim\r
+{XSPIM}	/usr/bin/xspim&\r
+/Debian/Applications/File Management
+{Baobab}	/usr/bin/baobab&\r
+{Brasero}	/usr/bin/brasero&\r
+{Thunar}	/usr/bin/thunar&\r
+{Unison 2.48.3 (GTK)}	/usr/bin/unison-2.48.3-gtk&\r
+{Xarchiver}	/usr/bin/xarchiver&\r
+{Xfdesktop}	xfdesktop&\r
+/Debian/Applications/Graphics
+{dotty}	/usr/bin/dotty&\r
+{Inkscape}	/usr/bin/inkscape&\r
+{Ipe}	/usr/bin/ipe&\r
+{Kino}	/usr/bin/kino&\r
+{lefty}	/usr/bin/lefty&\r
+{The GIMP}	/usr/bin/gimp&\r
+{xcam}	/usr/bin/xcam&\r
+{xscanimage}	/usr/bin/xscanimage&\r
+{X Window Snapshot}	xwd | xwud&\r
+/Debian/Applications/Mobile Devices
+{JPilot}	/usr/bin/jpilot&\r
+/Debian/Applications/Network
+/Debian/Applications/Network/Communication
+{Citrix Receiver}	/opt/Citrix/ICAClient/selservice --icaroot /opt/Citrix/ICAClient&\r
+{HexChat}	/usr/bin/hexchat&\r
+{Irssi}	/usr/bin/irssi\r
+{Manhole Twisted Client}	/usr/bin/manhole&\r
+{Minicom}	/usr/bin/minicom\r
+{Minicom (X11)}	/usr/bin/xminicom&\r
+{Mutt}	/usr/bin/mutt\r
+{nn}	/usr/bin/nn\r
+{Pidgin}	/usr/bin/pidgin&\r
+{Remmina}	/usr/bin/remmina&\r
+{Slrn}	/usr/bin/slrn\r
+{s-nail}	/usr/bin/s-nail\r
+{Telnet}	/usr/bin/telnet.netkit\r
+{Twisted Application Generator}	/usr/bin/tkmktap&\r
+{Xbiff}	xbiff&\r
+{X-Chat GNOME}	/usr/bin/xchat-gnome&\r
+{xtightvncviewer}	/usr/bin/xtightvncviewer&\r
+/Debian/Applications/Network/File Transfer
+{gFTP}	/usr/bin/gftp-gtk&\r
+{ncftp}	/usr/bin/ncftp3\r
+{Transmission BitTorrent Client (GTK)}	/usr/bin/transmission-gtk&\r
+/Debian/Applications/Network/Monitoring
+{IPTraf}	/usr/bin/su-to-root -c /usr/sbin/iptraf\r
+/Debian/Applications/Network/Web Browsing
+{Google Chrome}	/opt/google/chrome/google-chrome&\r
+{Lynx}	lynx\r
+{w3m}	/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html\r
+/Debian/Applications/Office
+{AbiWord Word Processor}	/usr/bin/abiword&\r
+{LyX Document Processor}	lyx&\r
+{Pybliographic}	/usr/bin/pybliographic&\r
+/Debian/Applications/Programming
+{codeblocks}	/usr/bin/codeblocks&\r
+{Data Display Debugger}	/usr/bin/ddd&\r
+{Doxywizard}	/usr/bin/doxywizard&\r
+{Eclipse}	eclipse&\r
+{GDB}	/usr/bin/gdb\r
+{Guile 2.0}	/usr/bin/guile-2.0\r
+{Hugs}	/usr/bin/hugs\r
+{MySQL Workbench}	/usr/bin/mysql-workbench&\r
+{NetBeans IDE}	/usr/bin/netbeans&\r
+{Ocaml}	/usr/bin/ocaml\r
+{Qt Creator}	qtcreator&\r
+{regexxer}	/usr/bin/regexxer&\r
+{SWI-Prolog}	/usr/bin/swipl\r
+{SWI-Prolog (with XPCE)}	/usr/bin/xpce\r
+{Tclsh8.6}	/usr/bin/tclsh8.6\r
+{TkCon Tcl/Tk console}	/usr/bin/tkcon&\r
+{TkWish8.6}	x-terminal-emulator -e /usr/bin/wish8.6&\r
+/Debian/Applications/Project Management
+{Planner}	/usr/bin/planner&\r
+/Debian/Applications/Science
+/Debian/Applications/Science/Astronomy
+{xplanet}	/usr/bin/xplanet&\r
+/Debian/Applications/Science/Chemistry
+{jmol}	/usr/bin/jmol&\r
+/Debian/Applications/Science/Electronics
+{gtkterm}	/usr/bin/gtkterm&\r
+/Debian/Applications/Science/Engineering
+{Dia}	/usr/bin/dia&\r
+{Netgen}	/usr/bin/netgen&\r
+/Debian/Applications/Science/Mathematics
+{Bc}	/usr/bin/bc\r
+{Coq}	/usr/bin/coqtop\r
+{CoqIDE}	/usr/bin/coqide&\r
+{Dc}	/usr/bin/dc\r
+{galculator}	/usr/bin/galculator&\r
+{GAP}	/usr/bin/gap\r
+{Gnuplot}	/usr/bin/gnuplot5-qt\r
+{Grace}	/usr/bin/xmgrace&\r
+{Octave}	/usr/bin/octave\r
+{sympy (Python2)}	python2 /usr/bin/isympy\r
+{sympy (Python3)}	python3 /usr/bin/isympy\r
+{Units}	units\r
+{Xcalc}	xcalc&\r
+/Debian/Applications/Shells
+{Bash}	/bin/bash --login\r
+{Dash}	/bin/dash -i\r
+{fish}	/usr/bin/fish\r
+{Ksh}	/bin/ksh93\r
+{Sh}	/bin/sh --login\r
+{tcsh}	/bin/tcsh\r
+{Zsh}	/bin/zsh5\r
+/Debian/Applications/Sound
+{Alsamixergui}	/usr/bin/alsamixergui&\r
+{pavucontrol}	/usr/bin/pavucontrol&\r
+/Debian/Applications/System
+/Debian/Applications/System/Administration
+{About Myself}	/usr/bin/userinfo&\r
+{Debian Task selector}	su-to-root -c tasksel\r
+{Disk Management}	/usr/bin/usermount&\r
+{DSL/PPPoE configuration tool}	/usr/sbin/pppoeconf\r
+{Editres}	editres&\r
+{GNOME partition editor}	su-to-root -X -c /usr/sbin/gparted&\r
+{Network Admin}	/usr/bin/network-admin&\r
+{Password}	/usr/bin/userpasswd&\r
+{pppconfig}	su-to-root -p root -c /usr/sbin/pppconfig\r
+{Services Admin}	/usr/bin/services-admin&\r
+{Shares Admin}	/usr/bin/shares-admin&\r
+{TeXconfig}	/usr/bin/texconfig\r
+{Time Admin}	/usr/bin/time-admin&\r
+{User accounts Admin}	/usr/bin/users-admin&\r
+{wmcalclock}	/usr/bin/wmCalClock&\r
+{Xclipboard}	xclipboard&\r
+{Xfce Application Finder}	xfce4-appfinder&\r
+{Xfontsel}	xfontsel&\r
+{Xkill}	xkill&\r
+{Xrefresh}	xrefresh&\r
+/Debian/Applications/System/Hardware
+{Xvidtune}	xvidtune&\r
+/Debian/Applications/System/Language Environment
+{Input Method Configuration}	/usr/bin/im-config\r
+/Debian/Applications/System/Monitoring
+{Pstree}	/usr/bin/pstree.x11\r
+{Top}	/usr/bin/top\r
+{Xconsole}	xconsole -file /dev/xconsole&\r
+{Xev}	x-terminal-emulator -e xev&\r
+{Xload}	xload&\r
+/Debian/Applications/System/Package Management
+{Aptitude Package Manager (text)}	/usr/bin/aptitude-curses\r
+/Debian/Applications/Terminal Emulators
+{Aterm}	/usr/bin/aterm-xterm&\r
+{Eterm}	/usr/bin/Eterm&\r
+{LXTerminal}	/usr/bin/lxterminal&\r
+{Rxvt}	/usr/bin/rxvt-xterm&\r
+{Rxvt-Unicode}	rxvt-unicode&\r
+{XTerm}	xterm&\r
+{X-Terminal as root (GKsu)}	/usr/bin/gksu -u root /usr/bin/x-terminal-emulator&\r
+{XTerm (Unicode)}	uxterm&\r
+/Debian/Applications/Text
+{ClipIt}	/usr/bin/clipit&\r
+/Debian/Applications/Video
+{GNOME MPlayer}	gnome-mplayer&\r
+{xine Media Player}	/usr/bin/xine&\r
+/Debian/Applications/Viewers
+{GV}	/usr/bin/gv&\r
+{Shotwell}	/usr/bin/shotwell&\r
+{Wordview}	/usr/bin/wordview&\r
+{Xditview}	xditview&\r
+{XDvi}	/usr/bin/xdvi&\r
+{Xpdf}	/usr/bin/xpdf&\r
+/Debian/Applications/Web Development
+{Bluefish}	/usr/bin/bluefish&\r
+/Debian/Games
+/Debian/Games/Blocks
+{GTetrinet}	/usr/games/gtetrinet&\r
+/Debian/Games/Tools
+{Rclock}	/usr/bin/rclock&\r
+/Debian/Games/Toys
+{Oclock}	oclock&\r
+{Xclock (analog)}	xclock -analog&\r
+{Xclock (digital)}	xclock -digital -update 1&\r
+{Xeyes}	xeyes&\r
+{Xlogo}	xlogo&\r
+/Debian/Help
+{Info Browser}	pinfo\r
+{TeXdoctk}	/usr/bin/texdoctk&\r
+{Xman}	xman&\r
+/Debian/Screen
+/Debian/Screen/Locking
+{Lock Screen (XScreenSaver)}	/usr/bin/xscreensaver-command -lock&\r
+/Debian/Screen/Saving
+{Activate ScreenSaver (Next)}	/usr/bin/xscreensaver-command -next&\r
+{Activate ScreenSaver (Previous)}	/usr/bin/xscreensaver-command -prev&\r
+{Activate ScreenSaver (Random)}	/usr/bin/xscreensaver-command -activate&\r
+{Demo Screen Hacks}	/usr/bin/xscreensaver-command -demo&\r
+{Disable XScreenSaver}	/usr/bin/xscreensaver-command -exit&\r
+{Enable XScreenSaver}	/usr/bin/xscreensaver&\r
+{Reinitialize XScreenSaver}	/usr/bin/xscreensaver-command -restart&\r
+{ScreenSaver Preferences}	/usr/bin/xscreensaver-command -prefs&\r
+[show]
+[done]

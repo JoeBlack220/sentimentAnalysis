@@ -120,6 +120,7 @@ public class Map{
 	if (badWords.contains(word.toLowerCase())) negCount ++;
 	}
 	sentiValue = (posCount - negCount) / (double) (posCount + negCount);
+	System.out.println(taskUri.getPath() + " is finished!");
 	System.out.println("posCount = " + posCount);
 	System.out.println("negCount = " + negCount);
 	System.out.println("sentiment value = " + sentiValue);

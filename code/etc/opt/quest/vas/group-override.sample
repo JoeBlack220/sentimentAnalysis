@@ -1,0 +1,18 @@
+# Sample group-override file
+# This assumes that the host has been joined to the example.com domain.
+# To validate group-override file: vastool status
+
+# Adds the local system users bob and localuser to the dbadmins group on this
+# host.
+
+EXAMPLE\dbadmins:::localuser,bob
+
+# Change the Unix name of the Active Directory group to enggrp on the local
+# system.
+
+EXAMPLE\Engineering_Group:enggrp::
+
+# Add the Active Directory user tuser@example.com to the group testgrp on this
+# Unix host, at the same time overriding the gid of the group to 1500.
+
+EXAMPLE\testgrp::1500:tuser@example.com

@@ -1,0 +1,10 @@
+queue_directory = /var/spool/postfix
+command_directory = /usr/sbin
+mydomain = cs.umn.edu
+mail_owner = postfix
+myorigin = cs.umn.edu
+mydestination = 
+relayhost = [mail.cs.umn.edu]
+notify_classes = resource, software
+message_size_limit = 52428800
+inet_protocols = ipv4

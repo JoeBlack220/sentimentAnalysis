@@ -1,0 +1,7 @@
+/var/log/prune-kernels/prune-kernels.log {
+  rotate 30
+  daily
+  compress
+  missingok
+  notifempty
+}
