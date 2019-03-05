@@ -46,8 +46,7 @@ public class Node {
             args.processor(processor);  //Set handler
             args.transportFactory(factory);  //Set FramedTransport (for performance)
 
-            //Run server as a single thread
-            //  TServer server = new TSimpleServer(args);
+            //Run server as a  multithread
 	     TServer server = new TThreadPoolServer(new TThreadPoolServer.Args(serverTransport).processor(processor));
 	     System.out.println("A Server has started.");
 	     server.serve();

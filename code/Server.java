@@ -9,7 +9,6 @@ import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 
-// Generated code
 public class Server {
     public static AssignServiceHandler handler;
     public static AssignService.Processor processor;

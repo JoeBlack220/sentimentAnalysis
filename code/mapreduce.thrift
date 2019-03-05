@@ -14,5 +14,5 @@ service MapService {
 }
 
 service AssignService {
-	ClientResult assign(1: string folderAddress)
+	ClientResult assign(1: string folderAddress, 2: bool injectMode)
 }

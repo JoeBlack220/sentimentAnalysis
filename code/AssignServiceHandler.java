@@ -22,48 +22,70 @@ import java.util.concurrent.Executors;
 import java.util.Random;
 public class AssignServiceHandler implements AssignService.Iface
 {	
+	// Runnable class for threads to call mapping service
 	public class Task implements Runnable
-{
-        private String address;
-        public Task(String s) {
-                address = s;
-        }
-        public void run() {
-                callMap(address);
-        }
-}
+	{
+       		private String address;
+		private boolean injectMode;
+       		public Task(String s, boolean m) {
+               		address = s;
+			injectMode = m;
+        	}
+        	public void run() {
+                	callMap(address, injectMode);
+        	}
+	}
+	// PLEASE MODIFY HERE TO CHANGE NODE IP ADDRESSES TO YOURS
 	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
-//	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
+
+	// sotre final mapping results in this arraylist
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
+	// use vector as intermediate container because it's thread-safe
+	// data in vector will be added to the arraylist at the end
 	private Vector saveResult = new Vector(3,2);
+
 	@Override
-	public ClientResult assign(String folderAddress) throws TException {
+	public ClientResult assign(String folderAddress, boolean injectMode) throws TException {
+		// Start counting time
 		Instant start = Instant.now();
+		// empty vector
+		saveResult.clear();
 		ClientResult ret = new ClientResult();
 		try{
+			// read the input_dir
 			File file = new File(folderAddress);
+			// save every task's name to a fileList
 			String[] fileList = file.list();
+			// create tasks list
 			ArrayList<Task> tasks = new ArrayList<>();
 			for(int i = 0; i < fileList.length; i++){
+				// make complete file address
 				String fileAddress = folderAddress + "/" + fileList[i];
-				Task tmp = new Task(fileAddress);
+				// create a new task
+				Task tmp = new Task(fileAddress, injectMode);
 				tasks.add(tmp);
 			}
+			// define the size of the threadpool in the server
 			int threadNum = 30;
+			// define thread pool
 			ExecutorService pool = Executors.newFixedThreadPool(threadNum);
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));
 			}
+			// wait for all the files to be finished
 			while(saveResult.size() != fileList.length){
 				try {
+					// wait 0.5 seconds then count the finished task number
       					Thread.sleep(500);
 					System.out.println("Now we have finished " + saveResult.size() + " tasks."); 
 				}catch (InterruptedException e) {
 				}
 			}
+			// finished mapping, calling the first node to do the sorting job
 			System.out.println("Start sorting.");
 			ret.fileOrder = callSort() ;
 			Instant end = Instant.now();
+			// record the time a job takes
 			int time = (int) Duration.between(start, end).getSeconds();
 			ret.time = time;
 
@@ -71,17 +93,22 @@ public class AssignServiceHandler implements AssignService.Iface
 		} catch (Exception e) {
 			System.err.println("Directory '" + folderAddress + "' not found.");
 		}
+		// return result
 		return ret;		
 			
 	}
 	
-	private void callMap(String address){
+	private void callMap(String address, boolean mode){
+		// this flag tests whether a node accept a task
 		boolean flag = false;
+		// when start calling map, first assign the task to the first node, if it rejects, then assign it to the next node
 		int acceptNodeId = 0;
-		boolean injectMode = false;
+		// this flag tests whether we should do injection
+		boolean injectMode = mode;
+		// when we use injection, assign a task to a random node, if it says delay, then delay few seconds then send it;
 		if (injectMode) {
 			Random rand = new Random();
-			int tmp = rand.nextInt(15);
+			int tmp = rand.nextInt(4);
 			acceptNodeId = tmp % 4;
 		}
 		while(!flag){
@@ -96,20 +123,25 @@ public class AssignServiceHandler implements AssignService.Iface
 				//What you need to do
 				flag = client.accept(acceptNodeId);
 				if(flag) {
+					// print whether a node accepts
 					System.out.println("Node " + acceptNodeId + "accept task " + address + "!");
 					saveResult.addElement(client.mapping(address));
-					System.out.println("Task '"+address+"' finished");
+					System.out.println("Task '"+address+"' finished.");
 				} else if (!flag && injectMode) {
-					System.out.println("In Inject Mode");
-					while(!flag) {
-						try{		
-    							Thread.sleep(3000);
-						}catch(InterruptedException ex){
-   							 Thread.currentThread().interrupt();
-						}
-						flag = client.accept(acceptNodeId);
+					System.out.println("In Inject Mode.");
+					try{	
+						// if a node doesn't accept and it is in injection mode, delay few seconds	
+    						Thread.sleep(3000);
+					}catch(InterruptedException ex){
+   						Thread.currentThread().interrupt();
 					}
+					System.out.println("Node " + acceptNodeId + " accept the task after delay in injection mode.");
+					saveResult.addElement(client.mapping(address));
+					System.out.println("Task finished.");
+					// set the flag to true to ensure the loop goes on
+					flag = true;
 				} else{
+					// if it's in normal mode and doesn't accept, assign the task to the next node
 					acceptNodeId = (acceptNodeId + 1) % 4;
 				}
 			} catch(TException e) {
