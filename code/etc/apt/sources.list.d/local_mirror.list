@@ -1,4 +1,0 @@
-# This file is managed by Puppet. DO NOT EDIT.
-# CSE local mirror
-deb http://local-mirror.cs.umn.edu/umncsit xenial main restricted
-deb-src http://local-mirror.cs.umn.edu/umncsit xenial main restricted

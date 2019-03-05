@@ -1,4 +1,0 @@
-# This file is managed by Puppet. DO NOT EDIT.
-# CSE local mirror (multiverse updates)
-deb http://local-mirror.cs.umn.edu/umncsit xenial-updates multiverse
-deb-src http://local-mirror.cs.umn.edu/umncsit xenial-updates multiverse

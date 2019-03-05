@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# update system-wide tags tables
-
-test -x /usr/sbin/update-otags || exit 0
-/usr/sbin/update-otags 2>/dev/null

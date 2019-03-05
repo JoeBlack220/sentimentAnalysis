@@ -1,4 +1,0 @@
-# Tune for home directories in CS
-
-@{HOMEDIRS}+=/home/*/
-

@@ -1,2 +1,0 @@
-# Run at 12:01am on Tuesdays for unattended upgrades
-01 00 * * 2	root	touch --date='12 days ago' /var/lib/apt/periodic/upgrade-stamp

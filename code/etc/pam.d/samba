@@ -1,6 +1,0 @@
-@include	common-auth
-@include	common-account
-session	required	pam_vas3.so
-session	requisite	pam_vas3.so echo_return
-@include	common-session-noninteractive
-@include	common-password

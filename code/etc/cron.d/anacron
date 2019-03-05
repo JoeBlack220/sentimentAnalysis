@@ -1,8 +1,0 @@
-# /etc/cron.d/anacron: crontab entries for the anacron package
-
-SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
-#30 7    * * *   root	test -x /etc/init.d/anacron && /usr/sbin/invoke-rc.d anacron start >/dev/null
-# Run at 4:30am so unattended upgrades doesn't start so late. Updated for 16.04 -LdT, 2016-06-27
-30 4    * * *   root	test -x /etc/init.d/anacron && /usr/sbin/invoke-rc.d anacron start >/dev/null

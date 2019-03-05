@@ -1,4 +1,0 @@
-# This file is managed by Puppet. DO NOT EDIT.
-# Node 8 Repo
-deb https://deb.nodesource.com/node_8.x xenial main
-deb-src https://deb.nodesource.com/node_8.x xenial main

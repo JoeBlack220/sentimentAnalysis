@@ -1,7 +1,0 @@
-# Site-specific additions and overrides for usr.sbin.cupsd.
-# For more details, please see /etc/apparmor.d/local/README.
-
-# Enable Quest authentication -LdT, 2014-06-09
-/var/opt/quest/vas/vasd/* rw,
-/etc/opt/quest/vas/* r,
-signal (send) peer=unconfined,
