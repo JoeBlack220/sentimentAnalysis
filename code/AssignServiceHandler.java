@@ -13,6 +13,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Vector;
 import java.time.Instant;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -31,9 +32,10 @@ public class AssignServiceHandler implements AssignService.Iface
                 callMap(address);
         }
 }
-//	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
-	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
+	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
+//	private String[] nodeIp = {"localhost","localhost","localhost","localhost"};
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
+	private Vector saveResult = new Vector(3,2);
 	@Override
 	public ClientResult assign(String folderAddress) throws TException {
 		Instant start = Instant.now();
@@ -52,10 +54,10 @@ public class AssignServiceHandler implements AssignService.Iface
 			for (int i = 0; i < tasks.size(); i ++) {
 				pool.execute(tasks.get(i));
 			}
-			while(unsortedArray.size() != fileList.length){
+			while(saveResult.size() != fileList.length){
 				try {
       					Thread.sleep(500);
-					System.out.println("Now we have finished " + unsortedArray.size() + " tasks."); 
+					System.out.println("Now we have finished " + saveResult.size() + " tasks."); 
 				}catch (InterruptedException e) {
 				}
 			}
@@ -76,7 +78,7 @@ public class AssignServiceHandler implements AssignService.Iface
 	private void callMap(String address){
 		boolean flag = false;
 		int acceptNodeId = 0;
-		boolean injectMode = true;
+		boolean injectMode = false;
 		if (injectMode) {
 			Random rand = new Random();
 			int tmp = rand.nextInt(15);
@@ -95,7 +97,7 @@ public class AssignServiceHandler implements AssignService.Iface
 				flag = client.accept(acceptNodeId);
 				if(flag) {
 					System.out.println("Node " + acceptNodeId + "accept task " + address + "!");
-					unsortedArray.add(client.mapping(address));
+					saveResult.addElement(client.mapping(address));
 					System.out.println("Task '"+address+"' finished");
 				} else if (!flag && injectMode) {
 					System.out.println("In Inject Mode");
@@ -125,6 +127,7 @@ public class AssignServiceHandler implements AssignService.Iface
                		 //Try to connect
                 	transport.open();
                		 //What you need to do
+			unsortedArray.addAll(saveResult);
                 	return client.sort(unsortedArray);
        		 } catch(TException e) {
            		 return "";
