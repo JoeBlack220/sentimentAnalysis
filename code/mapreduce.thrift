@@ -10,7 +10,7 @@ struct ClientResult {
 service MapService {
 	bool accept(1: i32 nodeID),
 	MapResult mapping(1:string fileUri),
-	string sort(1: list<MapResult> scores)
+	string sort(1: list<MapResult> scores, 2:string inputDir)
 }
 
 service AssignService {

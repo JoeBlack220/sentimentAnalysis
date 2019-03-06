@@ -59,11 +59,8 @@ public class Map{
 				System.err.println("Caught exception parsing cached file '"
 				+ goodWordsUri + "'");
 		}
-		
-
 	}
-
-	// Create the bad words set
+ //Create the bad words set
 	private void parseNegative() {
 		try {
 			BufferedReader fis = new BufferedReader(new FileReader(

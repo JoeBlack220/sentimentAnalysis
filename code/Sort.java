@@ -33,8 +33,9 @@ public class Sort{
 	});
 
 	// Constructor
-	public Sort(ArrayList<MapResult> unsorted){
-	sort(unsorted);
+	public Sort(ArrayList<MapResult> unsorted, String directDir){
+		this.directName = directDir; 
+		sort(unsorted);
 	}
 	//return the fileorder and score
 	public String getResult(){
@@ -118,8 +119,8 @@ public class Sort{
 	test.add(p2);
 	test.add(p3);
 	test.add(p4);
-	Sort S1 = new Sort(test);
-	S1.writeOutput(S1.outputDir+"/output.txt");
+	//Sort S1 = new Sort(test);
+	//S1.writeOutput(S1.outputDir+"/output.txt");
 
 
 	}

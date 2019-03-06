@@ -38,15 +38,15 @@ public class AssignServiceHandler implements AssignService.Iface
 	}
 	// PLEASE MODIFY HERE TO CHANGE NODE IP ADDRESSES TO YOURS
 	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
-
 	// sotre final mapping results in this arraylist
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	// use vector as intermediate container because it's thread-safe
 	// data in vector will be added to the arraylist at the end
 	private Vector saveResult = new Vector(3,2);
-
+	private String folderAddress = null;
 	@Override
 	public ClientResult assign(String folderAddress, int mode) throws TException {
+		this.folderAddress = folderAddress;
 		// Start counting time
 		Instant start = Instant.now();
 		// empty vector
@@ -163,10 +163,10 @@ public class AssignServiceHandler implements AssignService.Iface
                		 TProtocol protocol = new TBinaryProtocol(transport);
                		 MapService.Client client = new MapService.Client(protocol);
                		 //Try to connect
-                	transport.open();
+			transport.open();
                		 //What you need to do
 			unsortedArray.addAll(saveResult);
-                	return client.sort(unsortedArray);
+                	return client.sort(unsortedArray,folderAddress);
        		 } catch(TException e) {
            		 return "";
        		 }

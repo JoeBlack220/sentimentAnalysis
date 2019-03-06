@@ -15,20 +15,20 @@ public class Node {
     public static MapService.Processor processor;
 
     public static void main(String [] args) {
-        try {
-            handler = new MapServiceHandler();
-            processor = new MapService.Processor(handler);
+	try{
+		handler = new MapServiceHandler();
+		processor = new MapService.Processor(handler);
 
-            Runnable simple = new Runnable() {
-                public void run() {
-                    simple(processor);
-                }
-            };
+		Runnable simple = new Runnable() {
+		public void run() {
+		simple(processor);
+		}
+	};
 
-            new Thread(simple).start();
-        } catch (Exception x) {
-            x.printStackTrace();
-        }
+		new Thread(simple).start();
+	} catch (Exception x) {
+	x.printStackTrace();
+	}
     }
 
     public static void simple(MapService.Processor processor) {
