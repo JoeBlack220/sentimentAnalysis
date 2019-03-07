@@ -8,7 +8,9 @@ import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
-
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
 public class Server {
     public static AssignServiceHandler handler;
     public static AssignService.Processor processor;
@@ -32,8 +34,16 @@ public class Server {
 
     public static void simple(AssignService.Processor processor) {
         try {
+            BufferedReader fis = null;
+            int serverPort = 9998;
+            try {
+                    fis = new BufferedReader(new FileReader(new File("./configure_serverport.txt")));
+                    serverPort = Integer.parseInt(fis.readLine());
+            } catch(Exception e) {
+                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+            }
             //Create Thrift server socket
-            TServerTransport serverTransport = new TServerSocket(9998);
+            TServerTransport serverTransport = new TServerSocket(serverPort);
             TTransportFactory factory = new TFramedTransport.Factory();
 
             //Create service request handler

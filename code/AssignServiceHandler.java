@@ -6,11 +6,7 @@ import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
-import java.io.File;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Vector;
@@ -22,7 +18,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;	
 import java.util.Random;
 public class AssignServiceHandler implements AssignService.Iface
-{	
+{
+	static private int portnum;
+	static public void setPortNum(int num) {
+		portnum = num;
+	}	
 	// Runnable class for threads to call mapping service
 	public class Task implements Runnable
 	{
@@ -37,7 +37,7 @@ public class AssignServiceHandler implements AssignService.Iface
         	}
 	}
 	// PLEASE MODIFY HERE TO CHANGE NODE IP ADDRESSES TO YOURS
-	private String[] nodeIp = {"128.101.35.181","128.101.35.195","128.101.35.178","128.101.35.163"};
+	private ArrayList<String> nodeIp = new ArrayList<String>();
 	// sotre final mapping results in this arraylist
 	private ArrayList<MapResult> unsortedArray = new ArrayList<MapResult>();
 	// use vector as intermediate container because it's thread-safe
@@ -53,6 +53,13 @@ public class AssignServiceHandler implements AssignService.Iface
 		saveResult.clear();
 		ClientResult ret = new ClientResult();
 		try{
+			// read ip configuration file
+			File ip = new File ("./configure_ip.txt");
+			BufferedReader fis = new BufferedReader(new FileReader(ip));
+			String curIP = null;
+			while((curIP = fis.readLine())!=null){
+				nodeIp.add(curIP);
+			}
 			// read the input_dir
 			File file = new File(folderAddress);
 			// save every task's name to a fileList
@@ -74,14 +81,24 @@ public class AssignServiceHandler implements AssignService.Iface
 				pool.execute(tasks.get(i));
 			}
 			// wait for all the files to be finished
-			while(saveResult.size() != fileList.length){
-				try {
-					// wait 0.5 seconds then count the finished task number
-      					Thread.sleep(500);
-					System.out.println("Now we have finished " + saveResult.size() + " tasks.");
-					System.out.println("Currently " +((ThreadPoolExecutor)pool).getActiveCount()+ " tasks are running."); 
-				}catch (InterruptedException e) {
+			try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+			new FileOutputStream("filename.txt"), "utf-8"))) {
+				while(saveResult.size() != fileList.length){
+					try {
+						// wait 0.5 seconds then count the finished task number
+      						Thread.sleep(500);
+						String log1 = "Now we have finished " + saveResult.size() + " tasks.\n";
+						String log2 = "Currently " +((ThreadPoolExecutor)pool).getActiveCount()+ " tasks are running.\n"; 
+						writer.write(log1);
+						writer.write(log2);
+						System.out.print(log1);
+						System.out.print(log2);
+					}catch (Exception e) {
+						System.err.println("Exited by accident.");
+					}
 				}
+			} catch (Exception e){
+				System.err.println("Exception happened when writing logs.");
 			}
 			// finished mapping, calling the first node to do the sorting job
 			System.out.println("Start assign sorting task to the node 0.");
@@ -107,13 +124,14 @@ public class AssignServiceHandler implements AssignService.Iface
 		int acceptNodeId = 0;
 		// this flag indicates which mode we are using 0-load balancing 1-random mode 2-inject mode
 		// when we use injection or random mode, assign a task to a random node
-		if (mode == 1 || mode == 2) {
+		if (mode == 1) {
 			Random rand = new Random();
-			acceptNodeId = rand.nextInt(4);
+			acceptNodeId = rand.nextInt(nodeIp.size());
 		}
 		while(!flag){
-		        try {		
-				TTransport  transport = new TSocket(nodeIp[acceptNodeId], 9996);
+		        try {	
+				System.out.println(""+portnum+nodeIp.get(acceptNodeId));	
+				TTransport  transport = new TSocket(nodeIp.get(acceptNodeId), portnum);
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
@@ -122,33 +140,18 @@ public class AssignServiceHandler implements AssignService.Iface
 
 				// What you need to do
 				// if we are in random mode, we don't have to call accept function, just assgin the task to a random node
-				if(mode == 1) flag = true;
-				else flag = client.accept(acceptNodeId);
+				if(mode == 1) flag = client.accept(acceptNodeId, mode);
+				else flag = client.accept(acceptNodeId, mode);
 				if(flag) {
 					// print whether a node accepts
 					if(mode == 0) System.out.println("In load balancing load.");
 					else if(mode == 1) System.out.println("In random mode.");
-					else System.out.println("In inject mode");
 					System.out.println("Node " + acceptNodeId + " accept task " + address + "!");
 					saveResult.addElement(client.mapping(address));
 					System.out.println("Task '"+address+"' finished by node " + acceptNodeId +".");
-				// in inject mode, the reject just means some delay, the assigned node still have to do the computing
-				} else if (!flag && mode==2) {
-					System.out.println("In Inject Mode.");
-					try{	
-						// if a node doesn't accept and it is in injection mode, delay few seconds	
-    						Thread.sleep(3000);
-					}catch(InterruptedException ex){
-   						Thread.currentThread().interrupt();
-					}
-					System.out.println("Node " + acceptNodeId + " accept the task after delay in injection mode.");
-					saveResult.addElement(client.mapping(address));
-					System.out.println("Task '" + address + "' is finished by node " + acceptNodeId +".");
-					// set the flag to true to ensure the loop goes on
-					flag = true;
 				} else{
 					// if it's in normal mode and doesn't accept, assign the task to the next node
-					acceptNodeId = (acceptNodeId + 1) % 4;
+					acceptNodeId = (acceptNodeId + 1) % nodeIp.size();
 				}
 			} catch(TException e) {
 
@@ -159,7 +162,7 @@ public class AssignServiceHandler implements AssignService.Iface
 
 	private String callSort(){
 		try {
-           		 TTransport  transport = new TSocket(nodeIp[0], 9996);
+           		 TTransport  transport = new TSocket(nodeIp.get(0), portnum);
                		 TProtocol protocol = new TBinaryProtocol(transport);
                		 MapService.Client client = new MapService.Client(protocol);
                		 //Try to connect

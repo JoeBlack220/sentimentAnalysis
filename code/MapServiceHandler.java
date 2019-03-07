@@ -8,18 +8,23 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 public class MapServiceHandler implements MapService.Iface
 {      
-	private String posAddress = "../data/positive.txt";
-	private String negAddress = "../data/negative.txt";
-	private String outDir = "../data/intermediate_dir";
+	static private String posAddress;
+	static private String negAddress;
+	static private String outDir;
 	private Random rand = new Random();
 	// use nodeMap to store the load probabilities of each node
-	private HashMap<Integer, Double> nodeMap = new HashMap<Integer,Double>() {{
-        	put(0, 0.8);
-        	put(1, 0.8);
-		put(2, 0.8);
-		put(3, 0.8);
-    	}};
-	
+	static private HashMap<Integer, Double> nodeMap;
+	static public void setPosNeg(String pos, String neg) {
+		posAddress = pos;
+		negAddress = neg;
+	}
+	static public void setOut(String out) {
+		outDir = out;
+	}
+	static public void setLP(HashMap<Integer, Double> lps) {
+		nodeMap = lps;
+	}
+			
 	@Override
 	public String sort(List<MapResult> unsorted, String inputDir) throws TException{
 		// sort function is to sort the arraylist of MapResult from the server
@@ -33,25 +38,38 @@ public class MapServiceHandler implements MapService.Iface
 	}
 	
 	@Override
-        public boolean accept(int nodeID) throws TException {
+        public boolean accept(int nodeID, int mode) throws TException {
 		// accept function is to tell server whether this node is willing to acept a new task
 		// we generate a random number tmp, if it's larger than the load probability of this node(in percentage), return true
 		// otherwise return false
-		BufferedReader fis = null;
-		try {
-			fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
-			for (int i = 0; i < 4; i++){
-				nodeMap.put(i,Double.valueOf(fis.readLine()));
-			}
-		} catch(Exception e) {
-			System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
-		}
+		// mode 1 is random, mode 2 is load balancing
+//		BufferedReader fis = null;
+//		try {
+//			fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
+//			for (int i = 0; i < 4; i++){
+//				nodeMap.put(i,Double.valueOf(fis.readLine()));
+//			}
+//		} catch(Exception e) {
+//			System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+//		}
 		int tmp = rand.nextInt(100);
-		if (tmp > nodeMap.get(nodeID) * 100) {
-			System.out.println("I accept the task.");
-			return true;
+		if (tmp > nodeMap.get(nodeID) * 100 || mode == 1) {
+			tmp = rand.nextInt(100);
+			if (tmp > nodeMap.get(nodeID) * 100) {
+				System.out.println("I accept the task.");
+				return true;
+			} else {
+				System.out.println("I delay the task");
+				try{
+                               	        // if a node doesn't accept and it is in injection mode, delay few seconds
+                                        Thread.sleep(3000);
+                                    }catch(InterruptedException ex){
+                                           Thread.currentThread().interrupt();
+                                    }
+				return true;
+			}				
 		} else {
-			System.out.println("I reject/delay the task.");
+			System.out.println("I reject the task.");
 			return false;
 		}
 	}

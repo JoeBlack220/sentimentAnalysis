@@ -7,11 +7,44 @@ import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.util.HashMap;
 public class Client {
     public static void main(String [] args) {
 	 try {
+		BufferedReader fis = null;
+		int serverPort = 9998;
+                try {
+                        fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
+                        HashMap<Integer, Double> nodeMap = new HashMap<>();
+                        double lp;
+                        String tmp;
+                        int i = 0;
+                        while ((tmp = fis.readLine()) != null){
+                                nodeMap.put(i, Double.valueOf(tmp));
+                                i ++;
+                        }
+                        MapServiceHandler.setLP(nodeMap);
+                        fis = new BufferedReader(new FileReader(new File("./configure_negpos.txt")));
+                        String pos = fis.readLine();
+                        String neg = fis.readLine();
+                        MapServiceHandler.setPosNeg(pos, neg);
+                        fis = new BufferedReader(new FileReader(new File("./configure_output.txt")));
+                        String output = fis.readLine();
+                        MapServiceHandler.setOut(output);
+                } catch(Exception e) {
+                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+                }
+                try {
+                        fis = new BufferedReader(new FileReader(new File("./configure_serverport.txt")));
+                        serverPort = Integer.parseInt(fis.readLine());
+
+                } catch(Exception e) {
+                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+                }
 		// To run server and client in different machine, please modify the locahost to IP address of the server machine
-		TTransport  transport = new TSocket("localhost", 9998);
+		TTransport  transport = new TSocket("localhost", serverPort);
 		TProtocol protocol = new TBinaryProtocol(transport);
 		AssignService.Client client = new AssignService.Client(protocol);
 		// default input dir
@@ -27,8 +60,6 @@ public class Client {
 				mode = 0;
 			} else if(args[0].equals("random")){
 				mode = 1;
-			} else if(args[0].equals("inject")){
-				mode = 2;	
 			}
 		}
 		// accept parameters as the input dir

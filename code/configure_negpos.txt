@@ -1,0 +1,2 @@
+../data/positive.txt
+../data/negative.txt

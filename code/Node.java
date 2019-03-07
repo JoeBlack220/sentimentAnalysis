@@ -8,7 +8,10 @@ import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
-
+import java.util.HashMap;
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
 // Generated code
 public class Node {
     public static MapServiceHandler handler;
@@ -33,8 +36,17 @@ public class Node {
 
     public static void simple(MapService.Processor processor) {
         try {
+            BufferedReader fis = null;
+            int nodePort = 9996;
+            try {
+                    fis = new BufferedReader(new FileReader(new File("./configure_nodeport.txt")));
+                    nodePort = Integer.parseInt(fis.readLine());
+                    AssignServiceHandler.setPortNum(nodePort);
+            } catch(Exception e) {
+                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+            }
             //Create Thrift server socket
-            TServerTransport serverTransport = new TServerSocket(9996);
+            TServerTransport serverTransport = new TServerSocket(nodePort);
             TTransportFactory factory = new TFramedTransport.Factory();
 
             //Create service request handler
