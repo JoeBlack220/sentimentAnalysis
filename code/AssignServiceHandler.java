@@ -19,10 +19,7 @@ import java.util.concurrent.Executors;
 import java.util.Random;
 public class AssignServiceHandler implements AssignService.Iface
 {
-	static private int portnum;
-	static public void setPortNum(int num) {
-		portnum = num;
-	}	
+	private int portnum;	
 	// Runnable class for threads to call mapping service
 	public class Task implements Runnable
 	{
@@ -49,6 +46,12 @@ public class AssignServiceHandler implements AssignService.Iface
 		this.folderAddress = folderAddress;
 		// Start counting time
 		Instant start = Instant.now();
+		try {
+			BufferedReader fis1 = new BufferedReader(new FileReader(new File("./configure_nodeport.txt")));
+			portnum = Integer.valueOf(fis1.readLine());
+		} catch(Exception e){
+			System.err.println("Something wrong with the port configuration file.");
+		}
 		// empty vector
 		saveResult.clear();
 		ClientResult ret = new ClientResult();
@@ -129,9 +132,8 @@ public class AssignServiceHandler implements AssignService.Iface
 			acceptNodeId = rand.nextInt(nodeIp.size());
 		}
 		while(!flag){
-		        try {	
-				System.out.println(""+portnum+nodeIp.get(acceptNodeId));	
-				TTransport  transport = new TSocket(nodeIp.get(acceptNodeId), portnum);
+		        try {	//				System.out.println(""+portnum+nodeIp.get(acceptNodeId));	
+				TTransport  transport = new TSocket("localhost", 9903);
 				TProtocol protocol = new TBinaryProtocol(transport);
 				MapService.Client client = new MapService.Client(protocol);
 
@@ -140,8 +142,7 @@ public class AssignServiceHandler implements AssignService.Iface
 
 				// What you need to do
 				// if we are in random mode, we don't have to call accept function, just assgin the task to a random node
-				if(mode == 1) flag = client.accept(acceptNodeId, mode);
-				else flag = client.accept(acceptNodeId, mode);
+				flag = client.accept(acceptNodeId, mode);
 				if(flag) {
 					// print whether a node accepts
 					if(mode == 0) System.out.println("In load balancing load.");

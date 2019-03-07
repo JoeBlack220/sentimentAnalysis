@@ -40,7 +40,7 @@ public class Server {
                     fis = new BufferedReader(new FileReader(new File("./configure_serverport.txt")));
                     serverPort = Integer.parseInt(fis.readLine());
             } catch(Exception e) {
-                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+                        System.err.println("Something wrong with the server port configuration");
             }
             //Create Thrift server socket
             TServerTransport serverTransport = new TServerSocket(serverPort);

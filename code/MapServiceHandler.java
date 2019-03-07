@@ -8,25 +8,23 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 public class MapServiceHandler implements MapService.Iface
 {      
-	static private String posAddress;
-	static private String negAddress;
-	static private String outDir;
+	private String posAddress = "../data/positve.txt";
+	private String negAddress = "../data/negative.txt";
+	private String outDir = "../data/output_dir";
 	private Random rand = new Random();
 	// use nodeMap to store the load probabilities of each node
-	static private HashMap<Integer, Double> nodeMap;
-	static public void setPosNeg(String pos, String neg) {
-		posAddress = pos;
-		negAddress = neg;
-	}
-	static public void setOut(String out) {
-		outDir = out;
-	}
-	static public void setLP(HashMap<Integer, Double> lps) {
-		nodeMap = lps;
-	}
+	private HashMap<Integer, Double> nodeMap;
 			
 	@Override
 	public String sort(List<MapResult> unsorted, String inputDir) throws TException{
+		BufferedReader fis = null;
+		try {
+			fis = new BufferedReader(new FileReader(new File("./configure_output.txt")));
+                        outDir = fis.readLine();
+
+		} catch(Exception e) {
+			System.out.println("something wrong in sort read output configuration file");
+		}
 		// sort function is to sort the arraylist of MapResult from the server
 		// MapResult are {filename, score}
 		ArrayList<MapResult> temp = new ArrayList<>(unsorted.size());
@@ -43,16 +41,20 @@ public class MapServiceHandler implements MapService.Iface
 		// we generate a random number tmp, if it's larger than the load probability of this node(in percentage), return true
 		// otherwise return false
 		// mode 1 is random, mode 2 is load balancing
-//		BufferedReader fis = null;
+		BufferedReader fis = null;
 //		try {
 //			fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
 //			for (int i = 0; i < 4; i++){
 //				nodeMap.put(i,Double.valueOf(fis.readLine()));
 //			}
 //		} catch(Exception e) {
-//			System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+//			System.err.println("Something wrong with the configuration file, using the default probability .");
+			for (int i = 0; i < 4; i++){
+				nodeMap.put(i,0.8);	
+		}
 //		}
 		int tmp = rand.nextInt(100);
+		System.out.println("generated a random number");
 		if (tmp > nodeMap.get(nodeID) * 100 || mode == 1) {
 			tmp = rand.nextInt(100);
 			if (tmp > nodeMap.get(nodeID) * 100) {
@@ -76,6 +78,25 @@ public class MapServiceHandler implements MapService.Iface
 
         @Override
         public MapResult mapping(String fileUri) throws TException {
+		BufferedReader fis = null;
+		try {
+                          fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
+                          double lp;
+                          String tmp;
+                          int i = 0;
+                          while ((tmp = fis.readLine()) != null){
+                                  nodeMap.put(i, Double.valueOf(tmp));
+                                  i ++;
+                          }
+                          fis = new BufferedReader(new FileReader(new File("./configure_negpos.txt")));
+                          posAddress = fis.readLine();
+                          negAddress = fis.readLine();
+                          fis = new BufferedReader(new FileReader(new File("./configure_output.txt")));
+                          outDir = fis.readLine();
+                  } catch(Exception e) {
+                          System.err.println("Something wrong with the configuration file, using the default one.");
+                 }
+
 		// mapping function is to compute the score of file whose address is this  fileUri
 		MapResult res = null;		
 		System.out.println("Start mapping " + fileUri + ".\n");

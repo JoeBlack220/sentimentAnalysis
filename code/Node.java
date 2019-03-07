@@ -41,9 +41,9 @@ public class Node {
             try {
                     fis = new BufferedReader(new FileReader(new File("./configure_nodeport.txt")));
                     nodePort = Integer.parseInt(fis.readLine());
-                    AssignServiceHandler.setPortNum(nodePort);
+			System.out.println("portnumber is "+nodePort);
             } catch(Exception e) {
-                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
+                        System.err.println("Something wrong with the configuration file of ndoeport");
             }
             //Create Thrift server socket
             TServerTransport serverTransport = new TServerSocket(nodePort);

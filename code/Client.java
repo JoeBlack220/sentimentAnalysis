@@ -16,27 +16,6 @@ public class Client {
 		BufferedReader fis = null;
 		int serverPort = 9998;
                 try {
-                        fis = new BufferedReader(new FileReader(new File("./configure_probability.txt")));
-                        HashMap<Integer, Double> nodeMap = new HashMap<>();
-                        double lp;
-                        String tmp;
-                        int i = 0;
-                        while ((tmp = fis.readLine()) != null){
-                                nodeMap.put(i, Double.valueOf(tmp));
-                                i ++;
-                        }
-                        MapServiceHandler.setLP(nodeMap);
-                        fis = new BufferedReader(new FileReader(new File("./configure_negpos.txt")));
-                        String pos = fis.readLine();
-                        String neg = fis.readLine();
-                        MapServiceHandler.setPosNeg(pos, neg);
-                        fis = new BufferedReader(new FileReader(new File("./configure_output.txt")));
-                        String output = fis.readLine();
-                        MapServiceHandler.setOut(output);
-                } catch(Exception e) {
-                        System.err.println("Something wrong with the configuration file, using the default probability (all 0.8).");
-                }
-                try {
                         fis = new BufferedReader(new FileReader(new File("./configure_serverport.txt")));
                         serverPort = Integer.parseInt(fis.readLine());
 
